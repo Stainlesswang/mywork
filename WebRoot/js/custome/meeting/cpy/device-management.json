@@ -1,0 +1,41 @@
+[
+    {
+        "id": 0,
+        "authcode": "shxx001",
+        "leadername": "吕常山",
+        "jobnumber":"11688357",
+        "registertime":"2017-03-29",
+        "state":"已绑定"
+        
+    },
+    {
+        "id": 1,
+        "authcode": "shxx002",
+        "leadername": "侯亮平",
+        "jobnumber":"11688115",
+        "registertime":"2017-04-26",
+        "state":"已绑定"
+    },
+    {
+        "id": 3,
+        "authcode": "shxx003",
+        "leadername": "沙瑞金",
+        "jobnumber":"11688438",
+        "registertime":"2017-03-26",
+        "state":"已绑定"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+

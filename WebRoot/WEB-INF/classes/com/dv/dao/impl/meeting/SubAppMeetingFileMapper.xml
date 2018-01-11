@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="com.dv.dao.meeting.SubAppMeetingFileMapper">
+ 	<!-- 查询所有会议附件信息 -->
+ 		<select id="findSubAppMeetingFile" parameterType="com.dv.entity.meeting.SubAppMeetingFile"
+ 			resultType="com.dv.entity.meeting.SubAppMeetingFile">
+ 			select a.*,b.real_name as uploader_name, b.user_id as uploader_id from sub_app_meeting_file as a, bt_user as b where a.uploader_id = b.user_id
+	 		<if test="meeting_mid !=null">
+	 			and meeting_mid=#{meeting_mid}
+	 		</if>
+	 		<if test="file_mid !=null">
+	 			and file_mid=#{file_mid}
+	 		</if>
+	 		<if test="attach_type != null">
+	 			and attach_type=#{attach_type}
+	 		</if>
+	 		<if test="uploader_id != null">
+	 			and uploader_id=#{uploader_id}
+	 		</if>
+	 		<if test="token != null">
+	 			and token=#{token}
+	 		</if>
+	 		<if test="sort!=null">
+	 		    order by ${sort}
+	 		    <if test="order !=null">
+	 		        ${order}
+	 		    </if>
+	 		</if>
+	 		<if test = "limit!=0">
+			 	limit #{start},#{limit}
+			</if>	
+ 		</select>
+ 	<!-- 查询会议附件表信息条数 -->
+ 			<select id="findSubAppMeetingFileCount" parameterType="com.dv.entity.meeting.SubAppMeetingFile"
+		 		resultType="integer">
+		 			select count(*) from sub_app_meeting_file as a, bt_user as b where a.uploader_id = b.user_id
+		 		<if test="meeting_mid !=null">
+	 			and meeting_mid=#{meeting_mid}
+	 		</if>
+	 		<if test="file_mid !=null">
+	 			and file_mid=#{file_mid}
+	 		</if>	
+	 		<if test="attach_type != null">
+	 			and attach_type=#{attach_type}
+	 		</if>
+ 		</select>
+ 		<!-- 增加会议附件表信息 -->
+ 		<insert id="addSubAppMeetingFile"  parameterType="com.dv.entity.meeting.SubAppMeetingFile">
+ 			insert into sub_app_meeting_file 
+ 			<trim prefix="("  suffix=")"  suffixOverrides=",">
+ 				<if test="meeting_mid !=null">
+ 					meeting_mid,
+ 				</if>
+ 				<if test="file_mid !=null">
+ 					file_mid,
+ 				</if>
+ 				<if test="attach_name !=null">
+ 					attach_name,			
+ 				</if>
+ 				<if test="attach_path !=null">
+ 					attach_path,			
+ 				</if>
+ 				<if test="attach_realname !=null">
+ 					attach_realname,			
+ 				</if>
+ 				<if test="attach_size !=null">
+ 					attach_size,			
+ 				</if>
+ 				<if test="prefix !=null">
+ 					prefix,			
+ 				</if>
+ 				<if test="suffix !=null">
+ 					suffix,			
+ 				</if>
+ 				<if test="attach_type !=null">
+ 					attach_type,			
+ 				</if>
+ 				<if test="token !=null">
+ 					token,			
+ 				</if>
+ 				<if test="uploader_id != null">
+ 					uploader_id,
+ 				</if>
+ 					last_update_time,						 
+ 			</trim>
+ 			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test = "meeting_mid != null">
+			 			 #{meeting_mid},
+			 	</if>
+				<if test = "file_mid != null">
+			 			 #{file_mid},
+			 	</if>
+				<if test = "attach_name != null">
+			 			 #{attach_name},
+			 	</if>
+			 	<if test = "attach_path != null">
+			 			 #{attach_path},
+			 	</if>
+			 	<if test = "attach_realname != null">
+			 			 #{attach_realname},
+			 	</if>
+			 	<if test = "attach_size != null">
+			 			 #{attach_size},
+			 	</if>
+			 	<if test = "prefix != null">
+			 			 #{prefix},
+			 	</if>
+			 	<if test = "suffix != null">
+			 			 #{suffix},
+			 	</if>
+			 	<if test = "attach_type != null">
+			 			 #{attach_type},
+			 	</if>
+			 	<if test = "token != null">
+			 			 #{token},
+			 	</if>
+			 	<if test = "uploader_id != null">
+			 			 #{uploader_id},
+			 	</if>
+			 	 NOW(),	 	 
+			</trim>
+ 		</insert>
+ <!-- 删除会议附件信息 -->
+ 	<delete id="delSubAppMeetingFileByIds" parameterType="java.util.List">
+ 		delete from sub_app_meeting_file where file_mid in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+         #{item}
+    </foreach>
+ 	</delete>
+ 	
+ 		
+ 	<!-- 批量插入附件数据-->
+	<insert id="batchAddMeetFile" parameterType="java.util.List">  
+	    <!-- <selectKey keyProperty="fetchTime" order="BEFORE"  
+	        resultType="java.lang.String">  
+	        SELECT CURRENT_TIMESTAMP()  
+	    </selectKey> -->  
+	    insert into sub_app_meeting_file ( meeting_mid,file_mid, 
+	    attach_path,attach_name,attach_type,token,
+	    attach_size,last_update_time,attach_realname,prefix,suffix,uploader_id
+	    ) 
+	    values  
+	    <foreach collection="list" item="item" index="index"  
+	        separator=",">  
+	        ( #{item.meeting_mid}, #{item.file_mid},
+	        #{item.attach_path},#{item.attach_name},IFNULL(#{item.attach_type},0),#{item.token},
+	        #{item.attach_size},NOW(),#{item.attach_realname},
+	        #{item.prefix},#{item.suffix},#{item.uploader_id}
+	        )  
+	    </foreach>  
+    </insert>
+    
+	<!-- 根据会议id删除会议附件信息 -->
+	<delete id="delSubAppMeetingFileByMIds" parameterType="java.util.List">
+ 		delete from sub_app_meeting_file where meeting_mid in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+         #{item}
+    </foreach>
+ 	</delete>
+ 	
+ 	<!-- 修改会议附件信息 -->
+ <update id="modSubAppMeetingFileById" parameterType="com.dv.entity.meeting.SubAppMeetingFile" >
+ 	update sub_app_meeting_file set
+ 	<trim suffixOverrides=",">
+ 		<if test="meeting_mid !=null">
+ 			meeting_mid=#{meeting_mid},
+ 		</if>
+ 		<if test="attach_name !=null">
+ 			attach_name=#{attach_name},
+ 		</if>
+ 		<if test="attach_path !=null">
+ 			attach_path=#{attach_path},
+ 		</if>
+ 		<if test="attach_realname !=null">
+ 			attach_realname=#{attach_realname},
+ 		</if>
+ 		<if test="attach_size !=null">
+ 			attach_size=#{attach_size},
+ 		</if>
+ 		<if test="prefix !=null">
+ 			prefix=#{prefix},
+ 		</if>
+ 		last_update_time=NOW(),
+ 		<if test="suffix !=null">
+	 		  suffix=#{suffix}, 
+	 	</if>
+	 	<if test="attach_type !=null">
+	 		  attach_type=#{attach_type},
+	 	</if>
+	 	<if test="token !=null">
+	 		  token=#{token},
+	 	</if>
+	 	<if test="uploader_id != null">
+				uploader_id=#{uploader_id},
+		 </if>
+ 	</trim>
+ 	where file_mid=#{file_mid}
+ </update>	
+ 	
+ </mapper>

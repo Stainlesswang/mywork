@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="com.dv.dao.meeting.SubAppMeetingMapper">
+ 	<!-- 查询所有会议信息 -->
+ 		<select id="findSubAppMeeting" parameterType="com.dv.entity.meeting.SubAppMeeting"
+ 			resultType="com.dv.entity.meeting.SubAppMeeting">
+ 			select a.*,b.user_name,b.real_name from SUB_app_meeting as a left join bt_user as b on a.user_id=b.user_id where 1 = 1
+	 		<if test="mid !=null">
+	 			and mid=#{mid}
+	 		</if>
+	 		<if test="is_ipad !=null and is_ipad !=-1">
+	 		    and is_ipad=#{is_ipad}
+	 		</if>
+	 		<if test="search !=null">
+	 			and meet_name like CONCAT('%',#{search},'%')
+	 		</if>
+	 		<if test="status !=null">
+	 		    and a.status=#{status}
+	 		</if>
+	 		<if test="meet_attend_ids !=null">
+	 			and meet_attend_ids like CONCAT('%;',#{meet_attend_ids},';%')
+	 		</if>
+	 		<if test="user_id !=null">
+	 		    and a.user_id=#{user_id}
+	 		</if>
+	 		<if test="sort!=null">
+	 		    order by ${sort}
+	 		    <if test="order !=null">
+	 		        ${order}
+	 		    </if>
+	 		</if>
+	 		
+	 		<if test = "limit!=0">
+			 	limit #{start},#{limit}
+			</if>	
+ 		</select>
+ 	<!-- 查询会议表信息条数 -->
+ 			<select id="findSubAppMeetingCount" parameterType="com.dv.entity.meeting.SubAppMeeting"
+		 		resultType="integer">
+		 			select count(*) from SUB_app_meeting as a left join bt_user as b on a.user_id=b.user_id where 1 = 1
+		 		<if test="mid !=null">
+		 			and mid=#{mid}
+		 		</if>
+		 		<if test="is_ipad !=null and is_ipad !=-1">
+		 		    and is_ipad=#{is_ipad}
+		 		</if>
+		 		<if test="search !=null">
+		 			and meet_name like CONCAT('%',#{search},'%')
+		 		</if>
+		 		<if test="status !=null">
+		 		    and a.status=#{status}
+		 		</if>
+		 		<if test="meet_attend_ids !=null">
+	 				and meet_attend_ids like CONCAT('%;',#{meet_attend_ids},';%')
+	 			</if>
+		 		<if test="user_id !=null">
+		 		    and a.user_id=#{user_id}
+		 		</if>	
+ 		</select>
+ 		<!-- 增加会议表信息 -->
+ 		<insert id="addSubAppMeeting"  parameterType="com.dv.entity.meeting.SubAppMeeting">
+ 			insert into SUB_app_meeting 
+ 			<trim prefix="("  suffix=")"  suffixOverrides=",">
+ 				<if test="mid !=null">
+ 					mid,
+ 				</if>
+ 				<if test="meet_time !=null">
+ 					meet_time,
+ 				</if>
+ 				<if test="meet_name !=null">
+ 					meet_name,			
+ 				</if>
+ 				<if test="meet_addr !=null">
+ 					meet_addr,			
+ 				</if>
+ 				<if test="meet_attend !=null">
+ 					meet_attend,			
+ 				</if>
+ 				<if test="meet_attend_ids !=null">
+ 					meet_attend_ids,			
+ 				</if>
+ 				<if test="remark !=null">
+ 					remark,			
+ 				</if>
+ 				<if test="last_update_time !=null">
+ 					last_update_time,			
+ 				</if>
+ 				<if test="is_ipad!=null">
+	 		 	 	is_ipad, 
+	 			</if>
+		 		<if test="user_id!=null">
+		 		    user_id,
+		 		</if>
+		 		<if test="draft_time!=null">
+		 		    draft_time,
+		 		</if>
+		 		<if test="master!=null">
+		 		    master,
+		 		</if>
+		 		<if test="end_time!=null">
+		 		    end_time,
+		 		</if>
+		 		<if test="push_time!=null">
+		 		    push_time,
+		 		</if>
+		 		<if test="status !=null">
+		 		    status,
+		 		</if>
+		 			create_time,
+ 			</trim>
+ 			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test = "mid != null">
+			 			 #{mid},
+			 	</if>
+				<if test = "meet_time != null">
+			 			 #{meet_time},
+			 	</if>
+				<if test = "meet_name != null">
+			 			 #{meet_name},
+			 	</if>
+			 	<if test = "meet_addr != null">
+			 			 #{meet_addr},
+			 	</if>
+			 	<if test = "meet_attend != null">
+			 			 #{meet_attend},
+			 	</if>
+			 	<if test = "meet_attend_ids != null">
+			 			 #{meet_attend_ids},
+			 	</if>
+			 	<if test = "remark != null">
+			 			 #{remark},
+			 	</if>
+			 	<if test = "last_update_time != null">
+			 			 #{last_update_time},
+			 	</if>
+			 	<if test="is_ipad!=null">
+	 	 				#{is_ipad}, 
+	 			</if>
+		 		<if test="user_id!=null">
+		 		    #{user_id},
+		 		</if>
+		 		<if test="draft_time!=null">
+		 		    #{draft_time},
+		 		</if>
+		 		<if test="master!=null">
+		 		    #{master},
+		 		</if>
+		 		<if test="end_time!=null">
+		 		    #{end_time},
+		 		</if>
+		 		<if test="push_time!=null">
+		 		    #{push_time},
+		 		</if>
+		 		<if test="status !=null">
+		 		    #{status},
+		 		</if>
+		 			NOW(),
+			</trim>
+ 		</insert>
+ <!-- 删除会议信息 -->
+ 	<delete id="delSubAppMeetingByIds" parameterType="java.util.List">
+ 		delete from SUB_app_meeting where mid in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+         #{item}
+    </foreach>
+ 	</delete>	
+ 	
+ <!-- 修改会议信息 -->
+ <update id="modSubAppMeetingById" parameterType="com.dv.entity.meeting.SubAppMeeting" >
+ 	update SUB_app_meeting set
+ 	<trim suffixOverrides=",">
+ 		<if test="meet_time !=null">
+ 			meet_time=#{meet_time},
+ 		</if>
+ 		<if test="meet_name !=null">
+ 			meet_name=#{meet_name},
+ 		</if>
+ 		<if test="meet_addr !=null">
+ 			meet_addr=#{meet_addr},
+ 		</if>
+ 		<if test="meet_attend !=null">
+ 			meet_attend=#{meet_attend},
+ 		</if>
+ 		<if test="meet_attend_ids !=null">
+ 			meet_attend_ids=#{meet_attend_ids},
+ 		</if>
+ 		<if test="remark !=null">
+ 			remark=#{remark},
+ 		</if>
+ 		last_update_time=NOW(),
+ 		<if test="is_ipad!=null">
+	 		  is_ipad=#{is_ipad}, 
+	 	</if>
+	 	<if test="user_id!=null">
+	 		  user_id=#{user_id},
+	 	</if>
+	 	<if test="draft_time!=null">
+	 		  draft_time=#{draft_time},
+	 	</if>
+	 	<if test="master!=null">
+		 		    master=#{master},
+		 		</if>
+		 		<if test="end_time!=null">
+		 		    end_time=#{end_time},
+		 		</if>
+	 	<if test="push_time!=null">
+	 		  push_time=#{push_time},
+	 	</if>
+	 	<if test="status !=null">
+	 		  status=#{status},
+	 	</if>
+	 		 create_time=NOW(),
+ 	</trim>
+ 	where mid=#{mid}
+ </update>	
+ 		
+ 		
+ 	<update id="clearUserInfoByUserId"  parameterType="java.util.List">
+	      <foreach collection="list" item="item" index="index" open="" close="" separator=";">
+				update SUB_app_meeting 
+				<set>
+				  <trim suffixOverrides=",">
+				 		meet_attend_ids=REPLACE(meet_attend_ids,CONCAT(';',#{item},';'),";"),
+				 		user_id=null,
+				 	</trim>
+				</set>
+				where meet_attend_ids like CONCAT('%;',#{item},';%') or 
+				user_id=#{item}
+		 </foreach>
+    </update>
+ </mapper>

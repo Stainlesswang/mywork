@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="com.dv.dao.user.OrganizeMapper">
+	<!-- 查询组织所有信息 -->
+	<select id="findOrganize" parameterType="com.dv.entity.user.Organize"
+ 		resultType="com.dv.entity.user.Organize">
+ 			select a.*,b.org_name as parent_name from bt_organization as a 
+ 				left join bt_organization as b on  a.parent_id=b.org_id where 1 = 1
+ 		<if test="org_id !=null">
+ 			and a.org_id=#{org_id}
+ 		</if>	
+ 		<if test="parent_id !=null">
+ 			and a.parent_id=#{parent_id}
+ 		</if>
+		 <if test = "limit!=0">
+		 	limit #{start},#{limit}
+		 </if>
+ 	</select>
+	<!-- 查询组织信息总体数 -->
+	<select id="findOrganizeCount" parameterType="com.dv.entity.user.Organize"
+ 		resultType="integer">
+ 			select count(*) from bt_organization as a
+ 				 left join bt_organization as b on  a.parent_id=b.org_id 
+ 				 	where 1 = 1 
+ 		<if test="org_id!=null">
+ 			and org_id=#{org_id}
+ 		</if>	
+	</select>
+	<!-- 增加组织信息 -->
+	<insert id="addOrganize" parameterType="com.dv.entity.user.Organize" useGeneratedKeys="true" keyProperty="org_id">
+		insert into bt_organization 
+ 			<trim prefix="("  suffix=")"  suffixOverrides=",">
+ 				<if test="org_id !=null">
+ 					org_id,
+ 				</if>
+ 				<if test="org_name !=null">
+ 					org_name,
+ 				</if>
+ 				<if test="parent_code!=null">
+ 					parent_code,			
+ 				</if>
+ 				<if test="parent_id !=null">
+ 					parent_id,
+ 				</if>
+ 				<if test="remark !=null">
+ 					remark,
+ 				</if>
+ 			</trim>
+ 			<trim prefix="values (" suffix=")" suffixOverrides=",">
+ 				<if test="org_id !=null">
+ 					#{org_id},
+ 				</if>
+ 				<if test="org_name !=null">
+ 					#{org_name},
+ 				</if>
+ 				<if test="parent_code !=null">
+ 					#{parent_code},			
+ 				</if>
+ 				<if test="parent_id !=null">
+ 					#{parent_id},
+ 				</if>
+ 				<if test="remark !=null">
+ 					#{remark},
+ 				</if>
+ 			</trim>	
+	</insert>
+	<!-- 根据id删除组织信息 -->
+	<delete id="delOrganizeByIds"  parameterType="java.util.List">
+ 		delete from bt_organization  where org_id in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+         	#{item}
+    	</foreach>
+	</delete>
+<!-- 修改组织信息 -->
+<update id="modOrganize" parameterType="com.dv.entity.user.Organize" >
+	update bt_organization set   
+ 			<trim  suffixOverrides=",">
+ 				<if test="org_id !=null">
+ 					org_id=#{org_id},
+ 				</if>
+ 				<if test="org_name !=null">
+ 					org_name=#{org_name},		
+ 				</if>
+ 				<if test="parent_code !=null">
+ 					parent_code=#{parent_code},
+ 				</if>
+ 				<if test="parent_id !=null">
+ 					parent_id=#{parent_id},
+ 				</if>
+ 				<if test="remark !=null">
+ 					remark=#{remark},
+ 				</if>
+ 			</trim>
+ 			where org_id=#{org_id}
+</update>
+	
+<!-- 查询顶层组织 -->
+<select id="findTopOrganize" parameterType="com.dv.entity.user.Organize"
+ 		resultType="com.dv.entity.user.Organize">
+ 			select * from bt_organization as a 
+ 			where 1=1 and parent_id is null
+ 		<if test="org_id !=null">
+ 			and org_id=#{org_id}
+ 		</if>	
+		 <if test = "limit!=0">
+		 	limit #{start},#{limit}
+		 </if>
+ </select>
+ 
+<!-- 根据组织id删除组织以及下级组织 -->
+<delete id="delOrganizeById"  parameterType="com.dv.entity.user.Organize">
+ 		delete from bt_organization  where parent_code 
+ 		like CONCAT(#{parent_code},'%') or parent_id=#{org_id} or org_id=#{org_id}
+</delete>
+<!-- 根据id集合查询组织信息 -->
+<select id="findOrganizeByIds" parameterType="java.util.List"
+ 		resultType="com.dv.entity.user.Organize">
+ 			select * from bt_organization  where org_id in
+	 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+	         	#{item}
+	    	</foreach>
+ 	</select>
+ 	
+<!-- 修改子级组织的pcode -->
+<update id="modChildOrgPCode" parameterType="java.util.Map" >
+	update bt_organization set parent_code=REPLACE(parent_code, #{oldParentCode}, #{newParentCode})
+			where parent_code like CONCAT(#{oldParentCode},'%')
+</update>
+
+<!-- 根据上级组织信息查询该组织以及下级组织信息 -->
+<select id="findOrgAndSubByIds" parameterType="com.dv.entity.user.Organize"
+ 		resultType="com.dv.entity.user.Organize">
+ 		select * from bt_organization  where parent_code 
+ 		like CONCAT(#{parent_code},'%') or parent_id=#{org_id} or org_id=#{org_id}
+</select>
+
+<!-- 获取数据库中最大的组织id -->
+<select id="findMaxOrgId"  resultType="integer">
+ 		select IFNULL(max(org_id),0)+1 org_id from bt_organization
+ 	</select>
+ </mapper>

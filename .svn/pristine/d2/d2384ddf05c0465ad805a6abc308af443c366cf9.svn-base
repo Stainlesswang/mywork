@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"  
+	xmlns:jee="http://www.springframework.org/schema/jee" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.2.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+	
+    
+    <bean
+   class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+   <property name="messageConverters">
+      <list>
+         <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter" />
+         <bean id="jsonHttpMessageConverter"
+            class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+            <property name="supportedMediaTypes">
+               <list>
+                  <value>text/html;charset=utf-8</value>
+                  <value>text/xml;charset=utf-8</value>
+                  <value>text/plain;charset=UTF-8</value>
+                  <value>text/json;charset=utf-8</value>
+                  <value>application/json</value>
+               </list>
+            </property>
+         </bean>
+      </list>
+   </property>
+</bean>
+    
+    <!-- 支持上传文件 20160613-->  
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- one of the properties available; the maximum file size in bytes -->
+        <property name="maxUploadSize" value="1000000000"/>
+	</bean>
+    
+	<!-- 加载jdbc资源文件 -->
+	<util:properties id="jdbc" location="classpath:jdbc.properties"/>
+	<util:properties id="base" location="classpath:base.properties"/>
+	
+	<!-- 定义数据源 -->
+	<bean id="ds" 
+		class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<!-- <property name="url" value="#{jdbc.url}"/> -->
+		<property name="url" value="#{jdbc.url}#{jdbc.dbName}#{jdbc.urlAppend}"/>
+		<property name="driverClassName" value="#{jdbc.driver}"/>
+		<property name="username" value="#{jdbc.user}"/>
+		<property name="password" value="#{jdbc.password}"/>
+	</bean>
+	
+	<!--系统配置项 20170525-->
+	<bean id="systemConfigBean" 
+		class="com.dv.entity.SystemConfig">
+		<property name="url" value="#{jdbc.url}"/>
+		<property name="dbName" value="#{jdbc.dbName}"/>
+		<property name="urlAppend" value="#{jdbc.urlAppend}"/>
+		<property name="driver" value="#{jdbc.driver}"/>
+		<property name="user" value="#{jdbc.user}"/>
+		<property name="password" value="#{jdbc.password}"/>
+		<property name="mysqlExistDataBase" value="#{jdbc.mysqlExistDataBase}"/>
+		<property name="adminUsername" value="#{base.admin_user_name}"/>
+		<property name="adminPwd" value="#{base.admin_password}"/>
+		<property name="adminRealName" value="#{base.admin_real_name}"/>
+		<property name="adminSex" value="#{base.admin_sex}"/>
+		<property name="orgName" value="#{base.org_name}"/>
+		<property name="tempOrgName" value="#{base.temp_org_name}"></property>
+	</bean>
+	
+	<!-- 定义sqlSessionFactory -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">  
+      <property name="dataSource" ref="ds" />
+      <property name="mapperLocations" value="classpath:com/dv/dao/impl/*/*.xml"/>
+    </bean>
+    
+    <!-- 扫描DAO组件 -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+       <property name="basePackage" value="com.dv.dao" />
+       <property name="annotationClass" 
+           value="com.dv.dao.MyBatisRepository"/>
+	</bean>
+
+    <!-- 初始化数据类,不用的时候可注释 -->
+	 <bean class="com.dv.servlet.listener.InitDataListener"/>
+	<!-- 开启IOC注解扫描 -->
+	<context:component-scan base-package="com.dv" />
+
+	<!-- 开启MVC注解扫描 -->
+	<mvc:annotation-driven />
+	
+	<mvc:resources mapping="/**" location="/" />
+
+	<!-- 处理请求转发 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/"/>
+		<property name="suffix" value=".jsp"/>
+	</bean>
+	
+	<!-- 开启AOP注解扫描 -->
+	<aop:aspectj-autoproxy proxy-target-class="true"/>
+	
+	<!-- 拦截器 -->
+	<mvc:interceptors>
+		<!-- 登录检查拦截器 -->
+		<mvc:interceptor>
+		    <!-- 匹配的是url路径， 如果不配置或/**,将拦截所有的Controller -->
+		    <!-- mvc:mapping  mvc:exclude-mapping可配置多个-->
+			<mvc:mapping path="/**"/>
+			<mvc:exclude-mapping path="/login/*"/>
+			<bean class="com.dv.interceptor.LoginInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<!-- 声明式事务 -->
+	<bean id="txManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="ds" />
+	</bean>
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="add*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
+			<tx:method name="update*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
+			<tx:method name="delete*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
+			<tx:method name="create*" propagation="REQUIRED" rollback-for="java.lang.Exception"/>
+		</tx:attributes>
+	</tx:advice>
+	<aop:config proxy-target-class="true">
+		<aop:advisor advice-ref="txAdvice" pointcut="within(com.dv.service..*)" />
+	</aop:config>
+	
+</beans>

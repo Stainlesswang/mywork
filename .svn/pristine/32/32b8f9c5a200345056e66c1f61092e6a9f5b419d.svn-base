@@ -1,0 +1,24 @@
+#default admin
+admin_user_name=admin
+#default 123456
+admin_password=123456
+#default superman
+admin_real_name=超级管理员
+#0(man) or 1 (woman),default 0
+admin_sex=0
+
+
+org_name=信息公司
+#存放临时用户的子部门
+temp_org_name=临时用户组
+
+
+
+
+
+
+
+
+
+
+
