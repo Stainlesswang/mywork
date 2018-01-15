@@ -731,7 +731,6 @@ $(function(){
 			var hasMergeFile = false;
 			for(var i = 0; i < totalAttach.length; i++){
 				if (totalAttach[i].attach_type == 1) {
-                    layer.alert("totalAttach.length > 1)");
 					hasMergeFile = true;
 				}
 			}

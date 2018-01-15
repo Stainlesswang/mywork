@@ -5,7 +5,8 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  * MD5加密
- *
+ *首先MD5 加密是单向加密，将字符串加密后的串是无法解密为原有的字符串的
+ * 所以验证字符串是否与数据库中的字段一样只能MD5加密后匹配
  */
 public class MD5Util2 {
     protected final static String MD5_KEY = "MD5";

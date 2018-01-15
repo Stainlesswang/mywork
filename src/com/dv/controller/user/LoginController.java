@@ -1,5 +1,6 @@
 package com.dv.controller.user;
 
+import java.util.Date;
 import java.util.Map;
 
 import javax.annotation.Resource;
@@ -7,6 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.dv.util.CommonMethod;
+import com.dv.util.LicenseUtil;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -81,7 +84,8 @@ public class LoginController extends FnfhBaseController{
 //			return new Result(SystemConst.CHECKCODE_ERROR,SystemConst.CHECKCODE_ERROR_MSG);
 //		}
 		//检测license
-		int attendeesLimit = -1; //参会人数限制
+//		int attendeesLimit = 10000; //参会人数限制  -1为默认值，在此取消后修改为1000
+		int attendeesLimit = -1; //参会人数限制  -1为默认值
 		try
 		{
 		    /**  0：正常；
@@ -94,7 +98,7 @@ public class LoginController extends FnfhBaseController{
 		    LicenseChecker checker = new LicenseChecker();
 		    int checkResult = checker.checkLicenseFile(req.getServletContext().getRealPath("/") + "WEB-INF/classes/license");
 		    switch(checkResult){
-		        case 1: 
+		        case 1:
 		            return new Result(APIConstants.LICENSE_NO_FOUND);
 		        case 2:
 		            return new Result(APIConstants.LICENSE_CONTENT_NULL);
@@ -108,6 +112,14 @@ public class LoginController extends FnfhBaseController{
 		            return new Result(APIConstants.LICENSE_EXPIRED);
 		    }
 		    attendeesLimit = checker.getAttendeesLimit();
+			Long startTime = Long.parseLong(checker.getDecodePropety("LICENSEID"));
+			Date startDate = new Date(startTime);
+			String daysLimit = checker.getDecodePropety("DAYSLIMIT");
+			Date expireDate = LicenseUtil.addDays(startDate, Integer.parseInt(daysLimit));
+			String date =CommonMethod.getDateFormat(expireDate);
+		    System.out.println(attendeesLimit+"参加人数限制：：LICENSEID ********************************");
+			System.out.println(date+"到期日期：：DAYSLIMIT ********************************");
+
 		}
 		catch (Exception e)
 		{
