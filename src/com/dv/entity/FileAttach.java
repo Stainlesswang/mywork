@@ -5,7 +5,7 @@ package com.dv.entity;
  * @classDesc ：
  *	 文件实体类
  * @creater: 李梦婷
- * @creationDate:2017年1月13日 下午1:15:31
+ * @creationDate:2017年1月13日 下午15:15:31
  */
 public class FileAttach extends BaseEntity{
 	

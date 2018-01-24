@@ -95,7 +95,8 @@
 	</bean>
 
     <!-- 初始化数据类,不用的时候可注释 -->
-	 <bean class="com.dv.servlet.listener.InitDataListener"/>
+	 <!--<bean class="com.dv.servlet.listener.InitDataListener"/>-->
+
 	<!-- 开启IOC注解扫描 -->
 	<context:component-scan base-package="com.dv" />
 

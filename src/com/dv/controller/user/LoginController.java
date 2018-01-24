@@ -84,48 +84,48 @@ public class LoginController extends FnfhBaseController{
 //			return new Result(SystemConst.CHECKCODE_ERROR,SystemConst.CHECKCODE_ERROR_MSG);
 //		}
 		//检测license
-//		int attendeesLimit = 10000; //参会人数限制  -1为默认值，在此取消后修改为1000
-		int attendeesLimit = -1; //参会人数限制  -1为默认值
-		try
-		{
-		    /**  0：正常；
-		     *  1：无法获取授权文件；
-		     *  2：授权文件内容为空；
-		     *  3：授权文件签名校验无效；
-		     *  4：非授权服务器部署；
-		     *  5：授权类型错误；
-		     *  6：授权已经过期；*/
-		    LicenseChecker checker = new LicenseChecker();
-		    int checkResult = checker.checkLicenseFile(req.getServletContext().getRealPath("/") + "WEB-INF/classes/license");
-		    switch(checkResult){
-		        case 1:
-		            return new Result(APIConstants.LICENSE_NO_FOUND);
-		        case 2:
-		            return new Result(APIConstants.LICENSE_CONTENT_NULL);
-		        case 3:
-		            return new Result(APIConstants.LICENSE_SIGN_INVALID);
-		        case 4:
-		            return new Result(APIConstants.LICENSE_MATCHING_FAIL);
-		        case 5:
-		            return new Result(APIConstants.LICENSE_TYPE_ERROR);
-		        case 6:
-		            return new Result(APIConstants.LICENSE_EXPIRED);
-		    }
-		    attendeesLimit = checker.getAttendeesLimit();
-			Long startTime = Long.parseLong(checker.getDecodePropety("LICENSEID"));
-			Date startDate = new Date(startTime);
-			String daysLimit = checker.getDecodePropety("DAYSLIMIT");
-			Date expireDate = LicenseUtil.addDays(startDate, Integer.parseInt(daysLimit));
-			String date =CommonMethod.getDateFormat(expireDate);
-		    System.out.println(attendeesLimit+"参加人数限制：：LICENSEID ********************************");
-			System.out.println(date+"到期日期：：DAYSLIMIT ********************************");
-
-		}
-		catch (Exception e)
-		{
-		    logger.error(logger.getName()+"/backLogin,"+e.getMessage());
-            return new Result(APIConstants.CHECK_LICENSE_FAIL);
-		}
+		int attendeesLimit = 10000; //参会人数限制  -1为默认值，在此取消后修改为1000
+//		int attendeesLimit = -1; //参会人数限制  -1为默认值
+//		try
+//		{
+//		    /**  0：正常；
+//		     *  1：无法获取授权文件；
+//		     *  2：授权文件内容为空；
+//		     *  3：授权文件签名校验无效；
+//		     *  4：非授权服务器部署；
+//		     *  5：授权类型错误；
+//		     *  6：授权已经过期；*/
+//			LicenseChecker checker = new LicenseChecker();
+//		    int checkResult = checker.checkLicenseFile(req.getServletContext().getRealPath("/") + "WEB-INF/classes/license");
+//		    switch(checkResult){
+//		        case 1:
+//		            return new Result(APIConstants.LICENSE_NO_FOUND);
+//		        case 2:
+//		            return new Result(APIConstants.LICENSE_CONTENT_NULL);
+//		        case 3:
+//		            return new Result(APIConstants.LICENSE_SIGN_INVALID);
+//		        case 4:
+//		            return new Result(APIConstants.LICENSE_MATCHING_FAIL);
+//		        case 5:
+//		            return new Result(APIConstants.LICENSE_TYPE_ERROR);
+//		        case 6:
+//		            return new Result(APIConstants.LICENSE_EXPIRED);
+//		    }
+//		    attendeesLimit = checker.getAttendeesLimit();
+//			Long startTime = Long.parseLong(checker.getDecodePropety("LICENSEID"));
+//			Date startDate = new Date(startTime);
+//			String daysLimit = checker.getDecodePropety("DAYSLIMIT");
+//			Date expireDate = LicenseUtil.addDays(startDate, Integer.parseInt(daysLimit));
+//			String date =CommonMethod.getDateFormat(expireDate);
+//		    System.out.println(attendeesLimit+"参加人数限制：：LICENSEID ********************************");
+//			System.out.println(date+"到期日期：：DAYSLIMIT ********************************");
+//
+//		}
+//		catch (Exception e)
+//		{
+//		    logger.error(logger.getName()+"/backLogin,"+e.getMessage());
+//            return new Result(APIConstants.CHECK_LICENSE_FAIL);
+//		}
 		try {
 			Result result= userInfoService.backLogin(username, password);
 			if(result.getStatus()==0)
@@ -195,7 +195,7 @@ public class LoginController extends FnfhBaseController{
 	{
 		return new ModelAndView("error/no_per");
 	}
-	
+
 /********************************前台用户操作****************************************************/	
 	
 	

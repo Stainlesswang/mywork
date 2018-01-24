@@ -38,7 +38,7 @@
 </style>
 </head>
 <body>
-<nav class="breadcrumb nav_content" style=""><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 无纸化会议 <span class="c-gray en">&gt;</span> 会议材料推送
+<nav class="breadcrumb " style=""><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 无纸化会议 <span class="c-gray en">&gt;</span> 会议材料推送
 	<!-- button name="" id="" class="btn btn-danger" type="button" style="float:right;margin-top: 8px;"><i class="Hui-iconfont">&#xe609;</i> 删除</button> -->
 	<span class="select-box inline" style="float:right;border:0;font-size:14px;">
 		<a class="btn btn-success" style="line-height:1.6em;" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
@@ -48,20 +48,23 @@
 	</span>
 	
 </nav>
-<div class="text-c ctrl_content"> 
+
+
+<div class="page-container " style="">
+	<div class="text-c">
+		推送状态筛选：
 		<span class="select-box inline">
-			<select class="select" id="is_paid">
-				<option value="0" selected="selected">未推送文件</option>
+			<select class="select" id="is_paid" >
+				<option value="0" >未推送文件</option>
 				<option value="1">已推送文件</option>
-				<option value="-1">全部文件</option>				
+				<option value="-1" selected="selected">全部文件</option>
 			</select>
 		</span>
-		<input type="text" name="" id="keywords" placeholder=" 快速查询" style="width:250px" class="input-text">
-		<button name="" id="" onclick="bootstrapRefresh();" class="btn btn-success" type="submit"><i class="Hui-iconfont"></i> 查询</button>
-</div>
-
-<div class="page-container page_content" style="">
-	<table class="table table-border table-bordered table-bg" id="datatable">
+		<input  type="text" name="" id="keywords" placeholder="输入会议名称/参会领导名字" style="width:250px" class="input-text">
+		<button name="" id="" onclick="bootstrapRefresh();" class="btn btn-success" type="submit"><i class="Hui-iconfont"></i>查询</button>
+	</div>
+	<div class="mt-20">
+	<table class="table table-border table-bordered table-bg" id="datatable" >
 	</table>
 </div>
 <!--_footer 作为公共模版分离出去-->

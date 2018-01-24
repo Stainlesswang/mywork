@@ -32,6 +32,8 @@ public class Permission extends BaseEntity{
 	//以下非表中字段
 	private String user_name;//用户名
 	private String real_name;//拥有权限的人的真实姓名
+
+
 	public Integer getPer_id() {
 		return per_id;
 	}

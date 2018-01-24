@@ -25,14 +25,14 @@ public class PasswordUtil {
         for (int i = 0; i < 48; i += 3) {  
             cs[i] = cs1[i / 3 * 2];  
             cs[i + 1] = cs2[i / 3];  
-            cs[i + 2] = cs1[i / 3 * 2 + 1];  
-        }  
-        return new String(cs);  
-    }  
-  
-    /** 
-     * 校验密码是否正确 
-     */  
+            cs[i + 2] = cs1[i / 3 * 2 + 1];
+}
+        return new String(cs);
+                }
+
+/**
+ * 校验密码是否正确
+ */
     public static boolean verify(String password, String md5) {  
         char[] cs = md5.toCharArray();  
         char[] cs1 = new char[32];  

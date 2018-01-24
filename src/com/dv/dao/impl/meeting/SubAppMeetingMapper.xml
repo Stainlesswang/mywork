@@ -15,8 +15,9 @@
 	 		<if test="is_ipad !=null and is_ipad !=-1">
 	 		    and is_ipad=#{is_ipad}
 	 		</if>
-	 		<if test="search !=null">
-	 			and meet_name like CONCAT('%',#{search},'%')
+			<!--修改为多条件模糊查询，查询条件 会议名称，参会人员 2018/1/24 王建强-->
+	 		<if test="search !=null and search !=''">
+	 			and CONCAT(a.meet_name,a.meet_attend) like CONCAT('%',#{search},'%')
 	 		</if>
 	 		<if test="meet_type != null">
 	 			and a.meet_type=#{meet_type}
@@ -51,9 +52,9 @@
 		 		<if test="is_ipad !=null and is_ipad !=-1">
 		 		    and is_ipad=#{is_ipad}
 		 		</if>
-		 		<if test="search !=null">
-		 			and meet_name like CONCAT('%',#{search},'%')
-		 		</if>
+				<if test="search !=null and search !=''">
+					and CONCAT(a.meet_name,a.meet_attend) like CONCAT('%',#{search},'%')
+				</if>
 		 		<if test="meet_type != null">
 		 			and a.meet_type=#{meet_type}
 		 		</if>

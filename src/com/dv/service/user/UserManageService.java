@@ -1019,7 +1019,6 @@ public class UserManageService {
 			userInfo=list.get(0);
 			//比对密码
 			password=Md5Util.md5(password);
-			System.out.println(password+"******************");
 			if(password.equals(userInfo.getPassword()))//相等
 			{
 				Result result=new Result(SystemConst.SYS_SUCCESS,SystemConst.SYS_SUCCESS_MSG);

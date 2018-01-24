@@ -721,7 +721,6 @@ $(function(){
 	
 	// 推送至ipad
 	var pushToipad = function(){
-        layer.alert("function");
 		//没有附件不能推送、有一个附件不是pdf的不能推送
 		if (totalAttach.length == 0 || (totalAttach.length == 1 && !totalAttach[0].attach_name.endsWith("pdf"))) {
 			layer.alert("请合并附件后推送");
@@ -757,8 +756,10 @@ $(function(){
 		var data = {
 				mid: mid
 		};
-		
-        var url=getRootPath()+"/api/autoPush";
+		//Linux下部署不需要USB传送，将autoPush 修改为pushToIpad
+		//并且将加载
+        var url=getRootPath()+"/api/pushToIpad";
+        // var url=getRootPath()+"/api/autoPush";
         
 		 var succeed = function (result) {
 	            if (0 == result.status) {
