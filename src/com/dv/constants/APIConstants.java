@@ -26,6 +26,7 @@ package com.dv.constants;
  */
 public enum APIConstants implements IEnum
 {
+
     SUCCESS(0,"success"),
     
     IPAD_NO_NULL(10001, "设备编码不能为空"),

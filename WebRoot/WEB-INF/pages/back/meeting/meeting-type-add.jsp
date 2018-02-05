@@ -73,7 +73,7 @@
 					<input type="text" class= "input-text" name="name" id="name" value="${data.name}">
 				</td>
 			</tr>
-			<tr class="text-l" style="display:none;">
+			<tr class="text-l">
 				<td class="text-r">会议管理员:</td>
 				<td colspan="3">
 					<input type="text" class="input-text mydisable" style="width:82%;float:left;" readonly="readonly"   name="manager_name" id="manager_name" value="${data.manager_name}">

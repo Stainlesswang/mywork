@@ -116,11 +116,6 @@ public class SubAppMeetingService {
         {
             subAppMeeting.setUser_id(loginUser.getUser_id());
         }
-        System.out.println("subAppMeeting&&&&&&&&&& getIs_ipad" + subAppMeeting.getIs_ipad());
-        System.out.println("subAppMeeting&&&&&&&&&& getOrder" + subAppMeeting.getOrder());
-        System.out.println("subAppMeeting&&&&&&&&&& getSearch" + subAppMeeting.getSearch());
-        System.out.println("subAppMeeting&&&&&&&&&& getSort" + subAppMeeting.getSort());
-        System.out.println("subAppMeeting&&&&&&&&&& getUser_id" + subAppMeeting.getMeet_attend());
         List<SubAppMeeting> list = subAppMeetingMapper.findSubAppMeeting(subAppMeeting);
         totalCount = subAppMeetingMapper.findSubAppMeetingCount(subAppMeeting);
         result.setRows(list);
@@ -144,6 +139,9 @@ public class SubAppMeetingService {
 
             if (StringUtils.isEmpty(subAppMeeting.getMeet_name())) {
                 return Result.error(SystemConst.NOT_NULL, "会议标题不能为空");
+            }
+            if (StringUtils.isEmpty(subAppMeeting.getMeet_addr())) {
+                return Result.error(SystemConst.NOT_NULL, "会议地点不能为空");
             }
             if (StringUtils.isEmpty(subAppMeeting.getMeet_time())) {
                 return Result.error(SystemConst.NOT_NULL, "会议开始时间不能为空");
@@ -576,7 +574,7 @@ public class SubAppMeetingService {
             return Result.error(APIConstants.MEETING_NOT_EXIST.getCode(), APIConstants.MEETING_NOT_EXIST.getName());
         } else {
             meeting.setStatus(status);
-            meeting.setPush_time(CommonMethod.getDateFormat(new Date()));
+//            meeting.setPush_time(CommonMethod.getDateFormat(new Date()));
             int result = subAppMeetingMapper.modSubAppMeetingById(meeting);
             if (result < 1) {
                 throw new FnfhException(-30003, "数据更新失败");

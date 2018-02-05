@@ -52,7 +52,7 @@
 
 <div class="page-container " style="">
 	<div class="text-c">
-		推送状态筛选：
+		状态筛选：
 		<span class="select-box inline">
 			<select class="select" id="is_paid" >
 				<option value="0" >未推送文件</option>
@@ -60,7 +60,7 @@
 				<option value="-1" selected="selected">全部文件</option>
 			</select>
 		</span>
-		<input  type="text" name="" id="keywords" placeholder="输入会议名称/参会领导名字" style="width:250px" class="input-text">
+		<input  type="text" name="" id="keywords" placeholder="输入 会议名称/参会者姓名" style="width:250px" class="input-text">
 		<button name="" id="" onclick="bootstrapRefresh();" class="btn btn-success" type="submit"><i class="Hui-iconfont"></i>查询</button>
 	</div>
 	<div class="mt-20">

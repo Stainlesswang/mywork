@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 import com.dv.util.CommonMethod;
 import com.dv.util.LicenseUtil;
 import org.apache.log4j.Logger;
+import org.bouncycastle.asn1.x509.Time;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -149,6 +150,8 @@ public class LoginController extends FnfhBaseController{
 				session.setAttribute(SystemConst.LOGIN_USER, userInfo);
 				session.setAttribute(SystemConst.TOKEN, token);
 				session.setAttribute(SystemConst.ATTENDEESLIMIT, attendeesLimit);
+				Date date=new Date();
+				System.out.println(CommonMethod.getDateFormat(date)+"  it is"+userInfo.getUser_name()+" loginTime ********************************");
 				
 			}
 			return result;

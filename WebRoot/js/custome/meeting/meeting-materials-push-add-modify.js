@@ -8,6 +8,7 @@ var modAttachs = [];//用于保存修改过的附件
 var totalAttach=[];// 所有附件，包括新增的以及原始上传的
 var state="add";
 var isCreate=false;
+var meetingStatus=1;//定义1为初始状态,如果后边查询到会议状态结束  变成2(作为退按钮在结束状态下直接返回的标记)
 
 /** *****************合并附件start*************************** */
 var cnt = 0;
@@ -553,6 +554,7 @@ $(function(){
 						
 					}
 					if (meetInfo.status ==2 ) {
+                        meetingStatus=2;
 						$("#meet_name").attr("disabled", true);
 						$("input").attr("disabled", true);
 						$("#selectUserBtn").attr("disabled", true);
@@ -1050,13 +1052,21 @@ $(function(){
 		});
 		// 退出按钮点击事件
 		$("#exitBtn").click(function(){
-			layer.confirm('确定退出编辑？', {
-				  btn: ['确定','取消'] // 按钮
-				}, function(){
-					goBack();
-				}, function(){
-					// 取消没有事件
-				});
+			//判断当前会议状态,2 为结束状态,点击退出直接返回
+			if (meetingStatus==1){
+				//
+                layer.confirm('确定退出编辑？', {
+                    	  btn: ['确定','取消'] // 按钮
+                    	}, function(){
+                    		goBack();
+                    	}, function(){
+                    		// 取消没有事件
+                    	});
+			}else {
+				//直接返回,不弹出交互框
+				goBack();
+			}
+
 		});
 		// 保存按钮
 		$("#saveMeetBtn").click(saveMeetInfo);

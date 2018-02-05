@@ -329,11 +329,11 @@ public class FileUtilController {
 
 			String basePath = req.getSession().getServletContext().getRealPath("/");
 			String mergeFilePath=SystemConst.SYS_FILE_MERGE_FILE_PATH+token+"/"+fileName+".pdf";
-			String mergeFileAllPath=basePath+mergeFilePath;
+			final String mergeFileAllPath=basePath+mergeFilePath;
 			
 			Object[] _sourceFiles=(Object[])jsonArray2.toArray();
 //			List<String> filePathList=JSONArray.toList(jsonArray2);
-			String[] sourceFiles=new String[_sourceFiles.length];
+			final String[] sourceFiles=new String[_sourceFiles.length];
 			
 			for (int i=0;i<_sourceFiles.length;i++) {
 				Object path = _sourceFiles[i];
@@ -344,7 +344,7 @@ public class FileUtilController {
 	        if(!mergeFile.exists()){  
 	        	mergeFile.mkdirs();  
 	        }
-	        DocConverter converter = new DocConverter();
+	        final DocConverter converter = new DocConverter();
 	        //这段代码需要设置超时时间 start
 	        final ExecutorService exec = Executors.newFixedThreadPool(1);  
 			  

@@ -36,7 +36,7 @@ public class SubAppMeeting extends BaseEntity {
 	private String user_id;//用户id,拟稿人id
 	private String draft_time;//拟稿时间
 	private String push_time;//推送时间
-	private Integer status;//会议状态，0未启用1已启用2已停用
+	private Integer status;//会议状态，0未推送1已推送2已结束
 	private String master;//主持人
 	private String end_time;//会议结束时间
 	//非定义字段

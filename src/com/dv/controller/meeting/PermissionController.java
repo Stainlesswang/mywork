@@ -23,7 +23,7 @@ public class PermissionController extends FnfhBaseController{
 	Logger logger = Logger.getLogger(this.getClass()); // 记录日志
 	
 	
-	@Resource 
+	@Resource
 	private PermissionService permissionService;
 	
 	/**

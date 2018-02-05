@@ -65,22 +65,50 @@ $(function () {
                 sortable: true
             },
             {
+                field: 'meet_type_name',
+                title: '会议类型',
+                visible: true,
+                sortable: false
+            },
+            {
+                field: 'real_name',
+                title: '拟稿人',
+                visible: true,
+                sortable: false
+            },
+            {
                 field: 'is_ipad',
                 title: '是否已推送设备',
+                width: '55px',
                 visible: true,
-                <!--增加显示样式-->
+                <!--增加显示样式2018/1/24 王建强-->
+                // formatter: function(value,row,index) {
+                //     //通过判断单元格的值，来格式化单元格，返回的值即为格式化后包含的元素
+                //     var a = "";
+                //     if(value == "已完成") {
+                //         var a = '<span style="color:#00ff00">'+value+'</span>';
+                //     }else if(value == "已分派"){
+                //         var a = '<span style="color:#0000ff">'+value+'</span>';
+                //     }else if(value == "待办") {
+                //         var a = '<span style="color:#FF0000">'+value+'</span>';
+                //     }else{
+                //         var a = '<span>'+value+'</span>';
+                //     }
+                //     return a;
+                // }
+
                 formatter: function (value, row, index) {
                     var a="";
                     if (value == 0) {
 
-                        a='<span class="label label-danger radius">'+'未推送'+'</span>';
+                        a='<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>';
 
                     }
                     if (value == 1) {
-                        a= '<span class="label label-success radius">'+'已推送'+'</span>';
+                        a= '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
                     }
                     else {
-                      a= '<span class="label label-danger radius">'+'未推送'+'</span>';
+                      a= '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>';
                     }
                     return a;
                 }
@@ -90,11 +118,12 @@ $(function () {
                 field: 'status',
                 title: '是否结束',
                 formatter: function (value, row, index) {
-                    if (value == null) {
-                        return null;
-                    }
+
                     if (value == 2) {
-                        return "已结束";
+                        return  '<span style="color:#B82C29" fontsize="20dp">'+'结束'+'</span>';
+                    }
+                    else {
+                        return  '<span style="color:#008B00" fontsize="20dp">'+'正常'+'</span>';
                     }
                 }
             }

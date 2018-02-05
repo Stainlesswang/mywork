@@ -7,9 +7,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="shenhua" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="jackson-core-asl-1.9.2" />
-        </element>
       </element>
     </root>
   </artifact>

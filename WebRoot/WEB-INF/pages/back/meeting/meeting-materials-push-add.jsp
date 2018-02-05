@@ -96,7 +96,7 @@
 				<td>
 					<input type="text" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss' })" class="input-text Wdate"  name="meet_time" id="meet_time">
 				</td>
-				<td class="text-r">会议地点:</td>
+				<td class="text-r"><span class="c-red">*</span>会议地点:</td>
 				<td><input type="text" class="input-text"  name="meet_addr" id="meet_addr"></td>
 			</tr>
 			<tr class="text-l">
