@@ -46,14 +46,21 @@
 		<button name="" id="delDeviceBtn" class="btn btn-danger" type="button"><i class="Hui-iconfont">&#xe609;</i> 删除</button>
 	</span>
 </nav>
-<div class="text-c ctrl_content" style=""> 
-		<span class="select-box inline">
-			<select class="select" id="selectType">
-				<option value="1">使用中设备</option>
-				<option value="-1">设备历史信息</option>
-				<option value="3">授权码</option>
-			</select>
-		</span>
+<div class="text-c ctrl_content" style="">
+	<div class="radio-box">
+		<label >状态筛选</label>：
+		<input type="radio" id="selectType-1" value="1" name="radio" checked>
+		<label for="selectType-1" class="btn-primary-outline">使用中设备</label>
+		<input type="radio" id="selectType-2" value="-1" name="radio" >
+		<label for="selectType-2" class="btn-primary-outline">历史设备</label>
+	</div>
+		<%--<span class="select-box inline">--%>
+			<%--<select class="select" id="selectType">--%>
+				<%--<option value="1">使用中设备</option>--%>
+				<%--<option value="-1">设备历史信息</option>--%>
+				<%--&lt;%&ndash;<option value="3">授权码</option>&ndash;%&gt;--%>
+			<%--</select>--%>
+		<%--</span>--%>
 		<input type="text" name="" id="keywords" placeholder=" 快速查询" style="width:250px" class="input-text">
 		<button name="" id="" class="btn btn-success" onclick="bootstrapRefresh();" type="submit"><i class="Hui-iconfont"></i> 查询</button>
 	</div>

@@ -21,7 +21,7 @@ $(function() {
 				queryParamsType : "limit",
 				queryParams: function (params) {
 		            params["search"] = $("#keywords").val();
-		            params["is_binding"] = $("#selectType").val();
+		            params["is_binding"] =$("input[type='radio']:checked").val();
 		            return params;
 		        },
 				columns : [
@@ -38,6 +38,7 @@ $(function() {
 						{
 							field : 'index',
 							title : '行号',
+                            align: 'center',
 							width :'50px',
 							formatter : function(value, row, index) {
 								return index+1;
@@ -48,6 +49,7 @@ $(function() {
 							title : '授权码',
 							visible : true,
 							sortable:true,
+                            align: 'center',
 							formatter: function (value, row, index) {
 								if(value==null||value=='')
 								{
@@ -60,11 +62,13 @@ $(function() {
 							field : 'real_name',
 							title : '领导姓名',
 							visible : true,
+                            align: 'center',
 							sortable:true
 						},
 						{
 							field : 'job_number',
 							title : '账号',
+                            align: 'center',
 							visible : true,
 							sortable:true
 						},
@@ -72,6 +76,7 @@ $(function() {
 							field : 'is_binding',
 							title : '设备是否绑定',
 							visible : true,
+                            align: 'center',
 							formatter : function(value, row, index) {
 								 if (value==null) {
 									return null;
@@ -122,8 +127,8 @@ $(function() {
 	});
 	
 	//根据选中的设备信息状态来显示是否绑定信息
-	$("#selectType").change(function(){
-		var selectType=$("#selectType").val();
+    $("input[type='radio']").change(function(){
+		var selectType=$("input[type='radio']:checked").val();
 		if(selectType==0)
 		{
 			table.bootstrapTable('showColumn', 'state');
@@ -131,12 +136,11 @@ $(function() {
 		else
 		{
 			if(selectType==2){
-//				window.location.href=getRootPath()+"/backToUrl/toDo.action?url=deviceSeeting";
 				window.location.href=getRootPath()+"/backToUrl/toDo.action?url=meetingSetting&back=device";
 			}
-			else if(selectType==3){
-				window.location.href=getRootPath()+"/authcode/background_AuthDetailView.action";
-			}
+            // else if(selectType==3){
+            //     window.location.href=getRootPath()+"/authcode/background_AuthDetailView.action";
+            // }
 			else
 			{
 				bootstrapRefresh();

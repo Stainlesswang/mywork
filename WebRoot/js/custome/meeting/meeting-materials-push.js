@@ -20,7 +20,7 @@ $(function () {
         queryParamsType: "limit",
         queryParams: function (params) {
             params["search"] = $("#keywords").val();
-            params["is_paid"] = $("#is_paid").val();
+            params["is_paid"] = $("input[type='radio']:checked").val();
             return params;
         },
         columns: [
@@ -28,17 +28,18 @@ $(function () {
             {
                 field: 'mid',
                 title: 'mid',
-                visible: false,
+                visible: false
             },
             {
                 field: '',
                 checkbox: true,
-                width: '25px',
+                width: '25px'
             },
             {
                 field: 'index',
                 title: '行号',
                 width: '50px',
+                align: 'center',
                 formatter: function (value, row, index) {
                     return index + 1;
                 }
@@ -46,6 +47,7 @@ $(function () {
             {
                 field: 'create_time',
                 title: '创建时间',
+                align: 'center',
                 visible: true,
                 sortable: true
             },
@@ -54,6 +56,7 @@ $(function () {
                 title: '会议标题',
                 visible: true,
                 sortable: true,
+                align: 'center',
                 formatter: function (value, row, index) {
                     return "<a href='" + getRootPath() + "/subAppMeeting/background_meetAddView.action?mid=" + row.mid + "&status=" + row.status + "'>" + value + "</a>"
                 }
@@ -61,18 +64,21 @@ $(function () {
             {
                 field: 'meet_time',
                 title: '会议开始时间',
+                align: 'center',
                 visible: true,
                 sortable: true
             },
             {
                 field: 'meet_type_name',
                 title: '会议类型',
+                align: 'center',
                 visible: true,
                 sortable: false
             },
             {
                 field: 'real_name',
                 title: '拟稿人',
+                align: 'center',
                 visible: true,
                 sortable: false
             },
@@ -81,6 +87,7 @@ $(function () {
                 title: '是否已推送设备',
                 width: '55px',
                 visible: true,
+                align: 'center',
                 <!--增加显示样式2018/1/24 王建强-->
                 // formatter: function(value,row,index) {
                 //     //通过判断单元格的值，来格式化单元格，返回的值即为格式化后包含的元素
@@ -117,6 +124,7 @@ $(function () {
             {
                 field: 'status',
                 title: '是否结束',
+                align: 'center',
                 formatter: function (value, row, index) {
 
                     if (value == 2) {
@@ -155,8 +163,9 @@ $(function () {
     $("#addPushBtn").click(function () {
         window.location.href = getRootPath() + "/subAppMeeting/background_meetAddView.action";
     });
-    $("#is_paid").change(function () {
-        var isPaid = $("#is_paid").val();
+    $("input[type='radio']").change(function () {
+        var isPaid=$("input[type='radio']:checked").val();
+
         if (isPaid == 5) {//查看配置
             //
             window.location.href = getRootPath() + "/backToUrl/toDo.action?url=meetingSetting&back=meet";
@@ -165,6 +174,17 @@ $(function () {
             bootstrapRefresh();
         }
     });
+    // $("#is_paid").change(function () {
+    //     // var isPaid = $("#is_paid").val();
+    //     var isPaid=$("input[type='radio']:checked").val();
+    //     if (isPaid == 5) {//查看配置
+    //         //
+    //         window.location.href = getRootPath() + "/backToUrl/toDo.action?url=meetingSetting&back=meet";
+    //     }
+    //     else if (isPaid == 0 || isPaid == 1 || isPaid == -1) {
+    //         bootstrapRefresh();
+    //     }
+    // });
 
     $("#keywords").keydown(function (event) {
         if (event.keyCode == 13) {

@@ -40,23 +40,18 @@
 <body>
 <header class="navbar-wrapper">
 	<div class="navbar navbar-fixed-top">
-		<div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="">无纸化会议</a> <a class="logo navbar-logo-m f-l mr-10 visible-xs" href="javascript:;">无纸化会议</a>
-			<!--<span class="logo navbar-slogan f-l mr-10 hidden-xs">v3.0</span>--> 
+
+		<div class="container-fluid cl"> <a class="logo navbar-logo f-l mr-10 hidden-xs" href="" onresize="32dp">
+			<i class="Hui-iconfont">&#xe64f;</i>
+            无纸化会议系统</a>
 			<a aria-hidden="false" class="nav-toggle Hui-iconfont visible-xs" href="javascript:;">&#xe667;</a>
-			<!--<nav class="nav navbar-nav">
-				<ul class="cl">
-					<li class="dropDown dropDown_hover"><a href="javascript:;" class="dropDown_A"><i class="Hui-iconfont">&#xe600;</i> 新增 <i class="Hui-iconfont">&#xe6d5;</i></a>
-						<ul class="dropDown-menu menu radius box-shadow">
-							<li><a href="javascript:;" onclick="article_add('添加资讯','article-add.html')"><i class="Hui-iconfont">&#xe616;</i> 资讯</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>-->
+
 			<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
 				<ul class="cl">
 					<!-- <li>超级管理员</li> -->
 					<c:if test="${sessionScope.loginUser!=null}">
 						<li class="dropDown dropDown_hover">
+							<i class="Hui-iconfont">&#xe60d;</i>
 							<a href="#" class="dropDown_A">${sessionScope.loginUser.real_name } <i class="Hui-iconfont">&#xe6d5;</i></a>
 							<ul class="dropDown-menu menu radius box-shadow">
 								<!-- <li><a href="javascript:;" onClick="myselfinfo()">个人信息</a></li> -->
@@ -92,48 +87,57 @@
 							sessionScope.functionMap["1-2"]=="1"||
 							sessionScope.functionMap["1-3"]=="1"}'>
 			<dl id="menu-article">
-				<dt><img src="<%=path %>/images/icon-2.png"/> 无纸化会议<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-				<dd>
+				<%--<dt><img src="<%=path %>/images/icon-2.png"/> 无纸化会议<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>--%>
+					<dt><i class="Hui-iconfont">&#xe72d;</i> 无纸化会议<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+					<dd>
 					<ul>
 						<c:if test='${sessionScope.loginUser.is_super==1||
 						    sessionScope.loginUser.admin_type==2||
 							sessionScope.functionMap["1-1"]=="1"||
 							sessionScope.functionMap["1-3"]=="1"}'>
-							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=meetingManage" data-title="会议材料推送" href="javascript:void(0)"><img src="<%=path %>/images/icon-3.png"/>&nbsp;会议材料推送</a></li>
-							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=meetingTypeManage" data-title="会议类型管理" href="javascript:void(0)"><img src="<%=path %>/images/icon-3.png"/>&nbsp;会议类型管理</a></li>
+							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=meetingManage" data-title="会议材料推送" href="javascript:void(0)"><i class="Hui-iconfont">&#xe63e;</i>&nbsp;会议材料推送</a></li>
+							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=meetingTypeManage" data-title="会议类型管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe6f5;</i>&nbsp;会议类型管理</a></li>
 						</c:if>
-						<c:if test='${sessionScope.loginUser.is_super==1||
-							sessionScope.loginUser.admin_type==2||
-							sessionScope.functionMap["1-1"]=="1"||
-							sessionScope.functionMap["1-2"]=="1"}'>
-							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=deviceManage" data-title="设备管理" href="javascript:void(0)"><img src="<%=path %>/images/icon-3.png"/>&nbsp;设备管理</a></li>
-						</c:if>
+
 					</ul>
 				</dd>
 			</dl>
 		</c:if>
 		<c:if test='${sessionScope.loginUser.is_super==1||
+							sessionScope.loginUser.admin_type==2||
+							sessionScope.functionMap["1-1"]=="1"||
+							sessionScope.functionMap["1-2"]=="1"}'>
+
+			<dl id="menu-user">
+				<dt><i class="Hui-iconfont">&#xe64f;</i> 设备管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+				<dd>
+					<ul>
+						<li><a data-href="<%=path %>/backToUrl/toDo.action?url=deviceManage" data-title="设备管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe708;</i>&nbsp;设备管理</a></li>
+						<li><a data-href="<%=path %>/authcode/background_AuthDetailView.action	" data-title="认证码管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe72c;</i>&nbsp;认证码管理</a></li>
+
+					</ul>
+				</dd>
+			</dl>
+			<%--<li><a data-href="<%=path %>/backToUrl/toDo.action?url=deviceManage" data-title="设备管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe708;</i>&nbsp;设备管理</a></li>--%>
+		</c:if>
+
+			<dl id="menu-user">
+				<dt><i class="Hui-iconfont">&#xe61d;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+				<dd>
+					<ul>
+						<c:if test='${sessionScope.loginUser.is_super==1||
 						sessionScope.loginUser.admin_type==2||
 						sessionScope.functionMap["1-4"]=="1"}'>
-			<dl id="menu-user">
-				<dt><img src="<%=path %>/images/icon-2.png"/> 用户管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-				<dd>
-					<ul>
-						<li><a data-href="<%=path %>/backToUrl/toDo.action?url=userManage" data-title="用户管理" href="javascript:void(0)"><img src="<%=path %>/images/icon-3.png"/>&nbsp;用户管理</a></li>
+							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=userManage" data-title="用户管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe62b;</i>&nbsp;用户管理</a></li>
+						</c:if>
+						<c:if test='${sessionScope.loginUser.is_super==1}'>
+						<li><a data-href="<%=path %>/backToUrl/toDo.action?url=systemPermissions" data-title="系统权限管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe653;</i>&nbsp;系统权限管理</a></li>
+					    </c:if>
+
 					</ul>
 				</dd>
 			</dl>
-		</c:if>
-		<c:if test='${sessionScope.loginUser.is_super==1}'>
-			<dl id="menu-user">
-				<dt><img src="<%=path %>/images/icon-2.png"/> 系统权限管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-				<dd>
-					<ul>
-						<li><a data-href="<%=path %>/backToUrl/toDo.action?url=systemPermissions" data-title="系统权限管理" href="javascript:void(0)"><img src="<%=path %>/images/icon-3.png"/>&nbsp;系统权限管理</a></li>
-					</ul>
-				</dd>
-			</dl>
-		</c:if>
+
 </div>
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
@@ -214,7 +218,7 @@
 </ul>
 </div>
 <!--_footer 作为公共模版分离出去-->
-<script type="text/javascript" src="<%=path %>/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="<%=path %>/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="<%=path %>/lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="<%=path %>/static/h-ui/js/H-ui.min.js"></script>
 <script type="text/javascript" src="<%=path %>/static/h-ui.admin/js/H-ui.admin.js"></script>
@@ -270,15 +274,14 @@ $(function(){
 	});
 	//编辑用户
 	$("#editAccount").click(function(){
-		var index=layer.open({
+		layer.open({
 			  type: 2,
 			  title:"编辑用户",
 			  content:getRootPath()+"/userinfo/background_editAccountView.action",
-			  //area: ['850px', '550px'],
-			  maxmin: false,//放大缩小
+			  area: ['850px', '550px'],
+			  // maxmin: false,//放大缩小
 			  move:true, //是否允许拖拽
 		});
-		layer.full(index);
 	});
 });
 /*个人信息*/

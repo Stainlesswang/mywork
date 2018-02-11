@@ -24,7 +24,7 @@ $(function() {
 				queryParamsType : "limit",
 				queryParams: function (params) {
 		            params["search"] = $("#keywords").val();
-		            params["status"] = $("#status").val();
+		            params["status"] = $("input[type='radio']:checked").val();
 		            return params;
 		        },
 				columns : [
@@ -164,7 +164,7 @@ $(function() {
 		//删除
 		$("#delBtn").click(delAuthCode);
 		//状态下拉框
-		$("#status").change(function(){
+        $("input[type='radio']").change(function(){
 			bootstrapRefresh();
 		});
 		$("#keywords").keydown(function(event) {    

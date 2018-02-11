@@ -34,6 +34,7 @@
 						field : 'index',
 						title : '序号',
 						width :'50px',
+                        align: 'center',
 						formatter : function(value, row, index) {
 							return index+1;
 						}
@@ -42,6 +43,7 @@
 						field : 'identifier',
 						title : '会议类型编号',
 						visible : true,
+                        align: 'center',
 						formatter : function(value, row, index) {
 							return value;
 						}
@@ -50,14 +52,15 @@
 						field : 'name',
 						title : '会议类型名称',
 						visible : true,
+                        align: 'center',
 						formatter : function(value, row, index) {
 							return '<a href="' + rootPath + '/meetingType/meetTypeAddView?meetingTypeId=' + row.id + '">' + value + '</a>';
 						}
 					},
-					/*{
-						field: 'manager_account', 
+					{
+						field: 'manager_account',
 						title: '会议类型管理员'
-					},*/
+					},
 					{
 						field: 'comment',
 						title: '说明'

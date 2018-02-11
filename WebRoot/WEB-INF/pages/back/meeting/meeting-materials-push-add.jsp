@@ -47,7 +47,7 @@
 <title>会议材料推送-新建</title>
 </head>
 <body>
-<nav class="breadcrumb" style="position: fixed;width:100%;"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 无纸化会议 <span class="c-gray en">&gt;</span> 会议材料推送
+<nav class="breadcrumb" style="position: fixed;width:100%;"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 无纸化会议 <span class="c-gray en">&gt;</span> 会议材料维护单
     <span class="select-box inline" style="float:right;border:0;font-size:14px;">
     <!-- 会议未结束 -->
     <c:if test="${data.status!=2}">
@@ -63,7 +63,7 @@
 	    </c:if>
 	    
 	    
-	    <button name="" id="exitBtn" class="btn btn-danger navBtn" type="button" ><i class="Hui-iconfont">&#xe631;</i> 退出</button>
+	    <button name="" id="exitBtn" class="btn btn-danger navBtn" type="button" onclick="exitbtn()" ><i class="Hui-iconfont">&#xe631;</i> 退出</button>
 	</span>
 </nav>
 <c:if test="${data.status ==2}">
@@ -109,7 +109,7 @@
 				</td>
 			</tr>
 			<tr class="text-l">
-				<td class="text-r"><span class="c-red">*</span>参会领导:</td>
+				<td class="text-r"><span class="c-red">*</span>推送范围:</td>
 				<td colspan="3">
 					<input type="text" class="input-text mydisable" style="width:82%;float:left;" readonly="readonly"   name="meet_attend" id="meet_attend">
 					<input type="hidden"name="meet_attend_ids" id="meet_attend_ids">
@@ -192,7 +192,7 @@
 <script type="text/javascript" src="<%=path %>/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js"></script>
 
 <script type="text/javascript" src="<%=path %>/lib/jquery.validation/1.14.0/jquery.validate.js"></script> 
-<script type="text/javascript" src="<%=path %>/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<%--<script type="text/javascript" src="<%=path %>/lib/jquery.validation/1.14.0/validate-methods.js"></script> --%>
 <script type="text/javascript" src="<%=path %>/lib/jquery.validation/1.14.0/messages_zh.js"></script>
 
 
@@ -206,6 +206,9 @@
 
 <script type="text/javascript">
 $(function(){
+
+
+
 	$("input").on('keypress',  //所有input标签回车无效，当然，可以根据需求自定义
 		function(e){
 			var key = window.event ? e.keyCode : e.which;

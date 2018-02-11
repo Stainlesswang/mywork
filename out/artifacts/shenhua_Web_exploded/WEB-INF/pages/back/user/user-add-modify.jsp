@@ -53,7 +53,7 @@
 					<input type="text"  class="input-text" id="real_name" name="real_name">
 				<!-- <label for="real_name" class="error" style="position: relative;">22</label> -->
 				</td>
-				<td class="text-r td-width"><span class="c-red">*</span>登陆账号:</td>
+				<td class="text-r td-width"><span class="c-red">*</span>账号:</td>
 				<td class="td-width-text">
 					<label id="_user_name" style="display: none;"></label>
 					<input type="text"  class="input-text" id="user_name"  name="user_name">
@@ -123,7 +123,7 @@
 			</tr>
 			
 			<tr class="text-l">
-				<td class="text-r td-width">是否为管理员:</td>
+				<td class="text-r td-width">管理员:</td>
 				<td >
 					<div class="radio-box">
 						<input  type="radio" id="isAdminY" name="_admin_type" value="2" style="margin:0;">
@@ -134,7 +134,7 @@
 						<label for="isAdminN" style="font-weight: normal;">否</label>
 					</div>
 				</td>
-				<td class="text-r td-width">是否为临时用户:</td>
+				<td class="text-r td-width">临时用户:</td>
 				<td class="td-width-text">
 					<div class="radio-box">
 						<input  type="radio" id="isTempY" name="is_temp" value="1" style="margin:0;">

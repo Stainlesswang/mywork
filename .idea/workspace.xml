@@ -6,235 +6,66 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb63fb2c-08dc-4722-a933-c3778456968e" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shenhua_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/shenhua_Web_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1e252394-cc61-4033-9cf3-f8164673a566.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jackson_core_asl_1_9_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="bb63fb2c-08dc-4722-a933-c3778456968e" name="Default" comment="无纸化会议2.0版本">
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/favicon.ico" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/login/images/pic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/pic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo_name.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/pic.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/titlelogo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/jquery/1.9.1/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/jquery/1.9.1/jquery.min.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/APIConstants.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/APIConstants.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/IEnum.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/IEnum.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/SystemConst.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/SystemConst.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/APIController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/APIController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/BackToUrlController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/BackToUrlController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/FnfhBaseController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/FnfhBaseController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/IndexController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/IndexController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/AuthcodeController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/AuthcodeController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/MeetingTypeController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/MeetingTypeController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/PermissionController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/PermissionController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingFileController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingFileController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/SubAppUserController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/meeting/SubAppUserController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/user/LoginController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/user/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/user/OrgManageController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/user/OrgManageController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/user/UserManageController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/user/UserManageController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/CodeController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/CodeController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/DeviceController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/DeviceController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/FileUtilController$1.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/FileUtilController$1.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/FileUtilController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/FileUtilController.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/MyBatisRepository.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/MyBatisRepository.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/database/DataBaseInitMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/database/DataBaseInitMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/AuthcodeMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/AuthcodeMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/MeetAttendMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/MeetAttendMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/MeetingFileDownloadMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/MeetingFileDownloadMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/MeetingTypeMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/MeetingTypeMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/PermissionMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/PermissionMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingFileMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingFileMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/SubAppUserMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/meeting/SubAppUserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/user/OrganizeMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/user/OrganizeMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/user/UserMapper.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/dao/user/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/BaseEntity.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/BaseEntity.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FileAttach.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FileAttach.class" />
       <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhPageData.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhPageData.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhResult.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhResult.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/Result.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/Result.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/SysFile.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/SysFile.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/SystemConfig.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/SystemConfig.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/Authcode.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/Authcode.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/MeetAttend.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/MeetAttend.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/MeetingFileDownload.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/MeetingFileDownload.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/MeetingType.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/MeetingType.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/Permission.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/Permission.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/SubAppMeeting.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/SubAppMeeting.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/SubAppMeetingFile.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/SubAppMeetingFile.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/SubAppUser.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/meeting/SubAppUser.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/user/Organize.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/user/Organize.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/user/User.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/user/User.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/util/VEasyUiTree.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/util/VEasyUiTree.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/interceptor/LoginInterceptor.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/interceptor/LoginInterceptor.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/AuthcodeService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/AuthcodeService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/MeetingTypeService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/MeetingTypeService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/PermissionService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/PermissionService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingFileService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingFileService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/user/OrgManageService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/user/OrgManageService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/user/UserManageService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/user/UserManageService.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/servlet/filter/UserFilter.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/servlet/filter/UserFilter.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/servlet/listener/InitDataListener.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/servlet/listener/InitDataListener.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/servlet/listener/WebServletContextListener.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/servlet/listener/WebServletContextListener.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/FileProgressNotifier.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/FileProgressNotifier.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/Jmtp.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/Jmtp.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/MTPFileManager.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/MTPFileManager.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/MTPUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/MTPUtil.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/MyTest.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/MyTest.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/ParseTreeNotifier.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/ParseTreeNotifier.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestDataBase.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestDataBase.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestJacob.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestJacob.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestJpmp.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestJpmp.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestRead.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/TestRead.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/UserTest.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/test/UserTest.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/CommonMethod.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/CommonMethod.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/FileOperateUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/FileOperateUtil.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/FnfhException.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/FnfhException.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/ImageUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/ImageUtil.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/MD5Util2.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/MD5Util2.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/MTPFileManager.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/MTPFileManager.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/MTPUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/MTPUtil.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/Md5Util.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/Md5Util.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/PasswordUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/PasswordUtil.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/PropertiesUtil.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/SQLUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/SQLUtil.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/UploadFile.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/UploadFile.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/Validator.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/Validator.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools$ObjectComparator.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools$ObjectComparator.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools$SubObjectComparator.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools$SubObjectComparator.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WeixinUtils$CustomizedHostnameVerifier.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WeixinUtils$CustomizedHostnameVerifier.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WeixinUtils.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WeixinUtils.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login1.jsp" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management.jsp" />
       <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" />
       <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-type-add.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-type-add.jsp" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-add-modify.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-add-modify.jsp" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/favicon.ico" afterPath="$PROJECT_DIR$/WebRoot/favicon.ico" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management-auth.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management-auth.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management.js" />
       <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" />
       <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push.js" />
-      <change beforePath="$PROJECT_DIR$/config/applicationContext.xml" afterPath="$PROJECT_DIR$/config/applicationContext.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/APIConstants.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/APIConstants.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/IEnum.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/IEnum.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/SystemConst.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/SystemConst.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/APIController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/APIController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/BackToUrlController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/BackToUrlController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/FnfhBaseController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/FnfhBaseController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/IndexController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/IndexController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/AuthcodeController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/AuthcodeController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/MeetingTypeController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/MeetingTypeController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/PermissionController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/PermissionController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingFileController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/SubAppMeetingFileController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/SubAppUserController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/meeting/SubAppUserController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/user/LoginController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/user/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/user/OrgManageController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/user/OrgManageController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/user/UserManageController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/user/UserManageController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/CodeController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/CodeController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/DeviceController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/DeviceController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/FileUtilController$1.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/FileUtilController$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/FileUtilController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/FileUtilController.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/MyBatisRepository.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/MyBatisRepository.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/database/DataBaseInitMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/database/DataBaseInitMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/AuthcodeMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/AuthcodeMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/MeetAttendMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/MeetAttendMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/MeetingFileDownloadMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/MeetingFileDownloadMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/MeetingTypeMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/MeetingTypeMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/PermissionMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/PermissionMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingFileMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingFileMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/SubAppMeetingMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/SubAppUserMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/meeting/SubAppUserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/user/OrganizeMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/user/OrganizeMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/user/UserMapper.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/dao/user/UserMapper.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/BaseEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/BaseEntity.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FileAttach.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FileAttach.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meetingTypeManage.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meetingTypeManage.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/user/edit-account.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/user/edit-account.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/lib/jquery.validation/1.14.0/validate-methods.js" afterPath="$PROJECT_DIR$/WebRoot/lib/jquery.validation/1.14.0/validate-methods.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo.png" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo.png" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhPageData.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhPageData.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhResult.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhResult.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/Result.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/Result.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/SysFile.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/SysFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/SystemConfig.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/SystemConfig.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/Authcode.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/Authcode.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/MeetAttend.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/MeetAttend.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/MeetingFileDownload.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/MeetingFileDownload.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/MeetingType.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/MeetingType.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/Permission.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/Permission.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/SubAppMeeting.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/SubAppMeeting.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/SubAppMeetingFile.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/SubAppMeetingFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/SubAppUser.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/meeting/SubAppUser.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/user/Organize.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/user/Organize.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/user/User.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/user/User.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/util/VEasyUiTree.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/util/VEasyUiTree.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/interceptor/LoginInterceptor.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/interceptor/LoginInterceptor.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/AuthcodeService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/AuthcodeService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/MeetingTypeService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/MeetingTypeService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/PermissionService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/PermissionService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingFileService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingFileService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/user/OrgManageService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/user/OrgManageService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/user/UserManageService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/user/UserManageService.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/servlet/filter/UserFilter.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/servlet/filter/UserFilter.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/servlet/listener/InitDataListener.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/servlet/listener/InitDataListener.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/servlet/listener/WebServletContextListener.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/servlet/listener/WebServletContextListener.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/FileProgressNotifier.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/FileProgressNotifier.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/Jmtp.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/Jmtp.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/MTPFileManager.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/MTPFileManager.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/MTPUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/MTPUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/MyTest.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/MyTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/ParseTreeNotifier.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/ParseTreeNotifier.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestDataBase.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestDataBase.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestJacob.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestJacob.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestJpmp.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestJpmp.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestRead.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/TestRead.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/UserTest.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/test/UserTest.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/CommonMethod.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/CommonMethod.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/FileOperateUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/FileOperateUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/FnfhException.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/FnfhException.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/ImageUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/ImageUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/MD5Util2.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/MD5Util2.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/MTPFileManager.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/MTPFileManager.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/MTPUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/MTPUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/Md5Util.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/Md5Util.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/PasswordUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/PasswordUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/PropertiesUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/SQLUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/SQLUtil.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/UploadFile.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/UploadFile.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/Validator.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/Validator.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools$ObjectComparator.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools$ObjectComparator.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools$SubObjectComparator.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools$SubObjectComparator.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WeixinUtils$CustomizedHostnameVerifier.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WeixinUtils$CustomizedHostnameVerifier.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WeixinUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WeixinUtils.class" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/appdata" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/appdata" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/fonts" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/fonts" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/index" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/index" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management-auth.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management-auth.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/user/user-add-modify.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/user/user-add-modify.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/favicon.ico" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/favicon.ico" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management-auth.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management-auth.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management.js" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push-add-modify.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push-add-modify.js" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meetingTypeManage.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meetingTypeManage.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/edit-account.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/edit-account.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-management.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-management.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/lib/jquery.validation/1.14.0/validate-methods.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/lib/jquery.validation/1.14.0/validate-methods.js" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1516178568799/PDF_410999817.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1516325085638/832计算机组成原理与数据结构简洁.doc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1516325251809/20170924A神华集团IT系统巡检凭证记录单 (王建强).doc" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1516584966613/PDF_410999817.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1516720998556/Diagram 1.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1516759363032/Diagram 1.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1516759713389/Diagram 1.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/mergeFile/1516176419079/123.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/mergeFile/1516178628819/测试2.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/mergeFile/1516325257647/测试一月19.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/shenhua.iml" afterPath="$PROJECT_DIR$/shenhua.iml" />
-      <change beforePath="$PROJECT_DIR$/src/com/dv/constants/APIConstants.java" afterPath="$PROJECT_DIR$/src/com/dv/constants/APIConstants.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/dv/controller/meeting/PermissionController.java" afterPath="$PROJECT_DIR$/src/com/dv/controller/meeting/PermissionController.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/dv/controller/user/LoginController.java" afterPath="$PROJECT_DIR$/src/com/dv/controller/user/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/dv/controller/util/FileUtilController.java" afterPath="$PROJECT_DIR$/src/com/dv/controller/util/FileUtilController.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/dv/entity/meeting/SubAppMeeting.java" afterPath="$PROJECT_DIR$/src/com/dv/entity/meeting/SubAppMeeting.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/dv/service/meeting/SubAppMeetingService.java" afterPath="$PROJECT_DIR$/src/com/dv/service/meeting/SubAppMeetingService.java" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-16" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-17" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-22" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-25" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-30" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/static/h-ui.admin/images/logo.png" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/static/h-ui.admin/images/logo.png" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1517794469462/Diagram 1.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1517794693849/Diagram 1.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/com/dv/entity/FnfhPageData.java" afterPath="$PROJECT_DIR$/src/com/dv/entity/FnfhPageData.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
@@ -245,6 +76,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -259,95 +91,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="meeting-type-add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-type-add.jsp">
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2079">
-              <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+            <state relative-caret-position="179">
+              <caret line="67" column="56" lean-forward="false" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PermissionController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dv/controller/meeting/PermissionController.java">
+      <file leaf-file-name="titlelogo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/login/images/titlelogo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="H-ui.login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+            <state relative-caret-position="45">
+              <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="65" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Permission.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dv/entity/meeting/Permission.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="29" />
-              <folding />
-            </state>
+      <file leaf-file-name="logo1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meeting-type-add.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-type-add.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="196" column="46" lean-forward="false" selection-start-line="196" selection-start-column="36" selection-end-line="196" selection-end-column="46" />
-              <folding />
-            </state>
+      <file leaf-file-name="pic.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/pic.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetingTypeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dv/controller/meeting/MeetingTypeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="119" column="45" lean-forward="false" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
-              <folding />
-            </state>
+      <file leaf-file-name="titlelogo.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/titlelogo.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeetingTypeService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/dv/service/meeting/MeetingTypeService.java">
+      <file leaf-file-name="login1.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login1.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="65" column="48" lean-forward="false" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+            <state relative-caret-position="351">
+              <caret line="29" column="85" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="85" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeetingTypeMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dv/dao/meeting/MeetingTypeMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MeetingTypeMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/dv/dao/impl/meeting/MeetingTypeMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="36" />
-              <folding>
-                <marker date="1505098746602" expanded="true" signature="2496:2770" ph="delete from meeting_type... " />
-                <marker date="1505098746602" expanded="true" signature="2872:3322" ph="update meeting_type... " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -356,23 +153,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>status</find>
-      <find>meetStatus</find>
-      <find>showAttachInfo</find>
-      <find>result.status</find>
-      <find>meetInfo.status ==2</find>
-      <find>propertiesFileName</find>
-      <find>PropertiesUtil</find>
-      <find>background_meetAddView</find>
-      <find>meet_addr</find>
-      <find>form-meet-add</find>
-      <find>background_addOrModifySubAppMeeting</find>
-      <find>saveMeetBtn</find>
-      <find>endBtn</find>
-      <find>endMeeting</find>
-      <find>addorModifyMeetingType</find>
-      <find>addMeetingType</find>
-      <find>manager_id</find>
+      <find>fileUpload</find>
+      <find>checkValidate</find>
+      <find>selectLeaderLayer</find>
+      <find>showUploadAttachLayer</find>
+      <find>delete</find>
+      <find>delBtn</find>
+      <find>meetingStatus</find>
+      <find>exitBtn</find>
+      <find>exitbtn</find>
+      <find>addMethod</find>
+      <find>isIntEqZero</find>
+      <find>Deta</find>
+      <find>findOrganize</find>
+      <find>findUserByOrgId</find>
+      <find>background_showUserInfo</find>
+      <find>datatable</find>
+      <find>showUserLayer</find>
+      <find>modUserBtn</find>
+      <find>org_name</find>
+      <find>isAdminTr</find>
+      <find>editAccount</find>
+      <find>参会</find>
+      <find>参会领导</find>
+      <find>selectUserBtn</find>
+      <find>back</find>
+      <find>refreshOptions</find>
+      <find>is_paid</find>
+      <find>refresh</find>
+      <find>selectType</find>
+      <find>jquery.min</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -388,16 +198,35 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/dv/controller/util/FileUtilController.java" />
         <option value="$PROJECT_DIR$/src/com/dv/entity/meeting/SubAppMeeting.java" />
-        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" />
         <option value="$PROJECT_DIR$/src/com/dv/controller/user/LoginController.java" />
-        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push.js" />
         <option value="$PROJECT_DIR$/src/com/dv/util/CommonMethod.java" />
         <option value="$PROJECT_DIR$/src/com/dv/util/PropertiesUtil.java" />
         <option value="$PROJECT_DIR$/config/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" />
         <option value="$PROJECT_DIR$/src/com/dv/service/meeting/SubAppMeetingService.java" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-type-add.jsp" />
         <option value="$PROJECT_DIR$/src/com/dv/controller/meeting/PermissionController.java" />
+        <option value="$PROJECT_DIR$/src/com/dv/controller/meeting/MeetingTypeController.java" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/dv/controller/meeting/SubAppMeetingController.java" />
+        <option value="$PROJECT_DIR$/WebRoot/lib/jquery.validation/1.14.0/validate-methods.js" />
+        <option value="$PROJECT_DIR$/src/com/dv/entity/FnfhPageData.java" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meetingTypeManage.js" />
+        <option value="$PROJECT_DIR$/src/com/dv/dao/user/UserMapper.java" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-add-modify.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/user/edit-account.js" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push.js" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management.js" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management-auth.js" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/index.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/backLogin.js" />
+        <option value="$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css" />
+        <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp" />
       </list>
     </option>
   </component>
@@ -425,11 +254,33 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-116" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="1612" />
+    <option name="y" value="223" />
+    <option name="width" value="1366" />
+    <option name="height" value="728" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>ServletWithoutMappingInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -446,6 +297,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -457,61 +310,54 @@
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dv" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="shenhua_Web_exploded" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dv" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dv" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="meeting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dv" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dv" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="dv" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-              <item name="meeting" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="shenhua_Web_exploded" type="462c0819:PsiDirectoryNode" />
+              <item name="cpy" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
               <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
@@ -533,22 +379,11 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="back" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="back" type="462c0819:PsiDirectoryNode" />
-              <item name="meeting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,7 +394,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sh_hydb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring" />
     <property name="options.lastSelected" value="preferences.applicationServers" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -570,6 +405,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="SearchEverywhereHistoryKey" value="jQuery.validator.addMethod&#9;null&#9;null&#10;addMethod&#9;null&#9;null" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\static\h-ui.admin\images" />
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\WEB-INF\pages\back" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\static\h-ui.admin\images" />
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\login\images" />
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot" />
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\login" />
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -661,7 +510,8 @@
       <listeners />
     </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.59" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
       <deployment>
         <artifact name="shenhua:Web exploded">
           <settings>
@@ -762,41 +612,48 @@
       <workItem from="1517535649464" duration="6896000" />
       <workItem from="1517738078031" duration="1819000" />
       <workItem from="1517788888354" duration="14921000" />
+      <workItem from="1517907049365" duration="634000" />
+      <workItem from="1517913571090" duration="3377000" />
+      <workItem from="1517991385262" duration="1068000" />
+      <workItem from="1517994709696" duration="3761000" />
+      <workItem from="1518063600152" duration="11789000" />
+      <workItem from="1518137368984" duration="29083000" />
+      <workItem from="1518308894558" duration="41754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58898000" />
+    <option name="totallyTimeSpent" value="150364000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.49394855" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.49394855" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73070323" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4603352" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290469" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.4960894" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21055438" sideWeight="0.5039106" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35418993" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -808,7 +665,6 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44273505" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -823,7 +679,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -831,246 +687,238 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.49394855" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44273505" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73070323" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4603352" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290469" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.4960894" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21055438" sideWeight="0.5039106" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35418993" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="LONG_EDGES_VISIBLE" value="true" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="无纸化会议2.0版本" />
+    <option name="LAST_COMMIT_MESSAGE" value="无纸化会议2.0版本" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/util/VEasyUiTree.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="459">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#span#2;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/FnfhPageData.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="216">
+          <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/FileAttach.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/js/util/util.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="518">
+          <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/BaseEntity.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="2133">
+          <caret line="79" column="6" lean-forward="false" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/FnfhResult.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/SysFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/SystemConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1119">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/interceptor/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/MTPFileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/MTPUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/PasswordUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/SQLUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1358">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/UploadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/Validator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/WebTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/WeixinUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="44" column="13" lean-forward="false" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/constants/APIConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
+        <state relative-caret-position="-36">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/license">
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/jquery/1.9.1/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/h-ui/js/H-ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/conf-explain.txt">
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/static/h-ui/js/H-ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/base.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/util/PropertiesUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="53" column="58" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/controller/util/FileUtilController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="468" column="70" lean-forward="false" selection-start-line="468" selection-start-column="70" selection-end-line="468" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shenhua.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/favicon.ico">
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/643195424857829295.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/lib/iconfont/demo.css">
+    <entry file="file://$PROJECT_DIR$/WebRoot/lib/Hui-iconfont/1.0.8/iconfont.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2052">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/applicationContext.xml">
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui/js/H-ui.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui/js/H-ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="40" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/admin-login-bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/backLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="81" column="13" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/cn.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/admin-loginform-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/admin-login-bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/um.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/loading.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/images/file_merge.png">
@@ -1088,134 +936,72 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/images/icon-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/images/icon-3.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/controller/meeting/SubAppMeetingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="134" column="51" lean-forward="false" selection-start-line="134" selection-start-column="51" selection-end-line="134" selection-end-column="51" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="59" column="42" lean-forward="false" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="42" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/loginbk.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="790" column="49" lean-forward="false" selection-start-line="790" selection-start-column="39" selection-end-line="790" selection-end-column="49" />
-          <folding>
-            <marker date="1517303562922" expanded="true" signature="3288:3349" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="9927:9952" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="10020:10031" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="10109:10115" ph="&amp;nbsp;" />
-            <marker date="1517303562922" expanded="true" signature="10115:10121" ph="&amp;nbsp;" />
-            <marker date="1517303562922" expanded="true" signature="10121:10127" ph="&amp;nbsp;" />
-            <marker date="1517303562922" expanded="true" signature="13769:13785" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="26557:27098" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="26616:27087" ph="..." />
-            <marker date="1517303562922" expanded="false" signature="26657:26678" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="26679:26776" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="26743:26761" ph="..." />
-            <marker date="1517303562922" expanded="true" signature="26790:27075" ph="..." />
-            <marker date="1517303562922" expanded="false" signature="26839:26893" ph="..." />
-            <marker date="1517303562922" expanded="false" signature="27015:27025" ph="..." />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/logo_name.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/controller/APIController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="740" column="45" lean-forward="false" selection-start-line="740" selection-start-column="45" selection-end-line="740" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/screebk.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/service/meeting/SubAppMeetingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="576" column="34" lean-forward="false" selection-start-line="576" selection-start-column="22" selection-end-line="576" selection-end-column="34" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/acrossTab/acrossTab-2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/meeting/MeetingType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/formbk1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/classes/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3348">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/formbk1.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/entity/meeting/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/formbk.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-type-add.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="196" column="46" lean-forward="false" selection-start-line="196" selection-start-column="36" selection-end-line="196" selection-end-column="46" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/meet.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/controller/meeting/MeetingTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="119" column="45" lean-forward="false" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/dao/impl/meeting/MeetingTypeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="36" />
-          <folding>
-            <marker date="1505098746602" expanded="true" signature="2496:2770" ph="delete from meeting_type... " />
-            <marker date="1505098746602" expanded="true" signature="2872:3322" ph="update meeting_type... " />
-          </folding>
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/dao/meeting/MeetingTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="29" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.properties">
+    <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1223,26 +1009,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-type-add.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/pic.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/images/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login1.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2079">
-          <caret line="77" column="32" lean-forward="false" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+        <state relative-caret-position="351">
+          <caret line="29" column="85" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/controller/meeting/PermissionController.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/titlelogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/pic.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo_name.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/titlelogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="45">
+          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/dv/service/meeting/MeetingTypeService.java">
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="65" column="48" lean-forward="false" selection-start-line="65" selection-start-column="48" selection-end-line="65" selection-end-column="48" />
+        <state relative-caret-position="179">
+          <caret line="67" column="56" lean-forward="false" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
           <folding />
         </state>
       </provider>

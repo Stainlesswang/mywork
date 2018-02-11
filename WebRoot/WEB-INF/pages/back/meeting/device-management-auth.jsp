@@ -29,39 +29,47 @@
 </style>
 </head>
 <body>
-<nav class="breadcrumb nav_content"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 无纸化会议 <span class="c-gray en">&gt;</span> 授权码
-<span class="select-box inline" style="float:right;border:0;font-size:14px;">
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 无纸化会议 <span class="c-gray en">&gt;</span> 授权码
+<span class="c-gray en" style="float:right;border:0;font-size:14px;">
 	<a class="btn btn-success" style="line-height:1.6em;" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
-	<button name="" id="addAuthCodeBtn" class="btn btn-primary" type="button"><i class="Hui-iconfont">&#xe6df;</i> 创建</button>
 	<button name="" id="delBtn" class="btn btn-danger" type="button"><i class="Hui-iconfont">&#xe609;</i> 删除</button>
-	<button name="" id="exitBtn" class="btn btn-primary" type="button"><i class="Hui-iconfont">&#xe66b;</i> 返回</button>
+	<%--<button name="" id="exitBtn" class="btn btn-primary" type="button"><i class="Hui-iconfont">&#xe66b;</i> 返回</button>--%>
 </span>
 </nav>
-
-<div class="text-c ctrl_content"> 
-		<span class="select-box inline">
-			<select class="select" id="status">
-				<option value="-1">全部</option>
-				<option value="0">未使用</option>
-				<option value="1">已使用</option>
-			</select>
-		</span>
+	
+<div class="page-container" style="text-align: left;top:161px">
+	<div class="text-c ">
+		<div class="radio-box">
+			<label >状态筛选</label>：
+			<input type="radio" id="radio-1" value="-1" name="radio" checked>
+			<label for="radio-1" class="btn-primary-outline">全部</label>
+			<input type="radio" id="radio-2" value="1" name="radio" >
+			<label for="radio-2" class="btn-primary-outline">已使用</label>
+			<input type="radio" id="radio-3" value="0" name="radio" >
+			<label for="radio-3" class="btn-primary-outline">未使用</label>
+		</div>
+		<%--<span class="select-box inline">--%>
+		<%--<select class="select" id="status">--%>
+		<%--<option value="-1">全部</option>--%>
+		<%--<option value="0">未使用</option>--%>
+		<%--<option value="1">已使用</option>--%>
+		<%--</select>--%>
+		<%--</span>--%>
 		<input type="text" name="keywords" id="keywords" placeholder=" 快速查询" style="width:250px" class="input-text">
 		<button name="" id="" onclick="bootstrapRefresh();" class="btn btn-success" type="submit"><i class="Hui-iconfont"></i> 查询</button>
-	</div>
-<div class="cl pd-5 bg-1 bk-gray mt-20 ctrl_content" style="text-align: right;top:70px;padding-right: 40px;"> 
+		<div class="mt-20">
 			<label>授权码前缀:</label>
-		<input type="text" name="prefix" id="prefix" placeholder="前缀(1-16位字母)" style="width:250px" class="input-text"> 
-		<label>授权码数量:</label>
-		<input type="text" name="num" id="num" placeholder="数量，1-999" style="width:250px" class="input-text NumText"> 
-		
-</div>
-	
-<div class="page-container page_content" style="text-align: right;top:161px">
-	
-	
-	<table class="table table-border table-bordered table-bg" id="datatable">
-	</table>
+			<input type="text" name="prefix" id="prefix" placeholder="前缀(1-16位字母)" style="width:250px" class="input-text">
+			<label>授权码数量:</label>
+			<input type="text" name="num" id="num" placeholder="数量，1-999" style="width:250px" class="input-text NumText">
+			<button name="" id="addAuthCodeBtn" class="btn btn-primary" type="button"><i class="Hui-iconfont">&#xe6df;</i>快速创建</button>
+		</div>
+
+	</div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg" id="datatable"></table>
+	</div>
+
 </div>
 <!--_footer 作为公共模版分离出去-->
 <script type="text/javascript" src="<%=path %>/lib/jquery/1.9.1/jquery.min.js"></script> 

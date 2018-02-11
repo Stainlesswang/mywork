@@ -41,8 +41,10 @@ public class FnfhPageData extends HashMap implements Map {
 	public FnfhPageData(HttpServletRequest request) {
         this.request = request;
     	String contentType = getHeadersInfo(request).get("content-type");
-    	if (null != contentType && contentType.contains("application/json")) {
-            StringBuilder sb = new StringBuilder();
+
+		if (null != contentType && contentType.contains("application/json")) {
+
+			StringBuilder sb = new StringBuilder();
             BufferedReader reader = null;
             String line = null;
             try {

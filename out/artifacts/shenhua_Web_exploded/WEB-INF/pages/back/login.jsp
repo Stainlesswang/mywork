@@ -9,105 +9,78 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>系统登录</title>
 <link rel="Shortcut Icon" href="<%=path%>/favicon/favicon.ico" />
-<link rel="stylesheet" href="<%=path %>/login/css/login.css"/>
-<script type="text/javascript" src="<%=path %>/login/js/jquery-1.8.2.min.js"></script>
-<style type="text/css">
-	body, th, td, button, input, select, textarea
-	{
-		font-family: "\5B8B\4F53"
-	}
-	
-	
 
-</style>
+
+
+	<link rel="stylesheet" type="text/css" href="<%=path %>/static/h-ui.admin/css/H-ui.login.css" />
+	<link rel="stylesheet" type="text/css" href="<%=path %>/static/h-ui/css/H-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="<%=path %>/lib/Hui-iconfont/1.0.8/iconfont.css" />
+	<link rel="stylesheet" type="text/css" href="<%=path %>/static/h-ui.admin/css/style.css" />
 </head>
 
-<body style="background-color:#d6dee0">
-	<div id="loginBody">
-		<div class="mtitle"><img src="<%=path %>/login/images/titlelogo.png" /></div>
-		<div class="form-bg">
-			<img src="<%=path %>/login/images/formbk1.png" />
-		</div>
-		<div class="login-box">
-			<!--<h1>后台登录</h1>-->
-			<form method="post">
-				<div class="name">
-					<label>管理员账号：</label>
-					<input type="text" name="username" id="username" tabindex="1" autocomplete="off" value="" />
+<body >
+	<div class="header"></div>
+	<div class="loginWraper">
+		<div id="loginform" class="loginBox">
+				<!--<h1>后台登录</h1>-->
+			<form class="form form-horizontal" method="post" action="backLogin.action">
+				<div class="row cl">
+					<label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+					<div class="formControls col-xs-8">
+					<input type="text" name="username" id="username"  placeholder="账户" value="" class="input-text size-L"/>
+					</div>
 				</div>
-				<div class="password">
-					<label>密  码：</label>
-					<input type="password" name="password" maxlength="16" id="password" tabindex="2" value="" />
+<div class="col-10">&nbsp;&nbsp;</div>
+				<div class="row cl">
+					<label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+					<div class="formControls col-xs-8">
+					<input type="password" name="password"  id="password" placeholder="密码"   class="input-text size-L"/>
+				     </div>
+					</div>
+					<div class="col-10">&nbsp;&nbsp;&nbsp;</div>
+				<div class="row cl">
+					<div class="formControls col-xs-8 col-xs-offset-3">
+						<label for="remember">
+							<input type="checkbox" name="online" id="remember" value="" onclick="rememberMe()" >
+							记住密码</label>
+					</div>
 				</div>
-				<!--		<div class="code">
-			<label>验证码：</label>
-			<input type="text" name="code" maxlength="4" id="code" tabindex="3" value=""/>
-			<div class="codeImg">
-				<img src="<%=path %>/code/getCode.action" id="codeImg"/>
+					<div class="col-10">&nbsp;&nbsp;</div>
+				<div class="row cl">
+					<div class="formControls col-xs-8 col-xs-offset-3">
+						<input name="" type="button" onclick="login();" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+					</div>
+				</div>
+				</div>
+			</form>
 		</div>
-		</div>-->
-		<div class="remember">
-			<input type="checkbox" id="remember" onclick="rememberMe();" tabindex="4" />
-			<label for="remember">记住密码</label>
-		</div>
-		<div class="login">
-			<button type="button" tabindex="5" onclick="login();">登录</button>
-		</div>
-		</form>
-		</div>
-		
-
-		<!-- <div class="bottom" style="color:#000000;">北京大瓦科技有限公司 </div> -->
 	</div>
-	
-	<%-- <div style="    width: 190px; height: 30px; margin: auto; position: relative; margin-top: -50px;">
-			<img src="<%=path %>/login/images/logo.png" alt="" style="width: 30px;
-    height: 30PX;" />
-			<img src="<%=path %>/login/images/logo_name.png" alt="" style="    width: 200px;
-    float: right;
-    margin-top: -50px;"/>
-    <span style="    position: relative;
-    margin: 0 auto;
-    /* width: 200px; */
-    float: right;
-    margin-top: 10px;
-    font-size: 12px;
-    color: black;">北京南北恒达科技有限公司</span>
-		</div> --%>
+	<div class="footer">Copyright 国家能源集团 by Meeting.v2.0</div>
+	<script type="text/javascript" src="<%=path %>/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="<%=path %>/js/util/util.js"></script>
 
-		<div class="screenbg">
-			<ul>
-				<%-- <li>
-					<a href="javascript:;"><img src="img/0.jpg" /></a>
-				</li>
-				<li>
-					<a href="javascript:;"><img src="img/1.jpg" /></a>
-				</li>
-				<li>
-					<a href="javascript:;"><img src="<%=path %>/login/images/loginbk1.jpg" /></a>
-				</li> --%>
-			</ul>
-		</div>
-		
-		
-		<script type="text/javascript" src="<%=path %>/js/util/util.js"></script>
-		<script type="text/javascript" src="<%=path %>/js/jQuery.md5.js"></script>
-		<script type="text/javascript" src="<%=path%>/js/jquery.cookie.js"></script>
-		<script type="text/javascript" src="<%=path %>/js/custome/backLogin.js"></script>
-
-		<script type="text/javascript">
-			$(function() {
-				document.onkeydown = function(e) {
-					var ev = document.all ? window.event : e;
-					if(ev.keyCode == 13) {
-						login();
-					}
-				}
-			});
-		</script>
+	<script type="text/javascript" src="<%=path %>/js/custome/backLogin.js"></script>
+	<script type="text/javascript" src="<%=path %>/static/h-ui/js/H-ui.js"></script>
+	<%--<script type="text/javascript">--%>
+			<%--$(function() {--%>
+				<%--document.onkeydown = function(e) {--%>
+					<%--var ev = document.all ? window.event : e;--%>
+					<%--if(ev.keyCode == 13) {--%>
+						<%--login();--%>
+					<%--}--%>
+				<%--}--%>
+			<%--});--%>
+		<%--</script>--%>
 	</body>
 
 </html>

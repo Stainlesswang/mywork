@@ -82,6 +82,7 @@ $(function(){
 					{
 						$("#selectOrgBtn").hide();
 						$("#org_name").css({"width":"100%"});
+                        $("#org_name").val("管理员不属于任何组织")
 						$("#isAdminTr").hide();
 					}
 					else

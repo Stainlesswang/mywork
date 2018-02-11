@@ -25,7 +25,7 @@ $(function(){
 			if(row.admin_type==2||row.is_super==1)
 			{
 				return {
-	                classes:'danger'
+	                classes:'success'
 	            };
 			}
 			return {};
@@ -41,6 +41,9 @@ $(function(){
         	}
             params["includeChild"]=includeChild;
             return params;
+        },
+        onClickRow: function (row) {
+            showUserLayer('编辑用户',getRootPath()+"/userinfo/background_userAddOrModifyView.action?user_id="+row.user_id)
         },
 		columns : [
 				{
@@ -64,25 +67,27 @@ $(function(){
 					field : 'user_name',
 					title : '账号',
 					visible : true,
-					formatter : function(value, row, index) {
-						if(row.admin_type==2||row.is_super==1)
-						{
-							return '<span style="font-weight: bolder;">'+value+'</span>';
-						}
-						return value;
-					}
+                    formatter : function(value, row, index) {
+                        if(row.admin_type==2||row.is_super==1)
+                        {
+                            return '<span style="font-weight: bolder;">'+value+'</span>';
+                        }
+                        return value;
+                    }
+
 				},
 				{
 					field : 'real_name',
 					title : '姓名',
 					visible : true,
-					formatter : function(value, row, index) {
-						if(row.admin_type==2||row.is_super==1)
-						{
-							return '<span style="font-weight: bolder;">'+value+'</span>';
-						}
-						return value;
-					}
+                    formatter : function(value, row, index) {
+                        if(row.admin_type==2||row.is_super==1)
+                        {
+                            return '<span style="font-weight: bolder;">'+value+"(管理员)"+'</span>';
+                        }
+                        return value;
+                    }
+
 				},
 				{
 					field : 'sex',
@@ -492,15 +497,15 @@ $(function(){
 	//显示用户弹出框
 	var showUserLayer=function(_title,_content)
 	{
-		var index=layer.open({
+		layer.open({
 			  type: 2,
 			  title:_title,
 			  content: _content,
-			  area: ['800px', '500px'],
-			  maxmin: false,//放大缩小
-			  move:true, //是否允许拖拽
+			  area: ['920px', '540px'],
+			  // maxmin: false,//放大缩小
+			  move:true //是否允许拖拽
 		});
-		layer.full(index);
+
 	}
 	var showAddUserLayer=function()
 	{
