@@ -6,66 +6,8 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bb63fb2c-08dc-4722-a933-c3778456968e" name="Default" comment="无纸化会议2.0版本">
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/images/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/login/images/pic.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/pic.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo_name.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/pic.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/titlelogo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/jquery/1.9.1/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/jquery/1.9.1/jquery.min.js" />
+    <list default="true" id="bb63fb2c-08dc-4722-a933-c3778456968e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhPageData.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhPageData.class" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/index.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login1.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-add-modify.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-add-modify.jsp" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/favicon.ico" afterPath="$PROJECT_DIR$/WebRoot/favicon.ico" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management-auth.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management-auth.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meetingTypeManage.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meetingTypeManage.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/user/edit-account.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/user/edit-account.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/lib/jquery.validation/1.14.0/validate-methods.js" afterPath="$PROJECT_DIR$/WebRoot/lib/jquery.validation/1.14.0/validate-methods.js" />
-      <change beforePath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo.png" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo.png" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhPageData.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhPageData.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/appdata" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/appdata" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/fonts" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/fonts" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/index" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/index" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/login.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management-auth.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management-auth.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/device-management.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/user/user-add-modify.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/user/user-add-modify.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/favicon.ico" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/favicon.ico" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management-auth.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management-auth.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/device-management.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push-add-modify.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push-add-modify.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meetingTypeManage.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meetingTypeManage.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/edit-account.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/edit-account.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-management.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-management.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/lib/jquery.validation/1.14.0/validate-methods.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/lib/jquery.validation/1.14.0/validate-methods.js" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-16" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-17" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-22" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-25" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log.2018-01-30" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/static/h-ui.admin/images/logo.png" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/static/h-ui.admin/images/logo.png" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1517794469462/Diagram 1.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/uploadFile/meetingFile/1517794693849/Diagram 1.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/dv/entity/FnfhPageData.java" afterPath="$PROJECT_DIR$/src/com/dv/entity/FnfhPageData.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
@@ -618,12 +560,20 @@
       <workItem from="1517994709696" duration="3761000" />
       <workItem from="1518063600152" duration="11789000" />
       <workItem from="1518137368984" duration="29083000" />
-      <workItem from="1518308894558" duration="41754000" />
+      <workItem from="1518308894558" duration="41997000" />
     </task>
+    <task id="LOCAL-00001" summary="无纸化会议2.0版本">
+      <created>1518358865251</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1518358865251</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150364000" />
+    <option name="totallyTimeSpent" value="150607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
