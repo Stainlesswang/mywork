@@ -1,5 +1,4 @@
-#Wed Feb 07 17:12:59 CST 2018
-TeamViewer12=C\:/WINDOWS/Fonts\\teamviewer12.otf
+#Mon Feb 26 10:41:26 CST 2018
 Arial=C\:/WINDOWS/Fonts\\arial.ttf
 Segoe\ UI\ Light\uFFFD=C\:/WINDOWS/Fonts\\seguili.ttf
 Segoe\ UI\ Semilight=C\:/WINDOWS/Fonts\\segoeuisl.ttf
@@ -16,6 +15,7 @@ Yu\ Gothic\ Light=C\:/WINDOWS/Fonts\\YuGothL.ttc
 Microsoft\ JhengHei\ UI\uFFFC=C\:/WINDOWS/Fonts\\msjhbd.ttc
 MingLiU-ExtB=C\:/WINDOWS/Fonts\\mingliub.ttc
 \uFF2D\uFF33\ \uFF30\u30B4\u30B7\u30C3\u30AF=C\:/WINDOWS/Fonts\\msgothic.ttc
+\u65B9\u6B63\u5170\u4EAD\u8D85\u7EC6\u9ED1\u7B80\u4F53=C\:/WINDOWS/Fonts\\FZLTCXHJW.TTF
 Nirmala\ UI\uFFFC=C\:/WINDOWS/Fonts\\NirmalaB.ttf
 Comic\ Sans\ MS\uFFFE=C\:/WINDOWS/Fonts\\comicz.ttf
 Microsoft\ JhengHei\ Light=C\:/WINDOWS/Fonts\\msjhl.ttc
@@ -60,8 +60,6 @@ Malgun\ Gothic\uFFFC=C\:/WINDOWS/Fonts\\malgunbd.ttf
 Microsoft\ New\ Tai\ Lue=C\:/WINDOWS/Fonts\\ntailu.ttf
 \u7B49\u7EBF\uFFFC=C\:/WINDOWS/Fonts\\Dengb.ttf
 Mongolian\ Baiti=C\:/WINDOWS/Fonts\\monbaiti.ttf
-Wingdings\ 3=C\:/WINDOWS/Fonts\\WINGDNG3.TTF
-Wingdings\ 2=C\:/WINDOWS/Fonts\\WINGDNG2.TTF
 Microsoft\ New\ Tai\ Lue\uFFFC=C\:/WINDOWS/Fonts\\ntailub.ttf
 Times\ New\ Roman=C\:/WINDOWS/Fonts\\times.ttf
 Segoe\ UI\ Historic=C\:/WINDOWS/Fonts\\seguihis.ttf
@@ -126,7 +124,7 @@ Sitka\ Display\uFFFD=C\:/WINDOWS/Fonts\\SitkaI.ttc
 Microsoft\ PhagsPa\uFFFC=C\:/WINDOWS/Fonts\\phagspab.ttf
 Sitka\ Display\uFFFC=C\:/WINDOWS/Fonts\\SitkaB.ttc
 Javanese\ Text=C\:/WINDOWS/Fonts\\javatext.ttf
-FileCounts\uFFFB=148
+FileCounts\uFFFB=146
 Microsoft\ YaHei\ UI\ Light=C\:/WINDOWS/Fonts\\msyhl.ttc
 Cambria=C\:/WINDOWS/Fonts\\cambria.ttc
 Leelawadee\ UI\ Semilight=C\:/WINDOWS/Fonts\\LeelUIsl.ttf

@@ -1,18 +1,4 @@
-[ERROR] [09:12:26] com.dv.controller.user.LoginController 
+[ERROR] [09:33:16] com.dv.controller.user.LoginController 
  com.dv.controller.user.LoginController/backLogin,用户名或密码错误
-[ERROR] [11:01:53] com.dv.controller.user.OrgManageController 
+[ERROR] [10:08:58] com.dv.controller.user.OrgManageController 
  com.dv.controller.user.OrgManageController/showOrgTree,null
-[ERROR] [11:02:34] com.dv.service.user.OrgManageService 
- com.dv.service.user.OrgManageService/delOrgsByIds,
-### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`))
-### The error may involve com.dv.dao.user.OrganizeMapper.delOrganizeById-Inline
-### The error occurred while setting parameters
-### SQL: delete from bt_organization  where parent_code     like CONCAT(?,'%') or parent_id=? or org_id=?
-### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`))
-; SQL []; Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`)); nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`)),org.springframework.dao.DataIntegrityViolationException: 
-### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`))
-### The error may involve com.dv.dao.user.OrganizeMapper.delOrganizeById-Inline
-### The error occurred while setting parameters
-### SQL: delete from bt_organization  where parent_code     like CONCAT(?,'%') or parent_id=? or org_id=?
-### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`))
-; SQL []; Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`)); nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`dvmeet`.`bt_user`, CONSTRAINT `fk_user_org` FOREIGN KEY (`org_id`) REFERENCES `bt_organization` (`org_id`))

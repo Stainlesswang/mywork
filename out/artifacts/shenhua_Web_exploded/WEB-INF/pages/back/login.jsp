@@ -65,7 +65,7 @@
 			</form>
 		</div>
 	</div>
-	<div class="footer">Copyright 国家能源集团 by Meeting.v2.0</div>
+	<div class="footer">Copyright Meeting.v2.0</div>
 	<script type="text/javascript" src="<%=path %>/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="<%=path %>/js/util/util.js"></script>
 

@@ -106,7 +106,7 @@ $(function(){
 			  type: 1,
 			  title:'选择组织',
 			  content:$("#selectOrgLayer"),
-			  area: ['700px', '480px'],
+			  area: '400px',
 			  maxmin: false,//放大缩小
 			  move:true //是否允许拖拽
 		});

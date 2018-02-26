@@ -321,14 +321,18 @@ function showAttachInfo(file, meetStatus)
     if(fileSize<1024)
     {
         fileSize=fileSize+"B";
+
     }
-    else if(1024<=fileSize<1024*1024)
+    else if(fileSize<=1024*1024)
     {
         fileSize=(fileSize/1024).toFixed(2)+"KB";
+
     }
     else
     {
         fileSize=(fileSize/1024/1024).toFixed(2)+"M";
+
+
     }
     // startdownloadUserTemplate.action
 // var
@@ -689,8 +693,8 @@ $(function(){
             type: 1,
             title:'选择参会人员',
             content:$("#selectLeaderLayer"),
-            area: ['800px', '580px'],
-            maxmin: false,// 放大缩小
+            area: '800px',
+            maxmin: true,// 放大缩小
             move:true // 是否允许拖拽
         });
         if(!isCreate)

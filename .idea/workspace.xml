@@ -7,7 +7,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb63fb2c-08dc-4722-a933-c3778456968e" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo3.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shenhua_Web_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/shenhua_Web_exploded.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/SystemConst.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/constants/SystemConst.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/APIController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/APIController.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/BackToUrlController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/BackToUrlController.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/DeviceController.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/util/DeviceController.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhPageData.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/entity/FnfhPageData.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/CommonMethod.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/CommonMethod.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/FileOperateUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/FileOperateUtil.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/PropertiesUtil.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WebTools.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WeixinUtils.class" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/util/WeixinUtils.class" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp" afterPath="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/user/user-add-modify.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/user/user-add-modify.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" afterPath="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" />
+      <change beforePath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css" afterPath="$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/SystemConst.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/constants/SystemConst.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/APIController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/APIController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/BackToUrlController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/BackToUrlController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/DeviceController.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/controller/util/DeviceController.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhPageData.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/entity/FnfhPageData.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppMeetingService.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/service/meeting/SubAppUserService.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/CommonMethod.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/CommonMethod.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/FileOperateUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/FileOperateUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/PropertiesUtil.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WebTools.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WeixinUtils.class" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/classes/com/dv/util/WeixinUtils.class" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/appdata" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/appdata" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/fonts" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/fonts" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/index" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/lib/System/index" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/login.jsp" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/WEB-INF/pages/back/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push-add-modify.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/meeting/meeting-materials-push-add-modify.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-add-modify.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-add-modify.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-management.js" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/js/custome/user/user-management.js" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/shenhuaLog/logs/error.log" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/static/h-ui.admin/css/H-ui.login.css" afterPath="$PROJECT_DIR$/out/artifacts/shenhua_Web_exploded/static/h-ui.admin/css/H-ui.login.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/WebRoot/WEB-INF/classes/" />
@@ -32,61 +73,45 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp">
+    <leaf>
+      <file leaf-file-name="meeting-materials-push-add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="67" column="56" lean-forward="false" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="338">
+              <caret line="151" column="41" lean-forward="false" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="41" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#tr#13;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#td#0;n#tr#14;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="titlelogo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/login/images/titlelogo.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="H-ui.login.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css">
+      <file leaf-file-name="meeting-materials-push-add-modify.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logo1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pic.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/pic.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="titlelogo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/titlelogo.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login1.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="29" column="85" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="85" />
-              <folding />
+            <state relative-caret-position="175">
+              <caret line="322" column="0" lean-forward="false" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+              <folding>
+                <marker date="1519614620222" expanded="true" signature="3465:3526" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="10288:10313" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="10388:10399" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="10484:10490" ph="&amp;nbsp;" />
+                <marker date="1519614620222" expanded="true" signature="10490:10496" ph="&amp;nbsp;" />
+                <marker date="1519614620222" expanded="true" signature="10496:10502" ph="&amp;nbsp;" />
+                <marker date="1519614620222" expanded="true" signature="14852:14868" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="30479:31020" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="30538:31009" ph="..." />
+                <marker date="1519614620222" expanded="false" signature="30579:30600" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="30601:30698" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="30665:30683" ph="..." />
+                <marker date="1519614620222" expanded="true" signature="30712:30997" ph="..." />
+                <marker date="1519614620222" expanded="false" signature="30761:30815" ph="..." />
+                <marker date="1519614620222" expanded="false" signature="30937:30947" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -95,10 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fileUpload</find>
-      <find>checkValidate</find>
-      <find>selectLeaderLayer</find>
-      <find>showUploadAttachLayer</find>
       <find>delete</find>
       <find>delBtn</find>
       <find>meetingStatus</find>
@@ -125,6 +146,10 @@
       <find>refresh</find>
       <find>selectType</find>
       <find>jquery.min</find>
+      <find>selectLeaderLayer</find>
+      <find>addUserBtn</find>
+      <find>attachList</find>
+      <find>showAttachInfo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,10 +180,8 @@
         <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meetingTypeManage.js" />
         <option value="$PROJECT_DIR$/src/com/dv/dao/user/UserMapper.java" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-add-modify.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" />
         <option value="$PROJECT_DIR$/WebRoot/js/custome/user/edit-account.js" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp" />
-        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" />
         <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push.js" />
         <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/device-management.js" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management.jsp" />
@@ -167,13 +190,22 @@
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp" />
         <option value="$PROJECT_DIR$/WebRoot/js/custome/backLogin.js" />
-        <option value="$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css" />
         <option value="$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp" />
+        <option value="$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/user/user-add-modify.js" />
+        <option value="$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -188,7 +220,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.0.4" />
+        <option name="mavenHome" value="D:/../apache-maven-3.0.4" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -196,10 +228,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1612" />
-    <option name="y" value="223" />
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -238,10 +270,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="shenhua" type="cbb8eebc:String" user="shenhua" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,54 +291,18 @@
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="shenhua_Web_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="shenhua_Web_exploded" type="462c0819:PsiDirectoryNode" />
-              <item name="cpy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
               <item name="shenhua" type="462c0819:PsiDirectoryNode" />
               <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
-              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="h-ui.admin" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
@@ -322,6 +325,37 @@
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="back" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="meeting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shenhua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shenhua" type="462c0819:PsiDirectoryNode" />
+              <item name="WebRoot" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="back" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="shenhua" type="58d84e3e:PackageViewProjectNode" />
+              <item name="shenhua" type="616d4139:PackageViewModuleNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -336,30 +370,30 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="preferences.applicationServers" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="SearchEverywhereHistoryKey" value="jQuery.validator.addMethod&#9;null&#9;null&#10;addMethod&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\static\h-ui.admin\images" />
-      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\WEB-INF\pages\back" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\shenhua\WebRoot\static\h-ui.admin\images" />
       <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\static\h-ui.admin\images" />
       <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\login\images" />
       <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot" />
       <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\login" />
-      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\static\h-ui.admin\images" />
+      <recent name="E:\DevelopmentTools\JetBrains\IDEAWork\shenhua\WebRoot\WEB-INF\pages\back" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -561,6 +595,10 @@
       <workItem from="1518063600152" duration="11789000" />
       <workItem from="1518137368984" duration="29083000" />
       <workItem from="1518308894558" duration="41997000" />
+      <workItem from="1519462437650" duration="1642000" />
+      <workItem from="1519524395789" duration="1670000" />
+      <workItem from="1519575947428" duration="163000" />
+      <workItem from="1519606191810" duration="7241000" />
     </task>
     <task id="LOCAL-00001" summary="无纸化会议2.0版本">
       <created>1518358865251</created>
@@ -573,10 +611,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150607000" />
+    <option name="totallyTimeSpent" value="161323000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -590,19 +628,18 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.49394855" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269639" sideWeight="0.49267936" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4603352" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32784185" sideWeight="0.50680786" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32784185" sideWeight="0.49319214" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.4960894" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31240544" sideWeight="0.4960894" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21055438" sideWeight="0.5039106" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35418993" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35255355" sideWeight="0.49167928" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -615,6 +652,7 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44273505" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -623,7 +661,7 @@
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32849163" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -635,22 +673,22 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.49394855" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3269639" sideWeight="0.49267936" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44273505" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4603352" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45963755" sideWeight="0.50832075" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933104" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21055438" sideWeight="0.4960894" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31240544" sideWeight="0.4960894" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21055438" sideWeight="0.5039106" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35418993" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35255355" sideWeight="0.49167928" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -716,107 +754,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/device-management-auth.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="91" />
-          <folding>
-            <element signature="n#style#0;n#span#2;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="124" column="49" lean-forward="false" selection-start-line="124" selection-start-column="49" selection-end-line="124" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/js/util/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="93" column="27" lean-forward="false" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2133">
-          <caret line="79" column="6" lean-forward="false" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/login/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/jquery/1.9.1/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/login/h-ui/js/H-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/login/static/h-ui/js/H-ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/643195424857829295.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/lib/Hui-iconfont/1.0.8/iconfont.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui/js/H-ui.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui/js/H-ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1620">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,20 +770,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-567">
           <caret line="3" column="40" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/admin-login-bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/login/images/admin-login-bg.jpg" />
     <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/backLogin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="81" column="13" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -861,16 +801,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/um.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/loading.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/images/file_merge.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -887,11 +817,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/images/icon-3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -936,21 +861,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet1.png" />
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet.png" />
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/meet.png" />
     <entry file="file://$PROJECT_DIR$/WebRoot/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -974,19 +887,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="29" column="85" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/favicon.ico" />
     <entry file="file://$PROJECT_DIR$/WebRoot/login/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -997,12 +898,38 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png">
+    <entry file="file://$PROJECT_DIR$/src/com/dv/constants/APIConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="26" column="12" lean-forward="false" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/dv/constants/SystemConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="29" column="85" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/pic.png">
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/loading.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo1.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -1012,24 +939,133 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/pic.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/titlelogo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/um.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="67" column="33" lean-forward="false" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebRoot/static/h-ui.admin/css/H-ui.login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="16" column="65" lean-forward="false" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="65" />
+        <state relative-caret-position="389">
+          <caret line="39" column="34" lean-forward="false" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/login.jsp">
+    <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/user/user-management.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="67" column="56" lean-forward="false" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+        <state relative-caret-position="307">
+          <caret line="556" column="23" lean-forward="false" selection-start-line="556" selection-start-column="0" selection-end-line="557" selection-end-column="0" />
+          <folding>
+            <marker date="1519610618394" expanded="true" signature="2061:2081" ph="..." />
+            <marker date="1519610618394" expanded="true" signature="2468:2488" ph="..." />
+            <marker date="1519610618394" expanded="true" signature="2915:2935" ph="..." />
+            <marker date="1519610618394" expanded="true" signature="3214:3234" ph="..." />
+            <marker date="1519610618394" expanded="true" signature="3498:3518" ph="..." />
+            <marker date="1519610618394" expanded="true" signature="3778:3798" ph="..." />
+            <marker date="1519610618394" expanded="true" signature="4057:4077" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-management.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="110" column="71" lean-forward="true" selection-start-line="110" selection-start-column="71" selection-end-line="110" selection-end-column="71" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/user/user-add-modify.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="192" column="71" lean-forward="true" selection-start-line="192" selection-start-column="71" selection-end-line="192" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/user/user-add-modify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="108" column="22" lean-forward="false" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/pages/back/meeting/meeting-materials-push-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="151" column="41" lean-forward="false" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="41" />
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#13;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#td#0;n#tr#14;n#tbody#0;n#table#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="460" column="4" lean-forward="false" selection-start-line="460" selection-start-column="4" selection-end-line="460" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/WEB-INF/classes/com/dv/controller/APIController.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1400">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebRoot/js/custome/meeting/meeting-materials-push-add-modify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="322" column="0" lean-forward="false" selection-start-line="322" selection-start-column="0" selection-end-line="322" selection-end-column="0" />
+          <folding>
+            <marker date="1519614620222" expanded="true" signature="3465:3526" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="10288:10313" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="10388:10399" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="10484:10490" ph="&amp;nbsp;" />
+            <marker date="1519614620222" expanded="true" signature="10490:10496" ph="&amp;nbsp;" />
+            <marker date="1519614620222" expanded="true" signature="10496:10502" ph="&amp;nbsp;" />
+            <marker date="1519614620222" expanded="true" signature="14852:14868" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="30479:31020" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="30538:31009" ph="..." />
+            <marker date="1519614620222" expanded="false" signature="30579:30600" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="30601:30698" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="30665:30683" ph="..." />
+            <marker date="1519614620222" expanded="true" signature="30712:30997" ph="..." />
+            <marker date="1519614620222" expanded="false" signature="30761:30815" ph="..." />
+            <marker date="1519614620222" expanded="false" signature="30937:30947" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1075,7 +1111,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android API 24 Platform (1)</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
