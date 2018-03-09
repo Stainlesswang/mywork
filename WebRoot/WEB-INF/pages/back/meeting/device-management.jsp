@@ -50,9 +50,9 @@
 	<div class="radio-box">
 		<label >状态筛选</label>：
 		<input type="radio" id="selectType-1" value="1" name="radio" checked>
-		<label for="selectType-1" class="btn-primary-outline">使用中设备</label>
+		<label for="selectType-1" class="size-S">使用中设备</label>
 		<input type="radio" id="selectType-2" value="-1" name="radio" >
-		<label for="selectType-2" class="btn-primary-outline">历史设备</label>
+		<label for="selectType-2" class="size-S">历史设备</label>
 	</div>
 		<%--<span class="select-box inline">--%>
 			<%--<select class="select" id="selectType">--%>

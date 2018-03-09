@@ -477,9 +477,43 @@ public class SubAppUserService {
         }
         return Result.success();
     }
-    
+	/**
+	 * 更新存储信息
+	 * @param ipadUUID
+	 * @param storage
+	 * @return
+	 */
+	public Result updateDeviceStorage(String ipadUUID, String storage)
+	{
+		SubAppUser subAppUser = new SubAppUser();
+		subAppUser.setIpad_uuid(ipadUUID);;
+		List<SubAppUser> appList = subAppUserMapper.findSubAppUser(subAppUser);
+		if (appList == null || appList.isEmpty())
+		{
+			return Result.error(APIConstants.DEVICE_NOT_EXIST.getCode(), APIConstants.DEVICE_NOT_EXIST.getName());
+		}
+		int count = 0;
+		subAppUser.setStorage(storage);
+		try
+		{
+			count = subAppUserMapper.setStorageByIpadUUID(subAppUser);
+			if (count < 1)
+			{
+				return Result.error(SystemConst.MODIFY_FAIL,SystemConst.MODIFY_FAIL_MSG);
+			}
 
-    //判断设备编码是否和设备中记录的编码匹配
+		}
+		catch (Exception e)
+		{
+			logger.error(logger.getName()+"/updateDeviceEnergy,"+e.getMessage()+","+e.toString());
+			return Result.error(SystemConst.MODIFY_FAIL,SystemConst.MODIFY_FAIL_MSG);
+
+		}
+		return Result.success();
+	}
+
+
+	//判断设备编码是否和设备中记录的编码匹配
     private boolean isDeviceCodeMatch(MTPFileManager fileManager, PortableDevice device, String deviceCode)
     {
 //        MTPFileManager fileManager = new MTPFileManager();

@@ -10,7 +10,7 @@ define(function(require, expors, module) {
     	{
     		fileSize=fileSize+"B";
     	}
-    	else if(1024<=fileSize<1024*1024)
+    	else if(fileSize<1024*1024)
     	{
     		fileSize=(fileSize/1024).toFixed(2)+"KB";
     	}
@@ -74,7 +74,7 @@ define(function(require, expors, module) {
             //按钮容器
             container: 'upload-container',
             //文件最大M
-            max_file_size: '20mb',
+            max_file_size: '50mb',
             //过滤文件格式
             filters: [{
                 title: " Ms files",
@@ -100,9 +100,5 @@ define(function(require, expors, module) {
             }
         })
     });
-
-
-   
-
     expors.show = function(opt) {};
 });

@@ -38,5 +38,7 @@ public interface SubAppUserMapper {
 	
 	//根据设备编号，设置设备电量
 	public int setEnergyByIpadUUID(SubAppUser subAppUser);
+	//根据设备编号，设置设备存储信息
+	public int setStorageByIpadUUID(SubAppUser subAppUser);
 
 }

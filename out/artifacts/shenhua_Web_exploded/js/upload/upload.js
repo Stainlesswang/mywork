@@ -71,7 +71,7 @@ define(function (require, exports, module) {
             "Error: File too large:": "错误: 文件太大:",
             "kb": "kb",
             "Duplicate file error.": "重复文件错误",
-            "File size error.": "请上传2M以内的jpg、png文件",
+            "File size error.": "请上传50M以内的文件",
             "N/A": "N/A",
             "gb": "gb",
             "Error: Invalid file extension:": "错误：无效的文件扩展名:",
@@ -88,7 +88,7 @@ define(function (require, exports, module) {
             "Drag files here.": "把文件拖到这里",
             "Runtime ran out of available memory.": "运行时已消耗所有可用内存",
             "File count error.": "文件数量错误",
-            "File extension error.": "请上传2M以内的jpg、png文件",
+            "File extension error.": "请上传50M以内的文件",
             "mb": "mb",
             "Add Files": "增加文件"
         });
@@ -155,6 +155,7 @@ define(function (require, exports, module) {
 
         uploader.bind('Error', function (up, err) {
         	debugger;
+        	alert("文件上传错误:"+err.message)
             layer.title('上传结果', dialog);
             if (err.file) {
                 err.file.message = err.message;
@@ -162,7 +163,7 @@ define(function (require, exports, module) {
                 $('#' + err.file.id + " .progress-bar").html("上传失败," + err.message);
                 // dialog.setClosable(true);
             }
-            
+
 //            layer.msg(err.message, {
 //  			  time: 1000 // 1秒关闭（如果不配置，默认是3秒）
 //  			});

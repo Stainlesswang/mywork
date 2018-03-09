@@ -212,7 +212,7 @@ function getUserList()
             layer.alert(result.message);
         }
     };
-    $.post(getRootPath() + "/userinfo/background_showUserInfo.action",data,succeed, "json");
+    $.post(getRootPath() + "/userinfo/background_showUserInfoAndIsBlind.action",data,succeed, "json");
 }
 // 删除会议信息
 function delMeetInfo()
@@ -321,6 +321,7 @@ function showAttachInfo(file, meetStatus)
     if(fileSize<1024)
     {
         fileSize=fileSize+"B";
+        alert("sadfasdasdfasdf:"+up+"$$$$:"+err.message);
 
     }
     else if(fileSize<=1024*1024)

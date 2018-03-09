@@ -677,7 +677,37 @@ public class APIController extends FnfhBaseController
         }
         return subAppUserService.updateDeviceEnergy(ipadUUID, Integer.valueOf(energy));
     }
-
+    /**
+     * 更新设备存储信息
+     * @param request
+     * @param ipadUUID 设备唯一标识符
+     * @param storage 存储信息，由移动端提供处理后的字符串
+     * @return
+     */
+    @ RequestMapping(value = "updateDeviceStorage")
+    @ ResponseBody
+    public Result updateDeviceStorage(HttpServletRequest request, String ipadUUID, String storage)
+    {
+        try
+        {
+            // 判断用户是否登录
+            validateAdminAction(request.getSession());
+        }
+        catch(FnfhException e)
+        {
+            this.logger.error(this.logger.getName() + "/showMeetings, " + e.getMessage());
+            return Result.error(Integer.valueOf(e.getCode()), e.getMessage());
+        }
+        if (StringUtils.isEmpty(ipadUUID))
+        {
+            return new Result(APIConstants.IPAD_NO_NULL);
+        }
+        if (StringUtils.isEmpty(storage))
+        {
+            return new Result(APIConstants.STORAGE_NO_NULL);
+        }
+        return subAppUserService.updateDeviceStorage(ipadUUID, storage);
+    }
     @ RequestMapping("/waterMarkFile/download/{token}")
     public ResponseEntity<?> download(HttpServletRequest request, @PathVariable ("token") String token, String filePath)
         throws IOException

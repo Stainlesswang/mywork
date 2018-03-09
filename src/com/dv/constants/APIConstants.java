@@ -99,7 +99,8 @@ public enum APIConstants implements IEnum
     
     MEETING_TYPE_IN_USE(10035, "此会议类型正在被使用，无法删除"),
     
-    NO_WRITE_PERMISSION(10036, "连接的设备无写权限")
+    NO_WRITE_PERMISSION(10036, "连接的设备无写权限"),
+    STORAGE_NO_NULL(10037, "存储信息不能为空"),
     ;
     
     

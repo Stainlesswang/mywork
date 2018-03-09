@@ -95,6 +95,11 @@ $(function() {
 								return value ? value + "%" : "";
 							}
 						},
+                    {
+                        field : 'storage',
+                        title : '设备存储',
+                        visible : true
+                    },
 						{
 							field : 'create_time',
 							title : '登记日期',
@@ -205,54 +210,3 @@ $(function() {
 	});
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

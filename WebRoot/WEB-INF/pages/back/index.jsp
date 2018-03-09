@@ -86,16 +86,16 @@
 							sessionScope.functionMap["1-1"]=="1"||
 							sessionScope.functionMap["1-2"]=="1"||
 							sessionScope.functionMap["1-3"]=="1"}'>
-			<dl id="menu-article">
+			<dl id="menu-article" >
 				<%--<dt><img src="<%=path %>/images/icon-2.png"/> 无纸化会议<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>--%>
 					<dt><i class="Hui-iconfont">&#xe72d;</i> 无纸化会议<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 					<dd>
-					<ul>
+					<ul id="Huifold1" class="Huifold" >
 						<c:if test='${sessionScope.loginUser.is_super==1||
 						    sessionScope.loginUser.admin_type==2||
 							sessionScope.functionMap["1-1"]=="1"||
 							sessionScope.functionMap["1-3"]=="1"}'>
-							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=meetingManage" data-title="会议材料推送" href="javascript:void(0)"><i class="Hui-iconfont">&#xe63e;</i>&nbsp;会议材料推送</a></li>
+							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=meetingManage" data-title="会议材料管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe63e;</i>&nbsp;会议材料管理</a></li>
 							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=meetingTypeManage" data-title="会议类型管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe6f5;</i>&nbsp;会议类型管理</a></li>
 						</c:if>
 
@@ -135,6 +135,7 @@
 					    </c:if>
 
 					</ul>
+
 				</dd>
 			</dl>
 
@@ -144,7 +145,7 @@
 <section class="Hui-article-box" id="mainContent">
 	<div id="Hui-tabNav" class="Hui-tabNav hidden-xs">
 		<div class="Hui-tabNav-wp">
-			<ul id="min_title_list" class="acrossTab cl">
+			<ul id="min_title_list" class="acrossTab cl" >
 				<!-- <li class="active">
 					<span title="我的桌面" data-href="welcome.html">我的桌面</span>
 					<em></em></li> -->

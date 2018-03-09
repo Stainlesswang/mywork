@@ -260,7 +260,7 @@ $(function(){
 			
 			
 		}
-	}
+	};
 	
 	//绑定事件
 	var bindEvent=function()

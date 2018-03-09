@@ -188,7 +188,6 @@
  			</trim>
  			where user_id=#{user_id}
 </update>
-
 <!-- 根据组织id获取用户信息 -->
 	<select id="findUserByOrgId" parameterType="com.dv.entity.user.User"
  		resultType="com.dv.entity.user.User">
@@ -208,7 +207,26 @@
 		 	limit #{start},#{limit}
 		 </if>
  	</select>
- 	
+	<!-- 根据组织id,和is_blinding=1 条件下 获取用户信息 -->
+	<select id="findUserByOrgIdAndisblinding" parameterType="com.dv.entity.user.User"
+			resultType="com.dv.entity.user.User">
+		select a.*,b.org_name from bt_user as a INNER join bt_organization as b
+		on a.org_id=b.org_id INNER JOIN sub_app_user u ON a.user_id = u.user_id
+		where u.is_binding='1' AND
+		<if test="parent_code !=null and org_id!=null">
+			(b.parent_code like CONCAT(#{parent_code},'%') or b.org_id=#{org_id})
+		</if>
+		<if test="parent_code ==null and org_id!=null">
+			(b.org_id=#{org_id})
+		</if>
+
+		<if test="search !=null">
+			and (user_name like CONCAT('%',#{search},'%') or real_name like CONCAT('%',#{search},'%'))
+		</if>
+		<if test = "limit !=0">
+			limit #{start},#{limit}
+		</if>
+	</select>
 	<!-- 根据组织id查找用户信息总条数 -->
 	<select id="findUserCountByOrgId" parameterType="com.dv.entity.user.User"
  		resultType="integer">

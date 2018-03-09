@@ -79,7 +79,7 @@ public class UserManageService {
 	 * @creater: 李梦婷
 	 * @creationDate:2017年5月2日 下午2:47:52
 	 */
-	public Result showUserInfo(User userInfo,FnfhPageData pgdata) throws FnfhException 
+	public Result showUserInfo(User userInfo,FnfhPageData pgdata) throws FnfhException
 	{
 		try {
 			Result result=new Result();
@@ -144,10 +144,14 @@ public class UserManageService {
 				}
 				userInfo.setParent_code(parentCode);
 			}
-			
-			
+
+			List<User> list=null;
 			//step2 查询用户信息
-			List<User> list=userInfoMapper.findUserByOrgId(userInfo);
+			if ("查询和设备绑定的人员".equals(userInfo.getUser_id())){
+                list=userInfoMapper.findUserByOrgIdAndisblinding(userInfo);
+			}else {
+                list=userInfoMapper.findUserByOrgId(userInfo);
+			}
 			totalCount = userInfoMapper.findUserCountByOrgId(userInfo);
 			result.setRows(list);
 			result.setTotal(totalCount);
@@ -156,8 +160,6 @@ public class UserManageService {
 			throw new FnfhException(SystemConst.SYS_ERROR,e.getMessage());
 		}
 	}
-	
-	
 	/**
 	 * 
 	 * @methodDesc:  

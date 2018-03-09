@@ -61,7 +61,7 @@
 			</span>
 			<span class="select-box inline" style="display:block;width:396px;float:right;border:0;font-size:14px;">
 				<button name="" id="addUserBtn" class="btn btn-primary" type="button">新增用户</button>
-				<button name="" id="modUserBtn" class="btn btn-primary" type="button">编辑</button>
+				<%--<button name="" id="modUserBtn" class="btn btn-primary" type="button">编辑</button>--%>
 				<button name="" id="delUserBtn" class="btn btn-danger" type="button">删除</button>
 				<button name="" id="importExcelBtn" class="btn btn-primary" type="button">导入Excel</button>
 				<button name="" id="dowloadBtn" class="btn btn-primary" type="button">模板下载</button>

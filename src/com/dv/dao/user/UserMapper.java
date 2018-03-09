@@ -23,7 +23,8 @@ public interface UserMapper {
 	//根据组织id查询用户数据，查询该组织以下的所有人员数据信息
 	public List<User> findUserByOrgId(User user);
 	public int findUserCountByOrgId(User user);
-	
+	//根据组织id查询用户数据，查询该组织以下的所有人员数据信息，多加一个条件is_blinding
+	public List<User> findUserByOrgIdAndisblinding(User user);
 	//校验账号是否存在
 	public int isExistName(User userInfo);
 	

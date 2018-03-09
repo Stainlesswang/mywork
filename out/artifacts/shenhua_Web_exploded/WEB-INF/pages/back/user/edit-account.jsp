@@ -44,7 +44,7 @@
 </head>
 <body>
 <article class="page-container">
-<form class="form form-horizontal" id="form-user-add">
+<form class="form form-horizontal responsive" id="form-user-add">
 	<table class="table  table-bg" id="datatable">
 		<tbody>
 			<tr class="text-l">

@@ -38,15 +38,15 @@
 </nav>
 	
 <div class="page-container" style="text-align: left;top:161px">
-	<div class="text-c ">
+	<div class="text-l">
 		<div class="radio-box">
 			<label >状态筛选</label>：
 			<input type="radio" id="radio-1" value="-1" name="radio" checked>
-			<label for="radio-1" class="btn-primary-outline">全部</label>
+			<label for="radio-1" class="size-S">全部</label>
 			<input type="radio" id="radio-2" value="1" name="radio" >
-			<label for="radio-2" class="btn-primary-outline">已使用</label>
+			<label for="radio-2" class="size-S">已使用</label>
 			<input type="radio" id="radio-3" value="0" name="radio" >
-			<label for="radio-3" class="btn-primary-outline">未使用</label>
+			<label for="radio-3" class="size-S">未使用</label>
 		</div>
 		<%--<span class="select-box inline">--%>
 		<%--<select class="select" id="status">--%>
@@ -57,14 +57,17 @@
 		<%--</span>--%>
 		<input type="text" name="keywords" id="keywords" placeholder=" 快速查询" style="width:250px" class="input-text">
 		<button name="" id="" onclick="bootstrapRefresh();" class="btn btn-success" type="submit"><i class="Hui-iconfont"></i> 查询</button>
-		<div class="mt-20">
-			<label>授权码前缀:</label>
-			<input type="text" name="prefix" id="prefix" placeholder="前缀(1-16位字母)" style="width:250px" class="input-text">
-			<label>授权码数量:</label>
-			<input type="text" name="num" id="num" placeholder="数量，1-999" style="width:250px" class="input-text NumText">
-			<button name="" id="addAuthCodeBtn" class="btn btn-primary" type="button"><i class="Hui-iconfont">&#xe6df;</i>快速创建</button>
-		</div>
-
+	</div>
+	<div class="text-l">
+		&nbsp;
+		&nbsp;
+	</div>
+	<div class="text-l">
+		<label>&nbsp;&nbsp;授权码前缀:</label>
+		<input type="text" name="prefix" id="prefix" placeholder="前缀(1-16位字母)" style="width:250px" class="input-text">
+		<label>授权码数量:</label>
+		<input type="text" name="num" id="num" placeholder="数量，1-999" style="width:250px" class="input-text NumText">
+		<button name="" id="addAuthCodeBtn" class="btn btn-primary" type="button"><i class="Hui-iconfont">&#xe6df;</i>快速创建</button>
 	</div>
 	<div class="mt-20">
 		<table class="table table-border table-bordered table-bg" id="datatable"></table>
@@ -89,5 +92,7 @@
 	{
 		font-family: "\5B8B\4F53"
 	}
+	#zuo{width:900px;height:80px;float:left}
+
 </style>
 </html>

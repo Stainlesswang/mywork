@@ -32,6 +32,7 @@ public class SubAppUser extends BaseEntity
     private String user_id;//设备使用人id
     private String remark;//备注信息
     private Integer energy;//设备电量
+    private String storage;//设备可用存储
     //非定义字段
     private String user_name;//设备使用人
     private String real_name;//设备使用人真实姓名
@@ -200,17 +201,13 @@ public class SubAppUser extends BaseEntity
     {
         this.real_name = real_name;
     }
-
-    @ Override
-    public String toString()
-    {
-        return "SubAppUser [mid=" + mid + ", register_id=" + register_id + ", job_number="
-            + job_number + ", passwd_flag=" + passwd_flag + ", passwd=" + passwd + ", ipad_uuid="
-            + ipad_uuid + ", create_time=" + create_time + ", authorationcode=" + authorationcode
-            + ", status=" + status + ", is_binding=" + is_binding + ", user_id=" + user_id
-            + ", remark=" + remark + ", user_name=" + user_name + ", register=" + register + "]";
+    public String getStorage() {
+        return storage;
     }
 
+    public void setStorage(String storage) {
+        this.storage = storage;
+    }
     public Integer getEnergy()
     {
         return energy;
@@ -220,5 +217,16 @@ public class SubAppUser extends BaseEntity
     {
         this.energy = energy;
     }
+    @ Override
+    public String toString()
+    {
+        return "SubAppUser [mid=" + mid + ", register_id=" + register_id + ", job_number="
+            + job_number + ", passwd_flag=" + passwd_flag + ", passwd=" + passwd + ", ipad_uuid="
+            + ipad_uuid + ", create_time=" + create_time + ", authorationcode=" + authorationcode
+            + ", status=" + status + ", is_binding=" + is_binding + ", user_id=" + user_id
+            + ", remark=" + remark + ", user_name=" + user_name + ", register=" + register+ ", storage=" + storage+ "]";
+    }
+
+
 
 }

@@ -74,7 +74,32 @@ public class UserManageController extends FnfhBaseController{
     		return Result.errorUnknow();
     	}
 	}
-	
+	/**
+	 *
+	 * @methodDesc:
+	 * 根据组织id,用户是否绑定设备，获取用户列表信息
+	 * @param req
+	 * @param userInfo
+	 * @return
+	 * @creater: 王建强
+	 * @creationDate:2018年3月8日
+	 */
+	@RequestMapping(value="/background_showUserInfoAndIsBlind.action", method = {RequestMethod.POST})
+	@ResponseBody
+	public Result showUserInfoIsBlind(HttpServletRequest req,User userInfo)
+	{
+		FnfhPageData pgdata=new FnfhPageData(req);
+		try {
+			userInfo.setUser_id("查询和设备绑定的人员");
+			return userService.showUserInfo(userInfo, pgdata);
+		} catch (FnfhException e) {
+			logger.error(logger.getName()+"/showUserInfo,"+e.getMessage());
+			return Result.error(e.getCode(), e.getMessage());
+		} catch (Exception e) {
+			logger.error(logger.getName()+"/showUserInfo,"+e.getMessage());
+			return Result.errorUnknow();
+		}
+	}
 	/**
 	 * 
 	 * @methodDesc:  
