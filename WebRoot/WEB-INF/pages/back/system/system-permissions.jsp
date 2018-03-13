@@ -128,7 +128,8 @@ $(function(){
 				<table class="table  table-bg">
 					<tr>
 						<td>
-							<input type="checkbox" class="includeChild" id="includeChild" name="includeChild" checked="checked">
+                            <input type="hidden" name="adminType" id="adminType" value="0">
+                            <input type="checkbox" class="includeChild" id="includeChild" name="includeChild" checked="checked">
 							<label for="includeChild">含子部门</label>
 						</td>
 						<td>
@@ -169,12 +170,13 @@ $(function(){
 <!-- 选择设备管理弹出框 start -->
 <div id="selectIpadLayer" style="display:none;">
 	<article class="page-container">
-		<form class="form form-horizontal" id="form-select-org">
+		<form class="form form-horizontal" id="form-select-org2">
 			<div class="row cl" style="min-height:300px;">
 				<table class="table  table-bg" style="width:90%;">
 					<tr>
 						<td>
-							<input type="checkbox" class="includeChild" id="includeChild2" name="includeChild2" checked="checked">
+                            <input type="hidden" name="adminType" id="adminType2" value="0">
+                            <input type="checkbox" class="includeChild" id="includeChild2" name="includeChild2" checked="checked">
 							<label for="includeChild2">含子部门</label>
 						</td>
 						<td>
@@ -215,12 +217,13 @@ $(function(){
 <!-- 选择会议材料推送弹出框 start -->
 <div id="selectMeetLayer" style="display:none;">
 	<article class="page-container">
-		<form class="form form-horizontal" id="form-select-org">
+		<form class="form form-horizontal" id="form-select-org3">
 			<div class="row cl" style="min-height:300px;">
 				<table class="table  table-bg" style="width:90%;">
 					<tr>
 						<td>
-							<input type="checkbox" class="includeChild" id="includeChild3" name="includeChild3" checked="checked">
+                            <input type="hidden" name="adminType" id="adminType3" value="0">
+                            <input type="checkbox" class="includeChild" id="includeChild3" name="includeChild3" checked="checked">
 							<label for="includeChild3">含子部门</label>
 						</td>
 						<td>
@@ -261,11 +264,12 @@ $(function(){
 <!-- 选择用户管理人员弹出框 start -->
 <div id="selectUserManageLayer" style="display:none;">
 	<article class="page-container">
-		<form class="form form-horizontal" id="form-select-org">
+		<form class="form form-horizontal" id="form-select-org4">
 			<div class="row cl" style="min-height:300px;">
 				<table class="table  table-bg" style="width:90%;">
 					<tr>
 						<td>
+                            <input type="hidden" name="adminType" id="adminType4" value="0">
 							<input type="checkbox" class="includeChild" id="includeChild4" name="includeChild4" checked="checked">
 							<label for="includeChild4">含子部门</label>
 						</td>

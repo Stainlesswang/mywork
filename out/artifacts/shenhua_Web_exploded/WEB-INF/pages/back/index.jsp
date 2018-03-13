@@ -84,7 +84,7 @@
 	<c:if test='${sessionScope.loginUser.is_super==1||
 							sessionScope.loginUser.admin_type==2||
 							sessionScope.functionMap["1-1"]=="1"||
-							sessionScope.functionMap["1-2"]=="1"||
+
 							sessionScope.functionMap["1-3"]=="1"}'>
 			<dl id="menu-article" >
 				<%--<dt><img src="<%=path %>/images/icon-2.png"/> 无纸化会议<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>--%>
@@ -120,16 +120,16 @@
 			</dl>
 			<%--<li><a data-href="<%=path %>/backToUrl/toDo.action?url=deviceManage" data-title="设备管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe708;</i>&nbsp;设备管理</a></li>--%>
 		</c:if>
-
+		<c:if test='${sessionScope.loginUser.is_super==1||
+						sessionScope.loginUser.admin_type==2||
+						sessionScope.functionMap["1-4"]=="1"}'>
 			<dl id="menu-user">
 				<dt><i class="Hui-iconfont">&#xe61d;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 				<dd>
 					<ul>
-						<c:if test='${sessionScope.loginUser.is_super==1||
-						sessionScope.loginUser.admin_type==2||
-						sessionScope.functionMap["1-4"]=="1"}'>
+
 							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=userManage" data-title="用户管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe62b;</i>&nbsp;用户管理</a></li>
-						</c:if>
+
 						<c:if test='${sessionScope.loginUser.is_super==1}'>
 						<li><a data-href="<%=path %>/backToUrl/toDo.action?url=systemPermissions" data-title="系统权限管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe653;</i>&nbsp;系统权限管理</a></li>
 					    </c:if>
@@ -138,7 +138,7 @@
 
 				</dd>
 			</dl>
-
+		</c:if>
 </div>
 </aside>
 <div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>

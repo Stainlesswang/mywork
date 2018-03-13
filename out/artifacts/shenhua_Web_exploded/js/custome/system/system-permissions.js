@@ -8,6 +8,7 @@ var keywordsIdArr=["","keywords","keywords2","keywords3","keywords4"];
 var treeId="treeDemo";
 var checkBoxId="includeChild";
 var keywordsId="keywords";
+var adminType="adminType";
 var isCreate=false;
 var isCreate2=false;
 var isCreate3=false;
@@ -40,10 +41,12 @@ function getUserList()
 	var orgId=nodes[0].id;
 	var search=$("#"+keywordsId).val();
 	var includeChild=0;//默认不选中子部门
+	var adminType=0;
 	if ($('#'+checkBoxId).is(':checked')) {
 		includeChild=1;
 	}
-	var data={orgId:orgId,search:search,includeChild:includeChild}
+
+	var data={orgId:orgId,search:search,includeChild:includeChild,adminType:adminType};
 	var succeed = function (result) {
         if (0 == result.status) {
 //        	console.log(JSON.stringify(result));
@@ -77,6 +80,7 @@ function getUserList()
         	layer.alert(result.message);
         }
     };
+
     $.post(getRootPath() + "/userinfo/background_showUserInfo.action",data,succeed, "json");
 }
 
@@ -206,7 +210,7 @@ $(function(){
         moveOptions:true,  
         labelsx: '待选人员',  
         labeldx: '已选人员',
-        search: "查找: ", 
+        search: "查找: "
         
     });
 	$("#ipadselect").multiselect2side({  
@@ -214,7 +218,7 @@ $(function(){
         moveOptions:true,  
         labelsx: '待选人员',  
         labeldx: '已选人员',
-        search: "查找: ", 
+        search: "查找: "
         
     });
 	$("#meetselect").multiselect2side({  
@@ -222,7 +226,7 @@ $(function(){
         moveOptions:true,  
         labelsx: '待选人员',  
         labeldx: '已选人员',
-        search: "查找: ", 
+        search: "查找: "
         
     });
 	$("#usermanageselect").multiselect2side({  
@@ -230,8 +234,7 @@ $(function(){
         moveOptions:true,  
         labelsx: '待选人员',  
         labeldx: '已选人员',
-        search: "查找: ", 
-        
+        search: "查找: "
     });
 	//获取权限信息
 	getPermission();
@@ -275,30 +278,30 @@ $(function(){
 			}
 		}
 		
-	}
+	};
 	
 	var showSelectAdminLayer=function()
 	{
 		currentPerSubType=1;
 		
 		showSelectPermissionLayer("选择本模块管理员","selectAdminLayer");
-	}
+	};
 	var showSelectIpadLayer=function()
 	{
 		currentPerSubType=2;
 		showSelectPermissionLayer("选择设备管理员","selectIpadLayer");
-	}
+	};
 	var showSelectMeetLayer=function()
 	{
 		currentPerSubType=3;
 		showSelectPermissionLayer("选择会议推送管理员","selectMeetLayer");
-	}
+	};
 	
 	var showSelectUserManageLayer=function()
 	{
 		currentPerSubType=4;
 		showSelectPermissionLayer("选择用户管理员","selectUserManageLayer");
-	}
+	};
 	
 	
 	
@@ -317,7 +320,7 @@ $(function(){
 		$("#"+idName+"Ids").val(leaderIds);
 		$("#"+idName+"Names").val(leaderNames);
 		layer.close(selectAdminLayerIndex);
-	}
+	};
 	
 	//保存权限信息
 	var savePermissionInfo=function()

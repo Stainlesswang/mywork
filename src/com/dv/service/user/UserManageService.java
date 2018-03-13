@@ -96,6 +96,7 @@ public class UserManageService {
 			String sort=pgdata.getSort();
 			String orgId=pgdata.getString("orgId");
 			String includeChild=pgdata.getString("includeChild");//是否包含子部门
+			String adminType=pgdata.getString("adminType");//是否是普通人员？？用于权限管理选择人员
 			if(!StringUtils.isEmpty(orgId))
 			{
 				int _orgId=CommonMethod.StringToInt(orgId, -1);
@@ -119,7 +120,11 @@ public class UserManageService {
 			{
 				userInfo.setSort(sort);
 			}
-			
+			if(!StringUtils.isEmpty(adminType))
+			{
+				userInfo.setAdmin_type(0);
+				System.out.println("***********************adminTypeIs:@@@@@:"+adminType);
+			}
 			if("1".equals(includeChild))//包含子部门
 			{
 				//根据组织id获取用户信息,即该组织以及children下的用户

@@ -91,6 +91,7 @@ public class PermissionService {
 		List<Permission> permissionList=permissionMapper.findPermission(permission);
 		for (Permission per : permissionList) {
 			resultMap.put(per.getPer_type()+"-"+per.getPer_subtype(), "1");
+			System.out.println("PermissionIs:::"+per.getPer_type()+"-"+per.getPer_subtype());
 			//1-1 本模块；1-2 设备管理；1-3 会议资料新建
 		}
 		

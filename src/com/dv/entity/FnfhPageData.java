@@ -63,6 +63,7 @@ public class FnfhPageData extends HashMap implements Map {
             }
             
             JSONObject obj = JSONObject.fromObject(sb.toString());
+
 	        map = new HashMap();
 	        Object value = "";
             for (Object key : obj.keySet()) {
@@ -80,8 +81,10 @@ public class FnfhPageData extends HashMap implements Map {
 	            } else {
 	                value = valueObj.toString();
 	            }
+
 	            map.put(key, value);
-            }
+
+			}
     	} else /*if (contentType.contains("application/x-www-form-urlencoded"))*/ {    		
 	        Map properties = request.getParameterMap();
 	        Map returnMap = new HashMap();
@@ -112,11 +115,13 @@ public class FnfhPageData extends HashMap implements Map {
 	                }
 	            } else {
 	                value = valueObj.toString();
+
 	            }
 	            returnMap.put(name, value);
 	        }
 	        map = returnMap;
-    	}
+
+		}
 //    	System.out.println(map.toString());
         logger.debug("[PARAMS][" + request.getMethod().toString() + "][" + request.getRequestURI() + "]" + map.toString());
     }

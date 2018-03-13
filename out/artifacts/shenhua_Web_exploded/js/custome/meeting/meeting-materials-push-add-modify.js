@@ -692,7 +692,7 @@ $(function(){
     {
         selectLeaderLayerIndex=layer.open({
             type: 1,
-            title:'选择参会人员',
+            title:'选择已经绑定设备的人员',
             content:$("#selectLeaderLayer"),
             area: '800px',
             maxmin: true,// 放大缩小
@@ -717,7 +717,7 @@ $(function(){
         });
         if(leaderNames.length==0)
         {
-            layer.alert("请选择参会领导");
+            layer.alert("请选择参会人员");
         }
         else
         {

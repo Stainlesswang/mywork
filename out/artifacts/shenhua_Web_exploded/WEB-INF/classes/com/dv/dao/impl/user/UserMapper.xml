@@ -198,8 +198,10 @@
 			</if>
 			<if test="parent_code ==null and org_id!=null">
 			    (b.org_id=#{org_id})
-			</if>   
-			
+			</if>
+		    <if test="admin_type !=null ">
+			 AND (a.admin_type=#{admin_type})
+		    </if>
 		<if test="search !=null">
  			and (user_name like CONCAT('%',#{search},'%') or real_name like CONCAT('%',#{search},'%'))
  		</if>
