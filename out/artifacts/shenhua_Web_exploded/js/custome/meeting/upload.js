@@ -88,10 +88,10 @@ define(function(require, expors, module) {
             FileUploaded: function(up, file, result) {
             	var file = $.parseJSON(result.response).data;
             	file.attach_type=0;// 普通文件，没有合并
-            	var rows = [{"attach_path":file.attach_path, "attach_name":file.attach_name, 
-        			"attach_size":file.attach_size,"attach_realname":file.attach_realname,
-        			"prefix":file.prefix,"suffix":file.suffix,attach_type:file.attach_type,"token":file.token
-        		}];
+            	var rows = [{"attach_path":file.attach_path, "attach_name":file.attach_name,
+                    "attach_size":file.attach_size,"attach_realname":file.attach_realname,
+                    "prefix":file.prefix,"suffix":file.suffix,attach_type:file.attach_type,"token":file.token
+            }];
             	//用于保存新增的附件。
             	//attachs,totalAttach变量已在meeting-materials-push-add-modify.js中定义过了，这种写法容易造成混淆，有时间再改 TODO
             	attachs.push(rows[0]);

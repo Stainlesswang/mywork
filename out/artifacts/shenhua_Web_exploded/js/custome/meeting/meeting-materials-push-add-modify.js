@@ -61,6 +61,8 @@ function rmRow(cRow) {
 // 合并附件操作
 function mergeFileCtrl()
 {
+
+
     tableValue = [];
     tableValueLength = 0;
     var newFileName=$.trim($("#fileName").val());
@@ -72,7 +74,6 @@ function mergeFileCtrl()
     $("#form-materials-merge").find("select").each(function(){
         if(tableValue.length>0&&$.inArray($(this).val(),tableValue)>=0)
         {
-// layer.alert("选择了重复的文件:"+$(this).text());
             var name= $(this).find("option:selected").text();
             layer.alert("选择了重复的文件:\n"+name);
             flag=false;
@@ -84,12 +85,12 @@ function mergeFileCtrl()
         }
 
     });
-
     if(tableValue.length==0)
     {
         layer.alert("请选择需要合并的文件");
         return;
     }
+
     if(flag)
     {
         var loadIndex=null;
@@ -104,8 +105,15 @@ function mergeFileCtrl()
                 var file=result.data;
                 file.attach_type=1;
                 attachs.push(file);
+                for(i=0;i<totalAttach.length;i++) {
+                    var file1 = totalAttach[i];
+                    if (file1.attach_type ==1){
+                        deleteAttach(file1.token,file1.meeting_mid)
+                    }
+                }
                 totalAttach.push(file);// 转换后的pdf设置可以再次转换20170527
                 showAttachInfo(file);
+                    alert(totalAttach.length)
                 layer.close(mergeFileLayerIndex);
             }
             else{
@@ -119,7 +127,6 @@ function mergeFileCtrl()
         loadIndex =layer.load(2,{
             shade: [0.1,'#393D49'],// 0.1透明度的白色背景
             content:'<div style="margin-left: 50px;width: 150px;height: 37px;line-height: 37px">正在合并附件...</div>'
-
         });
     }
 
@@ -146,6 +153,23 @@ function checkFileCanConvert(fileType)
     }
     else
     {
+        return false;
+    }
+}
+/* 日期字符串比较大小 */
+function compareDate(DateOne, DateTwo) {
+    // 2015-02-08 20:20:20
+    var OneMonth = DateOne.substring(5, DateOne.lastIndexOf("-"));
+    var OneDay = DateOne.substring(DateOne.length, DateOne.lastIndexOf("-") + 1);
+    var OneYear = DateOne.substring(0, DateOne.indexOf("-"));
+    var TwoMonth = DateTwo.substring(5, DateTwo.lastIndexOf("-"));
+    var TwoDay = DateTwo.substring(DateTwo.length, DateTwo.lastIndexOf("-") + 1);
+    var TwoYear = DateTwo.substring(0, DateTwo.indexOf("-"));
+    alert(Date.parse(OneYear + "/" + OneMonth + "/" + OneDay))
+    alert(Date.parse( TwoYear+ "/" + TwoMonth + "/" + TwoDay))
+    if (Date.parse(OneYear + "/" + OneMonth + "/" + OneDay) > Date.parse(TwoYear+ "/" + TwoMonth + "/" + TwoDay)) {
+        return true;
+    } else {
         return false;
     }
 }
@@ -322,45 +346,29 @@ function showAttachInfo(file, meetStatus)
     {
         fileSize=fileSize+"B";
         alert("sadfasdasdfasdf:"+up+"$$$$:"+err.message);
-
     }
     else if(fileSize<=1024*1024)
     {
         fileSize=(fileSize/1024).toFixed(2)+"KB";
-
     }
     else
     {
         fileSize=(fileSize/1024/1024).toFixed(2)+"M";
-
-
     }
-    // startdownloadUserTemplate.action
-// var
-// downloadUrl=getRootPath()+"/fileUtil/downloadUserTemplate.action?filePath="+file.attach_path+"&fileName="+file.attach_name;
+
+
     var chakanUrl=getRootPath()+"/"+file.attach_path;
     var downloadUrl=getRootPath()+"/fileUtil/downloadMeetFileByToken.action?token="+file.token+"&type="+file.attach_type+"&fileName="+encodeURIComponent(file.attach_name);
-// var
-// downloadUrl=getRootPath()+"/fileUtil/downloadMeetFileByToken.action?token="+file.token+"&type="+file.attach_type+"&fileName="+file.attach_name;
-// downloadUrl=decodeURIComponent(downloadUrl);//其实可以不需要的
     var file_icon=file.attach_type==1?"file_merge.png":"file_normal.png";
-// var attachFileHtml='<tr id="file_'+file.token+'"
-// style="background-color:#E8E5E5;">'+
-// '<td><img src="'+getRootPath()+'/images/'+file_icon+'"
-// style="width:18px;"/></td>'+
-// '<td><a href="'+getRootPath()+'/'+file.attach_path+'"
-// target="_blank">'+file.attach_name+'&nbsp;&nbsp;&nbsp;('+fileSize+')</a></td>'+
-// '<td><a href="javascript:;"
-// onclick="deleteAttach(\''+file.token+'\',\''+file.file_mid+'\')">删除</a></td>'+
-// '</tr>';
     var attachFileHtml='<tr id="file_'+file.token+'" style="background-color:#E8E5E5;">'+
         '<td><img src="'+getRootPath()+'/images/'+file_icon+'" style="width:18px;"/></td>'+
         '<td><a href="'+chakanUrl+'" target="_blank">'+ file.attach_name+'&nbsp;&nbsp;&nbsp;('+fileSize+')</a></td>'+
         '<td><a href="'+ downloadUrl +'">下载</a></td>'+
-        (meetStatus == 2 ? '' : '<td><a href="javascript:;" onclick="deleteAttach(\''+file.token+'\',\''+file.file_mid+'\')">删除</a></td>')+   //会议结束了就不能再删除附件了
+        (meetStatus == 2 ? '' : '<td><a href="javascript:;" onclick="deleteAttachSure(\''+file.token+'\',\''+file.file_mid+'\')">删除</a></td>')+   //会议结束了就不能再删除附件了
         '</tr>';
     if(file.attach_type==1)
     {
+
         $("#attachList").prepend(attachFileHtml);
     }
     else
@@ -369,26 +377,36 @@ function showAttachInfo(file, meetStatus)
     }
 
 }
+//删除附件弹出框
+function deleteAttachSure(_token,attach_id) {
+    layer.confirm('确定删除该附件？', {btn: ['确定','取消']}, function(index) {
+        layer.close(index);
+        deleteAttach(_token,attach_id);
+    }, function(){
+        //取消没有事件
+    });
+}
 // 删除附件
 function deleteAttach(_token,attach_id){
-    var token=_token;
-    var deleteAttachToken = token;
-    var attachTokens = $.map(attachs, function(attach){return attach.token});
-    var totalAttachTokens=$.map(totalAttach, function(attach){return attach.token});// 20170510
-    $("#file_" + token).remove();// 渲染附件，根据token找到html，删除。
-    if($.inArray(deleteAttachToken, attachTokens) > -1){
-        attachs.splice($.inArray(deleteAttachToken, attachTokens), 1);
-        i = i - 1;
-    }
-    // 清除总列表中数据
-    if($.inArray(deleteAttachToken, totalAttachTokens) > -1){
-        totalAttach.splice($.inArray(deleteAttachToken, totalAttachTokens), 1);// 20170510
-        i = i - 1;
-    }
-    if(attach_id!=null&&attach_id!=undefined&&attach_id!='undefined')
-    {
-        delAttachs = delAttachs.concat(attach_id);
-    }
+    alert(_token+"----"+attach_id)
+            var token=_token;
+            var deleteAttachToken = token;
+            var attachTokens = $.map(attachs, function(attach){return attach.token});
+            var totalAttachTokens=$.map(totalAttach, function(attach){return attach.token});// 20170510
+            $("#file_" + token).remove();// 渲染附件，根据token找到html，删除。
+            if($.inArray(deleteAttachToken, attachTokens) > -1){
+                attachs.splice($.inArray(deleteAttachToken, attachTokens), 1);
+                i = i - 1;
+            }
+            // 清除总列表中数据
+            if($.inArray(deleteAttachToken, totalAttachTokens) > -1){
+                totalAttach.splice($.inArray(deleteAttachToken, totalAttachTokens), 1);// 20170510
+                i = i - 1;
+            }
+            if(attach_id!=null&&attach_id!=undefined&&attach_id!='undefined')
+            {
+                delAttachs = delAttachs.concat(attach_id);
+            }
 }
 
 //删除回传文件
@@ -567,8 +585,7 @@ $(function(){
                         $("#addAttachBtn").attr("disabled", true);
 
                     }
-// $("[name='dealerselectms2side__dx[]']").html("<option
-// value='2'>1212</option>");
+
                     // 显示参会人员信息
                     var attendList=meetInfo.attendUserList;
                     if(attendList!=null&&attendList.length>0)
@@ -583,22 +600,8 @@ $(function(){
                         $("#meet_attend").val(attendsNames);
                         $("[name='dealerselectms2side__dx[]']").html(html);
                     }
-// var meet_attend=meetInfo.meet_attend;
-// var meet_attend_ids=meetInfo.meet_attend_ids;
-// if(meet_attend!=null&&meet_attend!=''&&meet_attend_ids!=null&&meet_attend_ids!='')
-// {
-// var html="";
-// var attends=meet_attend.split(";");
-// var ids=meet_attend_ids.split(";");
-// for(i=0;i<attends.length-1;i++)
-// {
-// html+="<option value='"+ids[i]+"'>"+attends[i]+"</option>";
-// }
-// // alert(html);
-// $("[name='dealerselectms2side__dx[]']").html(html);
-// }
-                    // 回写附件信息
 
+                    // 回写附件信息
                     var attachList=meetInfo.fileList;
                     if(attachList!=null&&attachList.length>0)
                     {
@@ -616,34 +619,8 @@ $(function(){
                                     totalAttach.push(file);
                                 }
 
-
                                 showAttachInfo(file, meetInfo.status);
                             }
-// var fileSize=file.attach_size;
-// if(fileSize<1024)
-// {
-// fileSize=fileSize+"B";
-// }
-// if(1024<=fileSize<1024*1024)
-// {
-// fileSize=(fileSize/1024).toFixed(2)+"KB";
-// }
-// else
-// {
-// fileSize=(fileSize/1024/1024).toFixed(2)+"M";
-// }
-// //start
-// var file_icon=file.attach_type==1?"file_merge.png":"file_normal.png";
-// var attachFileHtml='<tr id="file_'+file.token+'"
-// style="background-color:#E8E5E5;">'+
-// '<td><img src="'+getRootPath()+'/images/'+file_icon+'"
-// style="width:18px;"/></td>'+
-// '<td><a
-// href="'+getRootPath()+'/'+file.attach_path+'">'+file.attach_name+'&nbsp;&nbsp;&nbsp;('+fileSize+')</a></td>'+
-// '<td><a href="javascript:;"
-// onclick="deleteAttach(\''+file.token+'\',\''+file.file_mid+'\')">删除</a></td>'+
-// '</tr>';
-// $("#attachList").prepend(attachFileHtml);
                         }
                     }
 
@@ -981,8 +958,7 @@ $(function(){
             moveOut:true
 
         });
-// layer.full(mergeFileLayerIndex);
-// console.log(JSON.stringify(totalAttach));
+
         // 清除掉之前的下拉框数据
         $("#form-materials-merge .template").remove();
         $("#fileName").val($("#meet_name").val());
@@ -1004,20 +980,25 @@ $(function(){
         if(totalAttach.length!=0)
         {
             var html='';
+
+            var optionnum=0;//统计增加的option数量
             for(i=0;i<totalAttach.length;i++)
             {
                 var file=totalAttach[i];
-                html+='<option value="'+file.attach_path+'">'+file.attach_name+'</option>';
+                if (file.attach_type==0){
+                    html+='<option value="'+file.attach_path+'">'+file.attach_name+'</option>';
+                    optionnum+=1;
+                }
             }
             $("#select1").html(html);
             $("#select0").html(html);
-            // 多文件合并缺省的把上传的附件都列出来
-            for(i=0;i<totalAttach.length-1;i++)
+            // 多文件合并只列出来类型为0（非合并文件）的附件
+            for(i=0;i<optionnum-1;i++)
             {
                 addRow($("#btn0"));
             }
             $("#form-materials-merge").find("select").each(function(index,elem){
-                // 设置选中
+                // 设置option选中
                 $(elem).find("option").each(function(index2,elem2){
                     if(index==index2)
                     {
@@ -1034,9 +1015,6 @@ $(function(){
     {
         // 合并附件
         $("#mergeBtn").click(
-// function(){
-// mergeFile("合并附件",getRootPath()+"/backToUrl/toDo.action?url=meetingFileMerge",800,500);
-// }
             showMergeFileLayer
         );
         // 选择领导按钮

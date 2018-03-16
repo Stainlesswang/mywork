@@ -128,10 +128,10 @@ $(function () {
                 formatter: function (value, row, index) {
 
                     if (value == 2) {
-                        return  '<span style="color:#B82C29" fontsize="20dp">'+'结束'+'</span>';
+                        return  '<span style="color:#B82C29" fontsize="20dp">'+'已结束'+'</span>';
                     }
                     else {
-                        return  '<span style="color:#008B00" fontsize="20dp">'+'正常'+'</span>';
+                        return  '<span style="color:#008B00" fontsize="20dp">'+'进行中'+'</span>';
                     }
                 }
             }

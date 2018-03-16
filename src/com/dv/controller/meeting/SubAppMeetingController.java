@@ -135,11 +135,8 @@ public class SubAppMeetingController extends FnfhBaseController {
 			return subAppMeetingService.addOrModifySubAppMeeting(subAppMeeting,pgdata,loginUser,attendeesLimit);
 		} catch (FnfhException e) {
 			logger.error(logger.getName()+"/addSubAppMeeting,"+e.getMessage(), e);
+			System.out.println("-------->"+e.getMessage());
 			return Result.error(e.getCode(), e.getMessage());
-    	} catch (Exception e) {
-    	    e.printStackTrace();
-    		logger.error(logger.getName()+"/addSubAppMeeting,"+e.getMessage(), e);
-    		return Result.errorUnknow();
     	}
 	}
 	

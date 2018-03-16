@@ -21,7 +21,8 @@ public class SubAppMeetingFile extends SubAppMeeting
 
     private String prefix;//文件前缀，即类型前名字
     private String suffix;//文件后缀，类型名
-    private Integer attach_type;//文档类型，0普通文档，1合并后的文档, 3会送的文件
+    private Integer attach_type;//文档类型，0普通文档，1合并后的文档, 3回送的文件
+    private String last_update_time;//最后更新时间
 
     private String token;//文件token
     
@@ -161,12 +162,22 @@ public class SubAppMeetingFile extends SubAppMeeting
         this.token = token;
     }
 
+    @Override
+    public String getLast_update_time() {
+        return last_update_time;
+    }
+
+    @Override
+    public void setLast_update_time(String last_update_time) {
+        this.last_update_time = last_update_time;
+    }
+
     @ Override
     public String toString()
     {
         return "SubAppMeetingFile [meeting_mid=" + meeting_mid + ", file_mid=" + file_mid
             + ", attach_name=" + attach_name + ", attach_size=" + attach_size + ", attach_realname="
-            + attach_realname + ", prefix=" + prefix + ", suffix=" + suffix + ", attach_type="
+            + attach_realname + ", prefix=" + prefix + ",last_update_time"+last_update_time+", suffix=" + suffix + ", attach_type="
             + attach_type + "]";
     }
 

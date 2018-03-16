@@ -297,6 +297,7 @@ $(function(){
 
 <!-- 合并附件弹出窗口 start -->
 <div id="merge-file" style="display:none;">
+
 	<article class="page-container">
 		<table style="display:none;">
 		<tr valign="middle" align="center" id="tabRowTemplate" class="template">
@@ -313,17 +314,17 @@ $(function(){
 					<button class="btn btn-danger" type="button" style="width:10%;" onclick="rmRow(this);">删除</button>
 				</span>
 			</td>
-			
+
 		</tr>
 	</table>
-	
-	<form class="form form-horizontal" id="form-materials-merge">
+
+	    <form class="form form-horizontal" id="form-materials-merge">
 	<div class="row cl">
 		<h2 class="text-c">多文件合并页</h2>
 	</div>
 	<div class="row cl" class="text-c">
 		<!-- <div class="formControls col-xs-8 col-sm-9"> -->
-		
+
 			<table id="merge-tb" class="table  table-bg" style="width:70%;margin: 0 auto;margin-left:10%;">
 				<tr>
 					<td class="text-r" style="width:180px;"><span class="c-red">*</span>合并后的文件名称：</td>
@@ -342,14 +343,12 @@ $(function(){
 							<button class="btn btn-primary" style="width:10%;float:left;margin-left:3px;margin-right:2px;" type="button" id="btn0" onclick="addRow(this);">追加</button>
 							<button class="btn btn-danger" type="button" style="width:10%;" onclick="rmRow(this);">删除</button>
 						</span>
-						
+
 					</td>
 				</tr>
 			</table>
 		<!-- </div> -->
 	</div>
-	
-	
 	<div class="row cl" style="text-align:center;">
 		<button class="btn btn-primary" type="button" id="mergeConfirmBtn">确定</button>
 		<button class="btn btn-default" type="button" id="cancelMergeFileBtn">取消</button>
@@ -358,7 +357,8 @@ $(function(){
 			<button class="btn btn-default" type="button" id="cancelMergeFileBtn">取消</button>
 		</div> -->
 	</div>
-	</form>
+	    </form>
+
 </article>
 </div>
 <!-- 合并附件弹出窗口 end -->

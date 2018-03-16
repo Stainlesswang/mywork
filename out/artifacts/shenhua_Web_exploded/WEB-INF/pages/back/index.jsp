@@ -131,7 +131,7 @@
 							<li><a data-href="<%=path %>/backToUrl/toDo.action?url=userManage" data-title="用户管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe62b;</i>&nbsp;用户管理</a></li>
 
 						<c:if test='${sessionScope.loginUser.is_super==1}'>
-						<li><a data-href="<%=path %>/backToUrl/toDo.action?url=systemPermissions" data-title="系统权限管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe653;</i>&nbsp;系统权限管理</a></li>
+						<li><a data-href="<%=path %>/backToUrl/toDo.action?url=systemPermissions" data-title="非管理员权限管理" href="javascript:void(0)"><i class="Hui-iconfont">&#xe653;</i>&nbsp;非管理员权限管理</a></li>
 					    </c:if>
 
 					</ul>

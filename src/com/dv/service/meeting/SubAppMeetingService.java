@@ -140,6 +140,9 @@ public class SubAppMeetingService {
             if (StringUtils.isEmpty(subAppMeeting.getMeet_name())) {
                 return Result.error(SystemConst.NOT_NULL, "会议标题不能为空");
             }
+            if (subAppMeeting.getMeet_name().length()>50) {
+                return Result.error(SystemConst.NOT_NULL, "会议标题不能大于50个字符");
+            }
             if (StringUtils.isEmpty(subAppMeeting.getMeet_addr())) {
                 return Result.error(SystemConst.NOT_NULL, "会议地点不能为空");
             }
