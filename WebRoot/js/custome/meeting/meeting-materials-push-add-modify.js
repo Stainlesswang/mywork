@@ -108,13 +108,14 @@ function mergeFileCtrl()
                 for(i=0;i<totalAttach.length;i++) {
                     var file1 = totalAttach[i];
                     if (file1.attach_type ==1){
-                        deleteAttach(file1.token,file1.meeting_mid)
+
+                        deleteAttach(file1.token,file1.file_mid)
                     }
                 }
                 totalAttach.push(file);// 转换后的pdf设置可以再次转换20170527
                 showAttachInfo(file);
-                    alert(totalAttach.length)
                 layer.close(mergeFileLayerIndex);
+                // alert("合并后新增的："+attachs.length+"  合并后总共："+totalAttach.length+"  合并后删除的："+delAttachs.length)
             }
             else{
                 layer.alert(result.message);
@@ -388,7 +389,6 @@ function deleteAttachSure(_token,attach_id) {
 }
 // 删除附件
 function deleteAttach(_token,attach_id){
-    alert(_token+"----"+attach_id)
             var token=_token;
             var deleteAttachToken = token;
             var attachTokens = $.map(attachs, function(attach){return attach.token});
@@ -407,6 +407,7 @@ function deleteAttach(_token,attach_id){
             {
                 delAttachs = delAttachs.concat(attach_id);
             }
+            alert("新增的："+attachs.length+"  总共："+totalAttach.length+"  删除的："+delAttachs.length)
 }
 
 //删除回传文件

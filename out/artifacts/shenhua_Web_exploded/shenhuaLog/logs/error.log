@@ -1,0 +1,48 @@
+[ERROR] [09:07:45] com.dv.servlet.listener.InitDataListener 
+ SQLException数据库初始化失败，原因:Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+[ERROR] [09:08:29] com.dv.controller.user.LoginController 
+ com.dv.controller.user.LoginController/backLogin,nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+### The error may exist in file [D:\WorkSpace\shenhua\out\artifacts\shenhua_Web_exploded\WEB-INF\classes\com\dv\dao\impl\user\UserMapper.xml]
+### The error may involve com.dv.dao.user.UserMapper.findUserInfoByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+[ERROR] [09:08:33] com.dv.controller.user.LoginController 
+ com.dv.controller.user.LoginController/backLogin,nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+### The error may exist in file [D:\WorkSpace\shenhua\out\artifacts\shenhua_Web_exploded\WEB-INF\classes\com\dv\dao\impl\user\UserMapper.xml]
+### The error may involve com.dv.dao.user.UserMapper.findUserInfoByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+[ERROR] [09:08:41] com.dv.controller.user.LoginController 
+ com.dv.controller.user.LoginController/backLogin,nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+### The error may exist in file [D:\WorkSpace\shenhua\out\artifacts\shenhua_Web_exploded\WEB-INF\classes\com\dv\dao\impl\user\UserMapper.xml]
+### The error may involve com.dv.dao.user.UserMapper.findUserInfoByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+[ERROR] [09:08:42] com.dv.controller.user.LoginController 
+ com.dv.controller.user.LoginController/backLogin,nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
+### The error may exist in file [D:\WorkSpace\shenhua\out\artifacts\shenhua_Web_exploded\WEB-INF\classes\com\dv\dao\impl\user\UserMapper.xml]
+### The error may involve com.dv.dao.user.UserMapper.findUserInfoByName
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)
