@@ -130,6 +130,7 @@ public class SubAppMeetingController extends FnfhBaseController {
 		}
 		User loginUser=(User)req.getSession().getAttribute(SystemConst.LOGIN_USER);
 		Integer attendeesLimit = (Integer)req.getSession().getAttribute(SystemConst.ATTENDEESLIMIT);
+
 		FnfhPageData pgdata=new FnfhPageData(req);
 		try {
 			return subAppMeetingService.addOrModifySubAppMeeting(subAppMeeting,pgdata,loginUser,attendeesLimit);

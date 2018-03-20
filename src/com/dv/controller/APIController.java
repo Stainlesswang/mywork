@@ -207,6 +207,8 @@ public class APIController extends FnfhBaseController
                     map.put("last_update_time", a.getLast_update_time());
                     // 备注
                     map.put("remark", a.getRemark());
+                    //状态
+                    map.put("status",a.getStatus());
 
                     List<SubAppMeetingFile> meetingFileList = a.getFileList();
                     int fileCount = meetingFileList.size();
@@ -529,9 +531,9 @@ public class APIController extends FnfhBaseController
      * 回传会议附件
      * 用户在移动设备端对文件进行手写签批后上传到服务器。用户可以在PC端浏览签批的文件
      * @param request
-     * @param uploadFiles 需要上传的文件：参数名称为file
-     * @param mid 会议id
-     * @param uploader_id  上传者id
+     * @param 需要上传的文件：参数名称为file
+     * @param 会议id
+     * @param   上传者id
      * @return
      */
     @ RequestMapping(value = "/uploadFile")

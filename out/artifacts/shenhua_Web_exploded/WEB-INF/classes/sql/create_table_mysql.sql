@@ -121,6 +121,7 @@ CREATE TABLE `sub_app_user` (
   `is_binding` int(1) DEFAULT '0' COMMENT '设置是否绑定,1.已绑定',
   `remark` varchar(255) DEFAULT NULL COMMENT '备注信息',
   `energy` INT(1) NULL DEFAULT NULL COMMENT '设备电量1-100',
+  `storage` varchar(100) DEFAULT NULL COMMENT '设备存储信息',
   PRIMARY KEY (`mid`),
   KEY `fk_sub_app_user_u` (`user_id`),
   CONSTRAINT `fk_sub_app_user_u` FOREIGN KEY (`user_id`) REFERENCES `bt_user` (`user_id`)

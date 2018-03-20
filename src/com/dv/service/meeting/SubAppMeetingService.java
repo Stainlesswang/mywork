@@ -134,8 +134,12 @@ public class SubAppMeetingService {
      */
     public Result addOrModifySubAppMeeting(SubAppMeeting subAppMeeting, FnfhPageData pgdata, User loginUser, Integer attendeesLimit) throws FnfhException {
         int result = 0;
+        boolean ispush=false;
         try {
             subAppMeeting.setUser_id(loginUser.getUser_id());//拟稿人
+            if ("1"==pgdata.getString("pushflag")){
+                ispush=true;
+            }
 
             if (StringUtils.isEmpty(subAppMeeting.getMeet_name())) {
                 return Result.error(SystemConst.NOT_NULL, "会议标题不能为空");
@@ -143,17 +147,17 @@ public class SubAppMeetingService {
             if (subAppMeeting.getMeet_name().length()>50) {
                 return Result.error(SystemConst.NOT_NULL, "会议标题不能大于50个字符");
             }
-            if (StringUtils.isEmpty(subAppMeeting.getMeet_addr())) {
+            if (StringUtils.isEmpty(subAppMeeting.getMeet_addr())&&ispush) {
                 return Result.error(SystemConst.NOT_NULL, "会议地点不能为空");
             }
             if (StringUtils.isEmpty(subAppMeeting.getMeet_time())) {
-                return Result.error(SystemConst.NOT_NULL, "会议开始时间不能为空");
+                return Result.error(SystemConst.NOT_NULL, "会议开始时间为必选项目");
             }
             String attends = subAppMeeting.getMeet_attend();
-            if (StringUtils.isEmpty(attends)) {
+            if (StringUtils.isEmpty(attends)&&ispush) {
                 return Result.error(SystemConst.NOT_NULL, "参会领导不能为空");
             }
-            //保存会议的时候检测参会人数是否操作会议最大授权人数
+//            保存会议的时候检测参会人数是否操作会议最大授权人数
             String[] attendArr = attends.split(";");
             //System.out.println("参会人员："+attends+",人员数量："+attendArr.length+",授权数量："+attendeesLimit);
             if (attendArr.length > attendeesLimit) {
@@ -499,6 +503,7 @@ public class SubAppMeetingService {
         String order = pageData.getOrder();
         String sort = pageData.getSort();
         String meet_type = pageData.getString("meet_type");
+//        String  status=pageData.getString("status");
         if (!StringUtils.isEmpty(order)) {
             subAppMeeting.setOrder(order);
         }

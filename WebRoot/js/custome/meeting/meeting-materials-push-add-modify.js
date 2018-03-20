@@ -907,6 +907,9 @@ $(function(){
         // return;
         // }
         data["attachsList"]=JSON.stringify(attachs);// 添加的附件
+        if (pushflag == 1) {
+           data["pushflag"]="1";
+        }
 
         if (state == "update") {
             data["delatchsList"] = JSON.stringify(delAttachs);// 删除的附件
@@ -921,14 +924,13 @@ $(function(){
 // goBack();
                 // 推送
                 if (pushflag == 1) {
-
                     push(result.data);
                 }
                 else {
                     layer.msg('保存成功', {
                         time: 1000 // 1秒关闭（如果不配置，默认是3秒）
                     }, function(){
-                        goBack();
+
                     });
                 }
             } else {
