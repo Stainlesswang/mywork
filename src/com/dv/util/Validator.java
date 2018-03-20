@@ -154,7 +154,7 @@ public class Validator {
      * @creationDate:2017年5月11日 上午8:55:48
      */
     public static boolean isValidFileName(String fileName) { 
-    	if (fileName == null || fileName.length() > 255) {
+    	if (fileName == null || fileName.length() > 50) {
     		return false;
     	} 
     	else {

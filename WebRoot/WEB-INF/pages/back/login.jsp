@@ -26,7 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="<%=path %>/static/h-ui.admin/css/style.css" />
 </head>
 
-<body >
+<body onkeydown="keyLogin();">
 	<div class="header"></div>
 	<div class="loginWraper">
 		<div id="loginform" class="loginBox">
@@ -56,7 +56,7 @@
 					<div class="col-10">&nbsp;&nbsp;</div>
 				<div class="row cl">
 					<div class="formControls col-xs-8 col-xs-offset-3">
-						<input name="" type="button" onclick="login();" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+						<input name="" id="denglu" type="button" onclick="login();" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						<input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
 					</div>

@@ -1,4 +1,7 @@
-
+function keyLogin(){
+    if (event.keyCode==13)  //回车键的键值为13
+        document.getElementById("denglu").click(); //调用登录按钮的登录事件
+};
 function login()
 {
 	var username=$("#username").val();

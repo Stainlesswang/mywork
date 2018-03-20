@@ -16,6 +16,7 @@ var rowCount=1;// 用来记录可以合并的文件数，追加时，超过数�
 var tableValue = [];
 var tableValueLength = 0;
 var newTrValues = {};
+var is_ipad=null;
 function addRow(cRow) {
     if(rowCount>=totalAttach.length)
     {
@@ -70,6 +71,10 @@ function mergeFileCtrl()
     {
         layer.alert("请输入合并后的文件名称");
     }
+    if(newFileName.length>50)
+    {
+        layer.alert("请输入合并后的文件名称");
+    }
     var flag=true;
     $("#form-materials-merge").find("select").each(function(){
         if(tableValue.length>0&&$.inArray($(this).val(),tableValue)>=0)
@@ -113,6 +118,7 @@ function mergeFileCtrl()
                     }
                 }
                 totalAttach.push(file);// 转换后的pdf设置可以再次转换20170527
+                //显示合并后的附件信息，可以不加编号
                 showAttachInfo(file);
                 layer.close(mergeFileLayerIndex);
                 // alert("合并后新增的："+attachs.length+"  合并后总共："+totalAttach.length+"  合并后删除的："+delAttachs.length)
@@ -407,7 +413,6 @@ function deleteAttach(_token,attach_id){
             {
                 delAttachs = delAttachs.concat(attach_id);
             }
-            alert("新增的："+attachs.length+"  总共："+totalAttach.length+"  删除的："+delAttachs.length)
 }
 
 //删除回传文件
@@ -559,7 +564,13 @@ $(function(){
             var data={mid:mid};
             var succeed = function (result) {
                 if (0 == result.status) {
+
                     var meetInfo=result.data;
+                    if(meetInfo.is_ipad==0){
+                        is_ipad="未推送"
+                    }else {
+                        is_ipad="已推送"
+                    }
 
                     for ( var x in meetInfo) {
                         if(x=='is_ipad')
@@ -620,6 +631,7 @@ $(function(){
                                     totalAttach.push(file);
                                 }
 
+                                //刚进界面显示附件信息
                                 showAttachInfo(file, meetInfo.status);
                             }
                         }
@@ -764,6 +776,15 @@ $(function(){
         $.post(url,data,succeed, "json");
     }
 
+    //结束会议弹出框
+   var endMeetingSure=function () {
+        layer.confirm('确定结束当前会议么？当前会议状态：'+is_ipad, {btn: ['确定','取消']}, function(index) {
+            layer.close(index);
+          endMeeting();
+        }, function(){
+            //取消没有事件
+        });
+    }
     // 结束会议
     var endMeeting = function() {
         var mid=$("#mid").val();
@@ -793,7 +814,7 @@ $(function(){
                 layer.alert("服务器异常！");
             }
         });
-    }
+    };
 
 
     // 显示上传附件弹出框
@@ -857,6 +878,7 @@ $(function(){
                             totalAttach.push(rows[0]);
                         }
 
+                        //每上传一个显示该附件信息
                         showAttachInfo(file);// 20170511
                         layer.close(uploadLayerIndex);
                     }else{
@@ -1071,7 +1093,7 @@ $(function(){
         // 推送ipad
         $("#pushToipad").click(pushToipad);
         //结束会议
-        $("#endBtn"	).click(endMeeting);
+        $("#endBtn"	).click(endMeetingSure);
 
 
     }

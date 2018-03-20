@@ -143,8 +143,8 @@ public class UploadFile {
             targetFile.mkdirs();  
         }  
         //保存  
-        try {  
-            file.transferTo(targetFile); 
+        try {
+            file.transferTo(targetFile);
             fileAttach.setAttach_name(tempFileName);//文件原始名
             fileAttach.setAttach_realname(fileName);//文件存储名
 //            fileAttach.setSuffix(tempFileName.substring(tempFileName.lastIndexOf(".") + 1));
