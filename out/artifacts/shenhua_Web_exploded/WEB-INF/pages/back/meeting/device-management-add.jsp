@@ -82,8 +82,8 @@
 							</select>
 						</span>
 					</td>
-					<td class="text-r">初始密码:</td>
-					<td><input type="password" class="input-text"  name="passwd" id="passwd" readonly="readonly"></td>
+					<%--<td class="text-r">初始密码:</td>--%>
+					<%--<td><input type="password" class="input-text"  name="passwd" id="passwd" readonly="readonly"></td>--%>
 				</tr>
 				<tr class="text-l">
 					<td class="text-r">设备编号:</td>

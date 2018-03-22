@@ -268,33 +268,6 @@ $(function(){
 </div>
 <!-- 选择参会领导弹出框 end -->
 
-<!-- 上传附件弹出框 start -->
-<div id="uploadAttachLayer" style="display:none;">
-<article class="page-container">
-	<form id="form_file" class="form form-horizontal" method="post" enctype="multipart/form-data" action="">
-		<label for="uploadFile" class="error"></label>
-		<div class="row cl">
-			<div class="col-xs-8 col-sm-9 col-xs-offset-3 col-sm-offset-2">
-				<input type="file" class="requiredFile" id="uploadFile" name="uploadFile" accept="" style="width:100%;" />
-			</div>
-		</div>
-		<div class="row cl">
-			<div class="col-xs-6 col-sm-7 col-xs-offset-3 col-sm-offset-2">
-				<label class="" style="font-weight: normal; font-size: 12px; color:red">
-				上传文件大小不得超过50M!</label>
-			</div>
-		</div>
-		<div class="row cl">
-			<div class="col-xs-6 col-sm-7 col-xs-offset-5 col-sm-offset-4" style="">
-				<button class="btn btn-primary" type="button" id="uploadFileBtn">确定</button>
-				<button class="btn btn-default cancelBtn" id="closeUploadLeaderLayerBtn" type="button">取消</button>
-			</div>
-		</div>
-	</form>
-	</article>
-</div>
-<!-- 上传附件弹出框 end -->
-
 <!-- 合并附件弹出窗口 start -->
 <div id="merge-file" style="display:none;">
 

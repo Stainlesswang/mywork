@@ -329,7 +329,7 @@ $(function(){
 				<tr>
 					<td class="text-r" style="width:180px;"><span class="c-red">*</span>合并后的文件名称：</td>
 					<td class="text-l">
-						<input type="text" class="input-text" value="" placeholder="2-255位，数字字母汉字下划线(文件名不需要后缀，缺省为pdf格式)" id="fileName" name="fileName">
+						<input type="text" class="input-text" value="" placeholder="2-50位，数字字母汉字下划线(文件名不需要后缀，缺省为pdf格式)" id="fileName" name="fileName">
 					</td>
 				</tr>
 				<tr >
