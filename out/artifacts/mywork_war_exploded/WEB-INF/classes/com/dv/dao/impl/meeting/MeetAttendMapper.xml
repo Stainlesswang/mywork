@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="com.dv.dao.meeting.MeetAttendMapper">
+ 	<!-- 查找参会人员 -->
+ 		<select id="findMeetAttend" parameterType="com.dv.entity.meeting.MeetAttend"
+ 			resultType="com.dv.entity.meeting.MeetAttend">
+ 			select  a.*,b.user_name,b.real_name  from bt_meetattend as a join bt_user as b on a.user_id=b.user_id  where 1 = 1
+	 		<if test="mid !=null">
+	 			and mid=#{mid}
+	 		</if>
+	 		<if test="user_id !=null">
+	 			and user_id=#{user_id}
+	 		</if>
+	 		order by attend_id asc
+	 		<if test = "limit!=0">
+			 	limit #{start},#{limit}
+			</if>	
+ 		</select>
+ 		
+ 		
+ 		
+ 		
+    <!-- 根据会议id集合删除参会人员信息 -->
+ 	<delete id="delMeetAttendByMids"  parameterType="java.util.List">
+ 		delete from bt_meetattend where mid in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+         #{item}
+    </foreach>	
+ 	</delete>
+ 	<!-- 批量插入权限信息 -->
+ 	<insert id="batchAddPermission" parameterType="java.util.List">  
+	    insert into bt_meetattend ( mid, user_id) 
+	    values  
+	    <foreach collection="list" item="item" index="index"  
+	        separator=",">  
+	        ( #{item.mid}, #{item.user_id})  
+	    </foreach>  
+    </insert>
+    
+ 	<!-- 根据用户id删除参会人员信息 -->
+ 	<delete id="delMeetAttendByUserIds"  parameterType="java.util.List">
+ 		delete from bt_meetattend where user_id in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+	         #{item}
+	    </foreach>
+	</delete>
+ </mapper>

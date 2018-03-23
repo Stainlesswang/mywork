@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="com.dv.dao.user.UserMapper">
+	<!-- 查找所有用户信息 -->
+	<select id="findUser" parameterType="com.dv.entity.user.User"
+ 		resultType="com.dv.entity.user.User">
+ 			select a.*,b.org_name from bt_user as a
+ 				 left join bt_organization as b on a.org_id=b.org_id 
+ 				 	where 1 = 1 
+ 		<if test="user_id !=null">
+ 			and user_id=#{user_id}
+ 		</if>
+ 		<if test="org_id !=null">
+ 			and a.org_id=#{org_id}
+ 		</if>
+ 		<if test="search !=null">
+ 			and (user_name like CONCAT('%',#{search},'%') or real_name like CONCAT('%',#{search},'%'))
+ 		</if>	
+		 <if test = "limit!=0">
+		 	limit #{start},#{limit}
+		 </if>
+ 	</select>
+	<!-- 查找用户信息总条数 -->
+	<select id="findUserCount" parameterType="com.dv.entity.user.User"
+ 		resultType="integer">
+ 			select count(*) from bt_user as a
+ 				 left join bt_organization as b on a.org_id=b.org_id 
+ 				 	where 1 = 1 
+ 		<if test="user_id !=null">
+ 			and user_id=#{user_id}
+ 		</if>
+ 		<if test="org_id !=null">
+ 			and a.org_id=#{org_id}
+ 		</if>
+ 		<if test="search !=null">
+ 			and (user_name like CONCAT('%',#{search},'%') or real_name like CONCAT('%',#{search},'%'))
+ 		</if>		
+	</select>
+	<!-- 增加用户信息 -->
+	<insert id="addUser" parameterType="com.dv.entity.user.User">
+		insert into bt_user 
+ 			<trim prefix="("  suffix=")"  suffixOverrides=",">
+ 				<if test="user_id !=null">
+ 					user_id,
+ 				</if>
+ 				<if test="user_name !=null">
+ 					user_name,
+ 				</if>
+ 				<if test="real_name !=null">
+ 					real_name,
+ 				</if>
+ 				<if test="password !=null">
+ 					password,			
+ 				</if>
+ 				<if test="sex !=null">
+ 					sex,
+ 				</if>
+ 				<if test="position !=null">
+ 					position,
+ 				</if>
+ 				<if test="org_id !=null">
+ 					org_id,			
+ 				</if>
+ 				<if test="mobile !=null">
+ 					mobile,
+ 				</if>
+ 				<if test="email !=null">
+ 					email,
+ 				</if>
+ 				<if test="admin_type !=null">
+ 					admin_type,				
+ 				</if>
+ 				<if test="is_temp != null">
+ 					is_temp,
+ 				</if>
+ 				savetime,
+ 				<if test="addr !=null">
+ 					addr,
+ 				</if>
+ 				<if test="tel !=null">
+ 					tel,
+ 				</if>
+ 				<if test="remark !=null">
+ 					remark,
+ 				</if>
+ 			</trim>
+ 			<trim prefix="values (" suffix=")" suffixOverrides=",">
+ 				<if test="user_id !=null">
+ 					#{user_id},
+ 				</if>
+ 				<if test="user_name !=null">
+ 					#{user_name},
+ 				</if>
+ 				<if test="real_name !=null">
+ 					#{real_name},
+ 				</if>
+ 				<if test="password !=null">
+ 					#{password},			
+ 				</if>
+ 				<if test="sex !=null">
+ 					#{sex},
+ 				</if>
+ 				<if test="position !=null">
+ 					#{position},
+ 				</if>
+ 				<if test="org_id !=null">
+ 					#{org_id},			
+ 				</if>
+ 				<if test="mobile !=null">
+ 					#{mobile},
+ 				</if>
+ 				<if test="email !=null">
+ 					#{email},
+ 				</if>
+ 				<if test="admin_type !=null">
+ 					#{admin_type},			
+ 				</if>
+ 				<if test="is_temp != null">
+ 					#{is_temp},
+ 				</if>
+ 				NOW(),
+ 				<if test="addr !=null">
+ 					#{addr},
+ 				</if>
+ 				<if test="tel !=null">
+ 					#{tel},
+ 				</if>
+ 				<if test="remark !=null">
+ 					#{remark},
+ 				</if>
+ 			</trim>	
+	</insert>
+	<!-- 删除用户信息 -->
+	<delete id="delUserByIds"  parameterType="java.util.List">
+ 		delete from bt_user where user_id in
+	 	<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+	         #{item}
+	    </foreach>
+	</delete>
+<!-- 更新用户信息 -->
+<update id="modUser" parameterType="com.dv.entity.user.User" >
+	update bt_user set  
+ 			<trim  suffixOverrides=",">
+ 				<if test="password !=null">
+ 					password=#{password},		
+ 				</if>
+ 				<if test="user_name !=null">
+ 					user_name=#{user_name},
+ 				</if>
+ 				<if test="real_name !=null">
+ 					real_name=#{real_name},
+ 				</if>
+ 				<if test="sex !=null">
+ 					sex=#{sex},
+ 				</if>
+ 				<if test="position !=null">
+ 					position=#{position},		
+ 				</if>
+ 				<if test="org_id !=null">
+ 					org_id=#{org_id},
+ 				</if>
+ 				<if test="mobile !=null">
+ 					mobile=#{mobile},
+ 				</if>
+ 				<if test="email !=null">
+ 					email=#{email},				
+ 				</if>
+ 				<if test="admin_type !=null">
+ 					admin_type=#{admin_type},	
+ 				</if>
+ 				<if test="is_temp !=null">
+ 					is_temp=#{is_temp},
+ 				</if>
+ 				<if test="savetime !=null">
+ 					savetime=#{savetime},
+ 				</if>
+ 				<if test="addr !=null">
+ 					addr=#{addr},
+ 				</if>
+ 				<if test="tel !=null">
+ 					tel=#{tel},
+ 				</if>
+ 				<if test="remark !=null">
+ 					remark=#{remark},
+ 				</if>
+ 				last_update_time=NOW(),		 
+ 			</trim>
+ 			where user_id=#{user_id}
+</update>
+<!-- 根据组织id获取用户信息 -->
+	<select id="findUserByOrgId" parameterType="com.dv.entity.user.User"
+ 		resultType="com.dv.entity.user.User">
+ 			select a.*,b.org_name from bt_user as a left join bt_organization as b
+			on a.org_id=b.org_id where  
+			<if test="parent_code !=null and org_id!=null">
+			    (b.parent_code like CONCAT(#{parent_code},'%') or b.org_id=#{org_id})
+			</if>
+			<if test="parent_code ==null and org_id!=null">
+			    (b.org_id=#{org_id})
+			</if>
+		    <if test="admin_type !=null ">
+			 AND (a.admin_type=#{admin_type})
+		    </if>
+		<if test="search !=null">
+ 			and (user_name like CONCAT('%',#{search},'%') or real_name like CONCAT('%',#{search},'%'))
+ 		</if>
+		 <if test = "limit !=0">
+		 	limit #{start},#{limit}
+		 </if>
+ 	</select>
+	<!-- 根据组织id,和is_blinding=1 条件下 获取用户信息 -->
+	<select id="findUserByOrgIdAndisblinding" parameterType="com.dv.entity.user.User"
+			resultType="com.dv.entity.user.User">
+		select a.*,b.org_name from bt_user as a INNER join bt_organization as b
+		on a.org_id=b.org_id INNER JOIN sub_app_user u ON a.user_id = u.user_id
+		where u.is_binding='1' AND
+		<if test="parent_code !=null and org_id!=null">
+			(b.parent_code like CONCAT(#{parent_code},'%') or b.org_id=#{org_id})
+		</if>
+		<if test="parent_code ==null and org_id!=null">
+			(b.org_id=#{org_id})
+		</if>
+
+		<if test="search !=null">
+			and (user_name like CONCAT('%',#{search},'%') or real_name like CONCAT('%',#{search},'%'))
+		</if>
+		<if test = "limit !=0">
+			limit #{start},#{limit}
+		</if>
+	</select>
+	<!-- 根据组织id查找用户信息总条数 -->
+	<select id="findUserCountByOrgId" parameterType="com.dv.entity.user.User"
+ 		resultType="integer">
+ 			select count(*) from bt_user as a left join bt_organization as b
+			on a.org_id=b.org_id where 
+			<if test="parent_code !=null and org_id!=null">
+			    (b.parent_code like CONCAT(#{parent_code},'%') or b.org_id=#{org_id})
+			</if>
+			<if test="parent_code ==null and org_id!=null">
+			    (b.org_id=#{org_id})
+			</if> 
+			<if test="search !=null">
+	 			and (user_name like CONCAT('%',#{search},'%') or real_name like CONCAT('%',#{search},'%'))
+	 		</if>
+	</select>
+
+	<!-- 校验账号是否已存在 -->
+ 	<select id="isExistName" parameterType="com.dv.entity.user.User"
+ 		resultType="integer">
+ 		<![CDATA[select count(*) from bt_user where 1=1 ]]>
+ 		<if test="user_id !=null">
+ 		<![CDATA[and user_id<>#{user_id} ]]>
+ 		</if>
+ 		<if test="user_name !=null">
+ 			<![CDATA[and user_name=#{user_name}]]>
+ 		</if>
+ 	</select>
+ 	
+ 	<!-- 修改管理员密码 -->
+	<update id="updateUserPwd" parameterType="com.dv.entity.user.User">
+		update bt_user set password = #{password},last_update_time=NOW() where user_id = #{user_id}
+	</update>
+	
+	<!-- 批量插入附件数据-->
+	<insert id="batchAddUserInfo" parameterType="java.util.List">  
+	    <!-- <selectKey keyProperty="fetchTime" order="BEFORE"  
+	        resultType="java.lang.String">  
+	        SELECT CURRENT_TIMESTAMP()  
+	    </selectKey> -->  
+	    insert into bt_user ( user_id, user_name,real_name,
+	    password,sex,position,org_id,mobile,
+	    email,admin_type,savetime,addr,tel,remark,is_temp
+	    ) 
+	    values  
+	    <foreach collection="list" item="item" index="index"  
+	        separator=",">  
+	        ( #{item.user_id}, #{item.user_name},#{item.real_name},
+	        #{item.password},IFNULL(#{item.sex},0),IFNULL(#{item.position},""),#{item.org_id},IFNULL(#{item.mobile},""),
+	        IFNULL(#{item.email},""),IFNULL(#{item.admin_type},0),NOW(),
+	        IFNULL(#{item.addr},""),IFNULL(#{item.tel},""),IFNULL(#{item.remark},""),#{item.is_temp}
+	        )  
+	    </foreach>  
+    </insert>
+    
+	<!-- 批量修改用户信息 ,其实还是一条一条的执行的，没有意义-->
+	<update id="batchModUserInfo"  parameterType="java.util.List">
+	      <foreach collection="list" item="item" index="index" open="" close="" separator=";">
+				update bt_user 
+				<set>
+				  <trim suffixOverrides=",">
+				 		<if test="item.user_name !=null">
+				 			user_name=#{item.user_name},
+				 		</if>
+				 		<if test="item.real_name !=null">
+				 			real_name=#{item.real_name},
+				 		</if>
+				 		<if test="item.password !=null">
+				 			password=#{item.password},
+				 		</if>
+				 		<if test="item.sex !=null">
+				 			sex=#{item.sex},
+				 		</if>
+				 		<if test="item.position !=null">
+				 			position=#{item.position},
+				 		</if>
+				 		<if test="item.org_id !=null">
+				 			org_id=#{item.org_id},
+				 		</if>
+				 		<if test="item.mobile !=null">
+				 			mobile=#{item.mobile},
+				 		</if>
+				 		<if test="item.email !=null">
+				 			email=#{item.email},
+				 		</if>
+				 		<if test="item.admin_type !=null">
+				 			admin_type=#{item.admin_type},
+				 		</if>
+				 		<if test="item.addr !=null">
+				 			addr=#{item.addr},
+				 		</if>
+				 		<if test="item.tel !=null">
+				 			tel=#{item.tel},
+				 		</if>
+				 		<if test="item.remark !=null">
+				 			remark=#{item.remark},
+				 		</if>
+				 		<if test="item.is_temp != null">
+				 			is_temp=#{item.is_temp},
+				 		</if>
+				 	</trim>
+				</set>
+				where user_id=#{item.user_id}
+		 </foreach>
+    </update>
+	
+    
+	<!-- 根据用户名查找用户 -->
+	<select id="findUserInfoByName" parameterType="com.dv.entity.user.User"
+ 		resultType="com.dv.entity.user.User">
+ 			select a.*,b.org_name from bt_user as a
+ 			left join bt_organization as b on a.org_id=b.org_id 
+ 			where user_name=#{user_name} 
+ 	</select>
+ 	
+	<!-- 根据用户id集合查询用户信息 -->
+	<select id="findUserByUserIds" parameterType="java.util.List"
+ 		resultType="com.dv.entity.user.User">
+ 			select a.* from bt_user as a  where  user_id in
+ 			<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+	         #{item}
+	    	</foreach>
+ 	</select>
+ 	
+	<!-- 根据组织集合查询人员信息 -->
+	<select id="findUserByOrgIds" parameterType="java.util.List"
+ 		resultType="com.dv.entity.user.User">
+ 			select a.* from bt_user as a  where  org_id in
+ 			<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+	         #{item.org_id}
+	    	</foreach>
+ 	</select>
+	
+	<!-- 添加超级管理员信息 -->
+	<insert id="addAdminInfo" parameterType="com.dv.entity.user.User">
+		insert into bt_user 
+ 			<trim prefix="("  suffix=")"  suffixOverrides=",">
+ 				<if test="user_id !=null">
+ 					user_id,
+ 				</if>
+ 				<if test="user_name !=null">
+ 					user_name,
+ 				</if>
+ 				<if test="real_name !=null">
+ 					real_name,
+ 				</if>
+ 				<if test="password !=null">
+ 					password,			
+ 				</if>
+ 				<if test="sex !=null">
+ 					sex,
+ 				</if>
+ 				<if test="is_super !=null">
+ 					is_super,
+ 				</if>
+ 				savetime,
+ 			</trim>
+ 			<trim prefix="values (" suffix=")" suffixOverrides=",">
+ 				<if test="user_id !=null">
+ 					#{user_id},
+ 				</if>
+ 				<if test="user_name !=null">
+ 					#{user_name},
+ 				</if>
+ 				<if test="real_name !=null">
+ 					#{real_name},
+ 				</if>
+ 				<if test="password !=null">
+ 					#{password},			
+ 				</if>
+ 				<if test="sex !=null">
+ 					#{sex},
+ 				</if>
+ 				<if test="is_super !=null">
+ 					#{is_super},
+ 				</if>
+ 				NOW(),
+ 			</trim>	
+	</insert>
+	
+	<!-- 根据用户id集合查询用户信息 -->
+	<select id="findUserByUserId" parameterType="java.lang.String"
+ 		resultType="com.dv.entity.user.User">
+ 			select a.* from bt_user as a  where  user_id=#{user_id}
+ 	</select>
+ </mapper>

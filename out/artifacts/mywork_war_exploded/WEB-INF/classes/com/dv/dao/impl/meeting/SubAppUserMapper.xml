@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+ <mapper namespace="com.dv.dao.meeting.SubAppUserMapper">
+ 	<!-- 查找所有设备使用人 -->
+ 		<select id="findSubAppUser" parameterType="com.dv.entity.meeting.SubAppUser"
+ 			resultType="com.dv.entity.meeting.SubAppUser">
+ 			select a.*,b.user_name,b.real_name,c.user_name as register  from sub_app_user as a left join bt_user as b on a.user_id=b.user_id
+ 			left join bt_user as c on a.register_id=c.user_id
+ 			where 1 = 1
+	 		<if test="mid !=null">
+	 			and a.mid=#{mid}
+	 		</if>
+	 		<if test="authorationcode !=null">
+	 			and authorationcode=#{authorationcode}
+	 		</if>
+	 		<if test="is_binding !=null and is_binding!=-1">
+	 		    and a.is_binding=#{is_binding}
+	 		</if>
+	 		<if test="search !=null">
+	 			and b.real_name like CONCAT('%',#{search},'%')
+	 		</if>
+	 		<if test="ipad_uuid != null">
+	 			and a.ipad_uuid=#{ipad_uuid}
+	 		</if>
+	 		<if test="sort!=null">
+	 		    order by ${sort}
+	 		    <if test="order !=null">
+	 		        ${order}
+	 		    </if>
+	 		</if>
+	 		<if test = "limit!=0">
+			 	limit #{start},#{limit}
+			</if>	
+ 		</select>
+ 	<!-- 查找设备使用人总条数-->
+ 			<select id="findSubAppUserCount" parameterType="com.dv.entity.meeting.SubAppUser"
+		 		resultType="integer">
+		 		select count(*) from sub_app_user as a left join bt_user as b on a.user_id=b.user_id 
+		 		left join bt_user as c on a.register_id=c.user_id where 1 = 1
+		 		<if test="mid !=null">
+		 			and a.mid=#{mid}
+		 		</if>
+		 		<if test="is_binding!=null and is_binding!=-1">
+	 		    and a.is_binding=#{is_binding}
+	 		</if>
+	 		<if test="search !=null">
+	 			and b.real_name like CONCAT('%',#{search},'%')
+	 		</if>	
+ 		</select>
+ 		<!-- 增加设备使用人 -->
+ 		<insert id="addSubAppUser"  parameterType="com.dv.entity.meeting.SubAppUser">
+ 			insert into sub_app_user 
+ 			<trim prefix="("  suffix=")"  suffixOverrides=",">
+ 				<if test="mid !=null">
+ 					mid,
+ 				</if>
+ 				<if test="register_id !=null">
+ 					register_id,
+ 				</if>
+ 				<if test="job_number !=null">
+ 					job_number,			
+ 				</if>
+ 				<if test="passwd_flag !=null">
+ 					passwd_flag,			
+ 				</if>
+ 				<if test="passwd !=null">
+ 					passwd,			
+ 				</if>
+ 				<if test="ipad_uuid !=null">
+ 					ipad_uuid,			
+ 				</if>
+ 				<if test="create_time !=null">
+ 					create_time,			
+ 				</if>
+ 				<if test="authorationcode !=null">
+ 					authorationcode,			
+ 				</if>
+ 				<if test="status !=null">
+ 					status,			
+ 				</if>
+ 				<if test="is_binding!=null">
+	 		     	is_binding,
+	 			</if>
+	 			<if test="user_id!=null">
+	 			    user_id, 			    
+	 			</if>
+	 			<if test="remark!=null">
+	 			    remark,	 			 
+	 			</if>
+ 			</trim>
+ 			<trim prefix="values (" suffix=")" suffixOverrides=",">
+				<if test = "mid != null">
+			 			 #{mid},
+			 	</if>
+				<if test = "register_id != null">
+			 			 #{register_id},
+			 	</if>
+				<if test = "job_number != null">
+			 			 #{job_number},
+			 	</if>
+			 	<if test = "passwd_flag != null">
+			 			 #{passwd_flag},
+			 	</if>
+			 	<if test = "passwd != null">
+			 			 #{passwd},
+			 	</if>
+			 	<if test = "ipad_uuid != null">
+			 			 #{ipad_uuid},
+			 	</if>
+			 	<if test = "create_time != null">
+			 			 #{create_time},
+			 	</if>
+			 	<if test = "authorationcode != null">
+			 			 #{authorationcode},
+			 	</if>
+			 	<if test = "status != null">
+			 			 #{status},
+			 	</if>
+			 	<if test="is_binding!=null">
+	 		     	#{is_binding},
+	 		</if>
+	 		<if test="user_id!=null">
+	 			    #{user_id}, 			    
+	 			</if>
+	 			<if test="remark!=null">
+	 			    #{remark},	 			 
+	 			</if>
+			</trim>
+ 		</insert>
+ <!-- 根据id删除设备使用人-->
+ 	<delete id="delSubAppUserByIds" parameterType="java.util.List">
+ 		delete from sub_app_user where mid in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+         #{item}
+    </foreach>
+ 	</delete>
+ 	
+ 	<!-- 根据用户id删除设备使用人-->
+ 	<delete id="delSubAppUserByUserIds" parameterType="java.util.List">
+ 		delete from sub_app_user where user_id in
+ 		<foreach collection="list" index="index" item="item" open="(" separator="," close=")">
+         #{item}
+    </foreach>
+ 	</delete>
+ 		
+ 	
+ <!-- 修改设备使用人-->
+ <update id="modSubAppUserById" parameterType="com.dv.entity.meeting.SubAppUser" >
+ 	update sub_app_user set
+ 	<trim suffixOverrides=",">
+ 		<if test="register_id !=null">
+ 			register_id=#{register_id},
+ 		</if>
+ 		<if test="job_number !=null">
+ 			job_number=#{job_number},
+ 		</if>
+ 		<if test="passwd_flag !=null">
+ 			passwd_flag=#{passwd_flag},
+ 		</if>
+ 		<if test="passwd !=null">
+ 			passwd=#{passwd},
+ 		</if>
+ 		<if test="ipad_uuid !=null">
+ 			ipad_uuid=#{ipad_uuid},
+ 		</if>
+ 		<if test="create_time !=null">
+ 			create_time=#{create_time},
+ 		</if>
+ 		<if test="authorationcode !=null">
+ 			authorationcode=#{authorationcode},
+ 		</if>
+ 		<if test="status !=null">
+ 			status=#{status},
+ 		</if>
+ 		<if test="is_binding!=null">
+	 		 is_binding=#{is_binding},
+	 		</if>
+	 		<if test="user_id!=null">
+	 			    user_id=#{user_id}, 			    
+	 			</if>
+	 			<if test="remark!=null">
+	 			    remark=#{remark},	 			 
+	 			</if>
+ 	</trim>
+ 	where mid=#{mid}
+ </update>	
+ 
+	<!-- 清除绑定信息，设置授权码以及pad编号为空 -->	
+ 	<update id="clearBindInfoByIds"
+ 		parameterType="java.util.List">
+ 		update sub_app_user set status=0,authorationcode=null,ipad_uuid=null,energy=null,is_binding=0
+        where mid in     
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">   
+            #{item}    
+        </foreach>  
+ 	</update>
+ 	
+ 	<!--根据用户id清除注册人员信息  -->
+ 	<update id="batchClearRegisterByUserIds"
+ 		parameterType="java.util.List">
+ 		update sub_app_user set register_id=null
+        where register_id in     
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">   
+            #{item}    
+        </foreach>  
+ 	</update>
+ 	
+ 	<!-- 根据授权码集合清除绑定信息，设置授权码以及pad编号为空 -->
+ 	<update id="clearBindInfoByAuthCodes"
+ 		parameterType="java.util.List">
+ 		update sub_app_user set status=0,authorationcode=null,ipad_uuid=null,is_binding=0
+        where authorationcode in     
+        <foreach collection="list" index="index" item="item" open="(" separator="," close=")">   
+            #{item}    
+        </foreach>  
+ 	</update>
+ 	
+ 	<!-- 根据设备编号，设置设备电量 -->
+ 	<update id="setEnergyByIpadUUID" parameterType="com.dv.entity.meeting.SubAppUser">
+ 		update sub_app_user set energy=#{energy}
+ 		where ipad_uuid = #{ipad_uuid}
+ 	</update>
+	<!-- 根据设备编号，设置设备存储信息 -->
+	<update id="setStorageByIpadUUID" parameterType="com.dv.entity.meeting.SubAppUser">
+		update sub_app_user set storage=#{storage}
+		where ipad_uuid = #{ipad_uuid}
+	</update>
+ </mapper>
